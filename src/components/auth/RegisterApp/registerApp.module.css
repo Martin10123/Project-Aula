@@ -1,0 +1,77 @@
+.register__container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(159deg, #006e6f 51%, rgba(255, 255, 255, 1) 97%);
+}
+
+.register__content {
+  width: 94%;
+  height: fit-content;
+  overflow: auto;
+  padding: 0.5rem;
+  background: #fff;
+  box-shadow: 1px 1px 11px grey;
+  border-radius: 1rem;
+}
+
+.register__content > h2 {
+  text-align: center;
+  padding: 1rem 0 1.5rem 0;
+  color: #006e6f;
+}
+
+.register__form {
+  width: 100%;
+  height: 100%;
+  padding: 0 0.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.register__input,
+.register__select {
+  width: 100%;
+  height: 2rem;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  border: 2px solid #80808099;
+  font-size: 1rem;
+  outline: gray;
+}
+
+.register__select {
+  padding: 0 0.5rem;
+}
+
+.register__button {
+  width: 100%;
+  height: 2rem;
+  font-size: 1rem;
+  border-radius: 0.3rem;
+  border: 2px solid #80808099;
+  background-color: #006e6f;
+  color: #fff;
+  cursor: pointer;
+}
+
+.register__redirect_login {
+  width: 100%;
+  text-align: end;
+  color: #808080c9;
+}
+
+.register__redirect_login > span {
+  color: #006e6f;
+  cursor: pointer;
+}
+
+@media (min-width: 800px) {
+  .register__content {
+    width: 28rem;
+  }
+}

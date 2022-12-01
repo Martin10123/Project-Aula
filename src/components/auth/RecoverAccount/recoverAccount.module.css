@@ -1,0 +1,42 @@
+.recover_account__content {
+  width: 100%;
+  padding: 1rem;
+}
+
+.recover_account__title {
+  padding: 1rem 0;
+}
+
+.recover_account__button {
+  width: 100%;
+  height: 2rem;
+  margin: 1rem 0;
+  font-size: 1rem;
+  border-radius: 0.3rem;
+  border: 2px solid #80808099;
+  background-color: #006e6f;
+  color: #fff;
+  cursor: pointer;
+}
+
+.recover_account__login,
+.recover_account__register {
+  font-size: 1.1rem;
+  margin: 0.6rem 0;
+  color: #006e6f;
+  cursor: pointer;
+}
+
+@media (min-width: 800px) {
+  .recover_account__container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .recover_account__content {
+    width: 25rem;
+  }
+}
