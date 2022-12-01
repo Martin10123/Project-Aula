@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-// import { RecoverAccount } from "./components/auth/RecoverAccount";
+import { ProfileUser } from "./components/auth/ProfileUser";
 import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(

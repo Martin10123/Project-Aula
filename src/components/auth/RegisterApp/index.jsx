@@ -30,7 +30,7 @@ export const RegisterApp = () => {
             placeholder="Nombre de usuario..."
           />
           <InputForm
-            name="username"
+            name="email"
             onChangeF={() => {}}
             type="email"
             value={""}
