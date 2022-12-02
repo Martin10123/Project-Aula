@@ -1,0 +1,145 @@
+.choose__container {
+  width: 100%;
+  height: 100vh;
+  padding: 0 1rem;
+  background: linear-gradient(159deg, #4fc7e2 40%, #47e7c8 60%);
+}
+
+.choose__welcome {
+  color: #fff;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.choose__title {
+  text-align: center;
+  padding: 0 0 1.5rem;
+  color: #fff;
+}
+
+.choose__resumen {
+  font-size: 1.3rem;
+  margin: 0rem 0 2rem;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+}
+
+.choose__modal_desc {
+  width: 92%;
+  height: fit-content;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 0.6rem;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.choose__modal_desc > h2 {
+  margin-bottom: 1rem;
+}
+
+.choose__back_modal {
+  content: "";
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  background-color: #000000a1;
+}
+
+.choose__modal_button {
+  width: 100%;
+  height: 3rem;
+  margin: 1.2rem 0;
+  font-size: 1rem;
+  border-radius: 0.4rem;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.choose__content_cards {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.choose__card_user,
+.choose__card_prof {
+  align-items: center;
+  background-color: #fff;
+  border-radius: 0.3rem;
+  box-shadow: 1px 1px 11px #808080b5;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  height: 9rem;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+.choose__card_user > svg,
+.choose__card_prof > svg {
+  font-size: 3rem;
+  margin: 0.5rem 0;
+  color: #47e7c8;
+}
+
+.choose__card_user > p,
+.choose__card_prof > p {
+  font-size: 1.1rem;
+}
+
+@media (min-width: 1000px) {
+  .choose__container {
+    width: 75%;
+    margin: 0 auto;
+    border-left: 3px solid #fff;
+    border-right: 3px solid #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .choose__container::before {
+    content: "";
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(159deg, #4fc7e2 40%, #47e7c8 60%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  .choose__content_cards {
+    flex-direction: row;
+  }
+
+  .choose__card_user,
+  .choose__card_prof {
+    height: 12rem;
+    transition: 1s ease-in-out;
+  }
+
+  .choose__modal_desc {
+    width: 34rem;
+    box-shadow: 1px 1px 15px grey;
+  }
+
+  .choose__card_user:hover,
+  .choose__card_prof:hover {
+    transform: scale(1.05);
+    transition: 1s ease-in-out;
+  }
+}

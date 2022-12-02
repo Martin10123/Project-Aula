@@ -1,54 +1,53 @@
-import { InputForm } from "./InputForm";
-
+import { InputForm } from "../../Helpers/InputForm/InputForm";
 import styles from "./registerApp.module.css";
 
 export const RegisterApp = () => {
   return (
     <div className={styles.register__container}>
       <div className={styles.register__content}>
-        <h2>Register App</h2>
+        <h2>Crear cuenta</h2>
         <form className={styles.register__form}>
           <InputForm
-            name="name"
+            nameInput="name"
             onChangeF={() => {}}
             type="text"
-            value={""}
-            placeholder="Nombre..."
+            value=""
+            placeH="Nombre..."
           />
           <InputForm
-            name="lastname"
+            nameInput="lastname"
             onChangeF={() => {}}
             type="text"
-            value={""}
-            placeholder="Apellido..."
+            value=""
+            placeH="Apellido..."
           />
           <InputForm
-            name="username"
+            nameInput="username"
             onChangeF={() => {}}
             type="text"
-            value={""}
-            placeholder="Nombre de usuario..."
+            value=""
+            placeH="Nombre de usuario..."
           />
           <InputForm
-            name="email"
+            nameInput="email"
             onChangeF={() => {}}
             type="email"
-            value={""}
-            placeholder="Correo..."
+            value=""
+            placeH="Correo..."
           />
           <InputForm
-            name="password1"
+            nameInput="password1"
             onChangeF={() => {}}
             type="password"
-            value={""}
-            placeholder="Contraseña..."
+            value=""
+            placeH="Contraseña..."
           />
           <InputForm
-            name="password2"
+            nameInput="password2"
             onChangeF={() => {}}
             type="password"
-            value={""}
-            placeholder="Contraseña..."
+            value=""
+            placeH="Confirmar contraseña..."
           />
 
           <select name="gender" id="gender" className={styles.register__select}>
