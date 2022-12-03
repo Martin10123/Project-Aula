@@ -1,17 +1,19 @@
 import imgFooter from "./imgFooter.svg";
-import loginBack from "./loginBack.svg";
+import loginBank from "./loginBank.svg";
 import LogoApp from "./LogoApp.png";
 import professional from "./professional.jpg";
 import register from "./register.jpg";
-import registerBack from "./registerBack.svg";
+import registerBank from "./registerBank.svg";
 import users from "./users.jpg";
+import photoUser from "./photoUser.png";
 
 export {
   imgFooter,
-  loginBack,
+  loginBank,
   LogoApp,
   professional,
   register,
-  registerBack,
+  registerBank,
   users,
+  photoUser,
 };

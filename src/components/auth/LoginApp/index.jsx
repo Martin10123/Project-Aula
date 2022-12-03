@@ -1,5 +1,6 @@
 import { FaFacebookF } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
+import { ButtonForm, InputForm } from "../../Helpers";
 
 import styles from "./loginPage.module.css";
 
@@ -12,19 +13,21 @@ export const LoginAppUser = () => {
         </div>
 
         <form className={styles.login__form}>
-          <div className={styles.login__content_input}>
-            <label htmlFor="email">Email</label>
-            <input id="email" type="email" placeholder="Ingresa tu email..." />
-          </div>
+          <InputForm
+            nameInput="email"
+            onChangeF={() => {}}
+            placeH="Correo..."
+            type="email"
+            value=""
+          />
 
-          <div className={styles.login__content_input}>
-            <label htmlFor="password">Password</label>
-            <input
-              id="password"
-              type="password"
-              placeholder="Ingrese tu contraseña..."
-            />
-          </div>
+          <InputForm
+            nameInput="password"
+            onChangeF={() => {}}
+            placeH="Contraseña..."
+            type="password"
+            value=""
+          />
         </form>
 
         <div className={styles.login__forgot_password}>
@@ -36,9 +39,7 @@ export const LoginAppUser = () => {
           <h5>Recordar mis datos</h5>
         </div>
 
-        <div className={styles.login__button_box}>
-          <button className={styles.login__button}>Login</button>
-        </div>
+        <ButtonForm title="Ingresar" />
         <hr />
 
         <div className={styles.login__with_fa_or_go}>

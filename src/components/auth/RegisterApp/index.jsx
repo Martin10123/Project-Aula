@@ -1,3 +1,4 @@
+import { ButtonForm } from "../../Helpers";
 import { InputForm } from "../../Helpers/InputForm/InputForm";
 import styles from "./registerApp.module.css";
 
@@ -7,48 +8,60 @@ export const RegisterApp = () => {
       <div className={styles.register__content}>
         <h2>Crear cuenta</h2>
         <form className={styles.register__form}>
-          <InputForm
-            nameInput="name"
-            onChangeF={() => {}}
-            type="text"
-            value=""
-            placeH="Nombre..."
-          />
-          <InputForm
-            nameInput="lastname"
-            onChangeF={() => {}}
-            type="text"
-            value=""
-            placeH="Apellido..."
-          />
+          <div className={styles.register__content_inputs}>
+            <InputForm
+              nameInput="name"
+              onChangeF={() => {}}
+              placeH="Nombre..."
+              type="text"
+              value=""
+            />
+            <InputForm
+              nameInput="lastname"
+              onChangeF={() => {}}
+              placeH="Apellido..."
+              type="text"
+              value=""
+            />
+          </div>
           <InputForm
             nameInput="username"
             onChangeF={() => {}}
+            placeH="Nombre de usuario..."
             type="text"
             value=""
-            placeH="Nombre de usuario..."
+          />
+          <InputForm
+            nameInput="phoneNumber"
+            maxLenght={10}
+            onChangeF={() => {}}
+            placeH="Telefono..."
+            type="tel"
+            value=""
           />
           <InputForm
             nameInput="email"
             onChangeF={() => {}}
+            placeH="Correo..."
             type="email"
             value=""
-            placeH="Correo..."
           />
-          <InputForm
-            nameInput="password1"
-            onChangeF={() => {}}
-            type="password"
-            value=""
-            placeH="Contraseña..."
-          />
-          <InputForm
-            nameInput="password2"
-            onChangeF={() => {}}
-            type="password"
-            value=""
-            placeH="Confirmar contraseña..."
-          />
+          <div className={styles.register__content_inputs}>
+            <InputForm
+              nameInput="password1"
+              onChangeF={() => {}}
+              placeH="Contraseña..."
+              type="password"
+              value=""
+            />
+            <InputForm
+              nameInput="password2"
+              onChangeF={() => {}}
+              placeH="Confirmar contraseña..."
+              type="password"
+              value=""
+            />
+          </div>
 
           <select name="gender" id="gender" className={styles.register__select}>
             <option value="Masculino">Hombre</option>
@@ -56,7 +69,7 @@ export const RegisterApp = () => {
             <option value="Sin especificar">Sin especificar</option>
           </select>
 
-          <button className={styles.register__button}>Registrarse</button>
+          <ButtonForm title="Registrarse" />
 
           <p className={styles.register__redirect_login}>
             ¿Ya tienes una cuenta? <span>Ingresar</span>

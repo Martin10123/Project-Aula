@@ -1,16 +1,17 @@
-import { imgFooter, loginBack } from "../../../images";
+import { imgFooter, loginBank } from "../../../images";
+import { ButtonForm } from "../../Helpers/ButtonForm/ButtonForm";
 import { InputForm } from "../../Helpers/InputForm/InputForm";
 
-import styles from "./loginBack.module.css";
+import styles from "./loginBank.module.css";
 
-export const LoginBack = () => {
+export const LoginBank = () => {
   return (
-    <div className={styles.loginBack__container}>
-      <div className={styles.loginBack__content}>
-        <figure className={styles.loginBack__image}>
-          <img src={loginBack} alt="" />
+    <div className={styles.loginBank__container}>
+      <div className={styles.loginBank__content}>
+        <figure className={styles.loginBank__image}>
+          <img src={loginBank} alt="" />
         </figure>
-        <div className={styles.loginBack__form}>
+        <div className={styles.loginBank__form}>
           <h2>Ingresar al banco</h2>
           <InputForm
             nameInput="email"
@@ -27,14 +28,15 @@ export const LoginBack = () => {
             placeH="Ingresa tu contraseña..."
           />
           <p>¿Olvidaste tu contraseña?</p>
-          <button className={styles.loginBack__button}>Ingresar</button>
+
+          <ButtonForm title="Ingresar" />
         </div>
-        <div className={styles.loginBack__redirect_register}>
+        <div className={styles.loginBank__redirect_register}>
           <p>¿No tienes cuenta? Registrate</p>
         </div>
       </div>
 
-      <div className={styles.loginBack__img_footer}>
+      <div className={styles.loginBank__img_footer}>
         <img src={imgFooter} alt="" />
       </div>
     </div>
