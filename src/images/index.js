@@ -6,6 +6,9 @@ import register from "./register.jpg";
 import registerBank from "./registerBank.svg";
 import users from "./users.jpg";
 import photoUser from "./photoUser.png";
+import bankImg from "./bankImg.svg";
+import bankMoney from "./bankMoney.svg";
+import bankBackgro from "./bankBackgro.svg";
 
 export {
   imgFooter,
@@ -16,4 +19,7 @@ export {
   registerBank,
   users,
   photoUser,
+  bankImg,
+  bankMoney,
+  bankBackgro,
 };
