@@ -1,0 +1,128 @@
+.myAccounts__return {
+  width: 100%;
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  gap: 1rem;
+  border-bottom: 1px solid gray;
+}
+
+.myAccounts__return > svg {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.myAccounts__return > p {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.myAccounts__content {
+  width: 100%;
+  padding: 1rem;
+}
+
+.myAccounts__count_cards {
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.myAccounts__count_cards > span {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+}
+
+.myAccounts__container_cards {
+  width: 100%;
+  overflow: auto;
+}
+
+.myAccounts__content_credit_card {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  gap: 1rem;
+  width: fit-content;
+}
+
+.myAccounts__credit_card {
+  background-color: #0099ff;
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 11px grey;
+  color: #fff;
+  height: 11rem;
+  padding: 1rem;
+  position: relative;
+  width: 20.5rem;
+}
+
+.myAccounts__check_card {
+  position: absolute;
+  right: 1rem;
+  top: 1.2rem;
+  font-size: 1.3rem;
+}
+
+.myAccounts__card_number {
+  font-size: 1.3rem;
+  margin: 0.3rem 0;
+}
+
+.myAccounts__content_info_user {
+  background: #d4d4d42c;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 1rem 0;
+  padding: 1rem 0.5rem;
+  width: 100%;
+}
+
+.myAccounts__personal_info {
+  background: #fff;
+  border-radius: 0.5rem;
+  border: 1px solid gray;
+  cursor: pointer;
+  font-weight: 500;
+  padding: 1rem;
+  width: 100%;
+}
+
+.myAccounts__list_servicies {
+  padding: 0.4rem 1rem;
+  display: grid;
+  gap: 0.3rem;
+}
+
+@media (min-width: 1000px) {
+  .myAccounts__return {
+    width: fit-content;
+    border: 1px solid gray;
+    border-radius: 4rem;
+    margin: 1rem 4rem;
+    cursor: pointer;
+  }
+
+  .myAccounts__container_money_creditCard {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    width: 60rem;
+  }
+
+  .myAccounts__content_info_user {
+    margin: 1rem auto;
+    width: 60rem;
+  }
+
+  .myAccounts__boxShadow_card {
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 11px grey;
+    gap: 1rem;
+    overflow: auto;
+    padding: 0 1rem;
+  }
+}
