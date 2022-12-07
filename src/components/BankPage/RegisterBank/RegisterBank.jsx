@@ -1,6 +1,7 @@
-import { imgFooter, registerBank } from "../../../images";
+import { registerBank } from "../../../images";
 import { ButtonForm } from "../../Helpers/ButtonForm/ButtonForm";
 import { InputForm } from "../../Helpers/InputForm/InputForm";
+import { bankNames } from "../helpers/BankNames";
 
 import styles from "./registerBank.module.css";
 
@@ -59,21 +60,12 @@ export const RegisterBack = () => {
           </div>
 
           <select className={styles.registerBank__select}>
-            <option value="">Elegir opción</option>
-            <option value="Banco Popular">Banco Popular</option>
-            <option value="Bancolombia">Bancolombia</option>
-            <option value="BBVA">BBVA </option>
-            <option value="Banco de Bogotá">Banco de Bogotá</option>
-            <option value="Banco Falabella">Banco Falabella</option>
-            <option value="Fondo Nacional del Ahorro">
-              Fondo Nacional del Ahorro
-            </option>
-            <option value="Banco Agrario de Colombia">
-              Banco Agrario de Colombia
-            </option>
-            <option value="Banco AV Villas">Banco AV Villas</option>
-            <option value="Banco Caja Social">Banco Caja Social</option>
-            <option value="Banco de Occidente">Banco de Occidente</option>
+            <option value="">Escoger banco</option>
+            {bankNames.map(({ name }) => (
+              <option key={name} value={name}>
+                {name}
+              </option>
+            ))}
           </select>
 
           <div className={styles.registerBack__content_input}>

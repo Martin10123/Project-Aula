@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { FaRegUserCircle, FaHouseUser } from "react-icons/fa";
-import { CardChooseOption, ModalResumen } from "./";
+import { CardChooseOption, ModalResumen } from ".";
 
 import styles from "./userOprof.module.css";
 
-export const AreYouUserOrProf = () => {
+export const AreYouUserOrProfPage = () => {
   const [resumen, setResumen] = useState(false);
 
   return (

@@ -1,6 +1,6 @@
 export * from "./AddNewCard/AddNewCard";
 export * from "./ChargeMoney/CardBank";
-export * from "./ChargeMoney/ChargeMoney";
+export * from "./ChargeMoney/ChargeMoneyPage";
 export * from "./ChargeMoney/InfoMoney";
 export * from "./ChargeMoney/OptionItem";
 export * from "./LoginBank/LoginBank";

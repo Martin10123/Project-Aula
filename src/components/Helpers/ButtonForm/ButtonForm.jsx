@@ -6,7 +6,7 @@ const styles = {
   borderRadius: "0.313rem",
   color: "#fff",
   cursor: "pointer",
-  fontSize: "1.5rem",
+  fontSize: "1.3rem",
   height: "3.75rem",
   margin: "1rem 0",
   width: "100%",

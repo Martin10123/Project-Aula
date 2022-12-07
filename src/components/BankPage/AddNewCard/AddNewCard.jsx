@@ -1,4 +1,7 @@
 import { IoIosArrowBack } from "react-icons/io";
+import { ButtonForm } from "../../Helpers/ButtonForm/ButtonForm";
+import { InputForm } from "../../Helpers/InputForm/InputForm";
+import { bankNames } from "../helpers/BankNames";
 
 import styles from "./addCard.module.css";
 
@@ -12,36 +15,61 @@ export const AddNewCard = () => {
         </div>
 
         <div className={styles.newCard__form}>
-          <div className={styles.newCard__name_card}>
-            <label htmlFor="">Nombre de la tarjeta</label>
-            <input type="text" placeholder="Ej: Martin Elias..." />
+          <div className={styles.newCard__content_input}>
+            <InputForm
+              nameInput="name"
+              onChangeF={() => {}}
+              type="text"
+              value=""
+              placeH="Nombre..."
+            />
+
+            <InputForm
+              nameInput="lastname"
+              onChangeF={() => {}}
+              type="text"
+              value=""
+              placeH="Apellido..."
+            />
           </div>
-          <div className={styles.newCard__content_inputs_number_card}>
-            <label>Numero de la tarjeta</label>
-            <div className={styles.newCard__inputs_number_card}>
-              <input type="tel" maxLength={4} placeholder="Ej: 2345" />
-              <input type="tel" maxLength={4} placeholder="Ej: 4355" />
-              <input type="tel" maxLength={4} placeholder="Ej: 6766" />
-              <input type="tel" maxLength={4} placeholder="Ej: 4455" />
-            </div>
-          </div>
-          <div className={styles.newCard__box_valid_card_and_cvc}>
-            <div className={styles.newCard__content_valid_card}>
-              <label htmlFor="">Fecha validación (MM/YY)</label>
-              <div className={styles.newCard__inputs_valid_card}>
-                <input type="tel" maxLength={2} placeholder="MM" />
-                <input type="tel" maxLength={2} placeholder="YY" />
-              </div>
-            </div>
-            <div className={styles.newCard__content_cvc}>
-              <label htmlFor="">CVC</label>
-              <input type="tel" maxLength={4} placeholder="Ej: 3453" />
-            </div>
+          <InputForm
+            nameInput="email"
+            onChangeF={() => {}}
+            type="email"
+            value=""
+            placeH="Email..."
+          />
+
+          <select className={styles.newCard__select}>
+            <option value="">Escoger banco</option>
+            {bankNames.map(({ name }) => (
+              <option key={name} value={name}>
+                {name}
+              </option>
+            ))}
+          </select>
+
+          <div className={styles.newCard__content_input}>
+            <InputForm
+              maxLenght={4}
+              nameInput="passwordAccount1"
+              onChangeF={() => {}}
+              placeH="Contraseña de la cuenta..."
+              type="tel"
+              value=""
+            />
+
+            <InputForm
+              maxLenght={4}
+              nameInput="passwordAccount2"
+              onChangeF={() => {}}
+              placeH="Confirmar contraseña de la cuenta..."
+              type="tel"
+              value=""
+            />
           </div>
 
-          <div className={styles.newCard__button_send_info}>
-            <button>Confirmar</button>
-          </div>
+          <ButtonForm title="Confirmar" />
         </div>
       </div>
     </section>

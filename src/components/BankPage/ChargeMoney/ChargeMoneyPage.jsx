@@ -11,7 +11,7 @@ import { photoUser } from "../../../images";
 
 import styles from "./chargeMoney.module.css";
 
-export const ChargeMoney = () => {
+export const ChargeMoneyPage = () => {
   return (
     <section className={styles.chargeMoney__container}>
       <div className={styles.chargeMoney__div_color_back}>
@@ -41,9 +41,6 @@ export const ChargeMoney = () => {
             <h3>Tus transiciones</h3>
 
             <div className={styles.chargeMoney__list_transition}>
-              <CardBank />
-              <CardBank />
-              <CardBank />
               <CardBank />
             </div>
           </div>
