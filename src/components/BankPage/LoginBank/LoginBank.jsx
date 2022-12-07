@@ -1,6 +1,5 @@
 import { imgFooter, loginBank } from "../../../images";
-import { ButtonForm } from "../../Helpers/ButtonForm/ButtonForm";
-import { InputForm } from "../../Helpers/InputForm/InputForm";
+import { ButtonForm, InputForm } from "../helpers";
 
 import styles from "./loginBank.module.css";
 

@@ -1,7 +1,5 @@
 import { IoIosArrowBack } from "react-icons/io";
-import { ButtonForm } from "../../Helpers/ButtonForm/ButtonForm";
-import { InputForm } from "../../Helpers/InputForm/InputForm";
-import { bankNames } from "../helpers/BankNames";
+import { bankNames, ButtonForm, InputForm } from "../helpers";
 
 import styles from "./addCard.module.css";
 

@@ -1,7 +1,5 @@
 import { registerBank } from "../../../images";
-import { ButtonForm } from "../../Helpers/ButtonForm/ButtonForm";
-import { InputForm } from "../../Helpers/InputForm/InputForm";
-import { bankNames } from "../helpers/BankNames";
+import { bankNames, ButtonForm, InputForm } from "../helpers";
 
 import styles from "./registerBank.module.css";
 
