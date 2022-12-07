@@ -1,0 +1,100 @@
+.newCard__content_nav {
+  align-items: center;
+  border-bottom: 1px solid gray;
+  display: flex;
+  font-size: 1.2rem;
+  gap: 1rem;
+  padding: 1rem;
+  width: 100%;
+  cursor: pointer;
+}
+
+.newCard__content_nav > svg {
+  font-size: 2rem;
+}
+
+.newCard__form {
+  padding: 1.5rem 1rem;
+  width: 100%;
+}
+
+.newCard__name_card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.newCard__name_card > label,
+.newCard__content_inputs_number_card > label,
+.newCard__content_valid_card > label,
+.newCard__content_cvc > label {
+  font-weight: 500;
+}
+
+.newCard__name_card > input,
+.newCard__inputs_number_card > input,
+.newCard__inputs_valid_card > input,
+.newCard__content_cvc > input {
+  border-radius: 0.5rem;
+  border: 1px solid gray;
+  font-size: 1.1rem;
+  height: 3rem;
+  padding: 1rem;
+  width: 100%;
+}
+
+.newCard__content_inputs_number_card {
+  display: grid;
+  gap: 0.5rem;
+  margin: 1rem 0;
+  width: 100%;
+}
+
+.newCard__inputs_number_card {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+}
+
+.newCard__inputs_valid_card {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.newCard__button_send_info {
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.newCard__button_send_info > button {
+  background-color: #0099ff;
+  border-radius: 0.5rem;
+  border: 1px solid gray;
+  box-shadow: 1px 1px 11px grey;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.1rem;
+  height: 3.5rem;
+  width: 100%;
+}
+
+@media (min-width: 1000px) {
+  .newCard__container {
+    align-items: center;
+    background: #0099ff;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .newCard__box_info {
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 37px #4545459e;
+    background-color: #fff;
+  }
+}
