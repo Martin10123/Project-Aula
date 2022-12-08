@@ -10,6 +10,10 @@ export const bankNames = [
   { name: "Banco de Occidente" },
 ];
 
+export const convertNumDece = (num) => {
+  return num.toLocaleString();
+};
+
 // const random = Math.floor(Math.random() * 9000 + 1000);
 
 // console.log(random);

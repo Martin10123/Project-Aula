@@ -1,0 +1,158 @@
+.recharge__nav_return {
+  align-items: center;
+  border-bottom: 1px solid gray;
+  display: flex;
+  font-size: 1.1rem;
+  gap: 1rem;
+  padding: 1rem;
+  width: 100%;
+}
+
+.recharge__nav_return > svg {
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.recharge__content_info_bank {
+  padding: 1rem;
+  width: 100%;
+}
+
+.recharge__select_card > p,
+.recharge__buttons_options_money > p {
+  font-size: 1.1rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.recharge__from_money {
+  border-radius: 0.5rem;
+  border: 1px solid gray;
+  cursor: pointer;
+  font-size: 1.1rem;
+  height: 3.5rem;
+  margin: 0 0 1rem;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.recharge__money_send_buttons {
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem;
+  width: 100%;
+}
+
+.recharge__button_less,
+.recharge__button_more {
+  align-items: center;
+  background: #0075ff;
+  border-radius: 50%;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  font-size: 1.5rem;
+  height: 2rem;
+  justify-content: center;
+  width: 2rem;
+}
+
+.recharge__money_send_buttons > p {
+  font-size: 1.3rem;
+  color: #0075ff;
+}
+
+.recharge__buttons_options_money,
+.recharge__content_money_send > input {
+  width: 100%;
+  margin: 1rem 0;
+  cursor: pointer;
+}
+
+.recharge__list_money {
+  width: 100%;
+  display: grid;
+  gap: 1rem;
+  margin: 1rem 0 0;
+}
+
+.recharge__list_money > li {
+  align-items: center;
+  background: #0075ff;
+  border-radius: 0.5rem;
+  border: 1px solid gray;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  font-size: 1.1rem;
+  height: 4rem;
+  line-height: 1.2;
+  padding: 1rem;
+  width: 100%;
+}
+
+.recharge__button_confirm_new_money {
+  width: 100%;
+  margin: 1rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.recharge__button_confirm_new_money > button {
+  border-radius: 0.5rem;
+  border: 1px solid gray;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.1rem;
+  height: 3rem;
+  width: 100%;
+}
+
+.recharge__button_confirm_new_money > button:nth-child(1) {
+  background-color: #0075ff;
+}
+
+.recharge__button_confirm_new_money > button:nth-child(2) {
+  background-color: #ff0000;
+}
+
+@media (min-width: 1000px) {
+  .recharge__container {
+    background: #fff;
+    border-radius: 0.5rem;
+    border: 1px solid gray;
+    box-shadow: 1px 1px 11px #5a5a5a;
+    margin: 2rem auto;
+    padding: 1rem;
+    width: 42rem;
+  }
+
+  .recharge__container::before {
+    background: #0075ff;
+    content: "";
+    height: 100vh;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+  }
+
+  .recharge__nav_return {
+    background-color: #0075ff;
+    border-radius: 0.5rem;
+    border: 1px solid gray;
+    color: #fff;
+    cursor: pointer;
+    margin: 1rem;
+    padding: 1rem 2rem;
+    width: 15rem;
+  }
+
+  .recharge__button_confirm_new_money > button {
+    height: 3.5rem;
+    font-size: 1.3rem;
+  }
+}
