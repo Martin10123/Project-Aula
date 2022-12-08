@@ -1,15 +1,6 @@
 import PropTypes from "prop-types";
 
-const styles = {
-  borderRadius: "0.5rem",
-  border: "1px solid #887e7e",
-  color: "#887e7e",
-  fontSize: "1.1rem",
-  height: "3.75rem",
-  margin: "0.5rem 0",
-  padding: "1rem",
-  width: "100%",
-};
+import styles from "../stylesHelpers.module.css";
 
 export const InputForm = ({
   nameInput,
@@ -21,7 +12,7 @@ export const InputForm = ({
 }) => {
   return (
     <input
-      style={styles}
+      className={styles.inputForm}
       name={nameInput}
       type={type}
       maxLength={maxLenght}

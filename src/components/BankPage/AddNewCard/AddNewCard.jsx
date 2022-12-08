@@ -1,5 +1,10 @@
-import { IoIosArrowBack } from "react-icons/io";
-import { bankNames, ButtonForm, InputForm } from "../helpers";
+import {
+  bankNames,
+  ButtonForm,
+  InputForm,
+  NavbarReturn,
+  SelectBank,
+} from "../helpers";
 
 import styles from "./addCard.module.css";
 
@@ -7,10 +12,7 @@ export const AddNewCard = () => {
   return (
     <section className={styles.newCard__container}>
       <div className={styles.newCard__box_info}>
-        <div className={styles.newCard__content_nav}>
-          <IoIosArrowBack />
-          <p>Agregar tarjeta</p>
-        </div>
+        <NavbarReturn title="Agregar tarjeta" />
 
         <div className={styles.newCard__form}>
           <div className={styles.newCard__content_input}>
@@ -38,14 +40,7 @@ export const AddNewCard = () => {
             placeH="Email..."
           />
 
-          <select className={styles.newCard__select}>
-            <option value="">Escoger banco</option>
-            {bankNames.map(({ name }) => (
-              <option key={name} value={name}>
-                {name}
-              </option>
-            ))}
-          </select>
+          <SelectBank />
 
           <div className={styles.newCard__content_input}>
             <InputForm

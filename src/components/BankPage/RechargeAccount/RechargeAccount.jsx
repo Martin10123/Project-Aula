@@ -1,15 +1,11 @@
-import { BsArrowLeft } from "react-icons/bs";
-import { convertNumDece } from "../helpers/BankNames";
+import { ButtonForm, convertNumDece, NavbarReturn } from "../helpers";
 
 import styles from "./recharge.module.css";
 
 export const RechargeAccount = () => {
   return (
     <section className={styles.recharge__container}>
-      <div className={styles.recharge__nav_return}>
-        <BsArrowLeft />
-        <p>Mi cuenta</p>
-      </div>
+      <NavbarReturn title="Mi cuenta" />
       <div className={styles.recharge__content_info_bank}>
         <div className={styles.recharge__select_card}>
           <p>Selecciona cuenta</p>
@@ -40,8 +36,8 @@ export const RechargeAccount = () => {
         <hr />
 
         <div className={styles.recharge__button_confirm_new_money}>
-          <button>Confirmar</button>
-          <button>Cancelar</button>
+          <ButtonForm title="Confirmar" />
+          <ButtonForm title="Cancelar" colorButton="red" />
         </div>
       </div>
     </section>

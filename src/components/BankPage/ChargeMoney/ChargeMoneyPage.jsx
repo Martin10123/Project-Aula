@@ -10,6 +10,7 @@ import { OptionItem } from "./OptionItem";
 import { photoUser } from "../../../images";
 
 import styles from "./chargeMoney.module.css";
+import { ButtonForm } from "../helpers";
 
 export const ChargeMoneyPage = () => {
   return (
@@ -46,10 +47,7 @@ export const ChargeMoneyPage = () => {
           </div>
         </div>
         <div className={styles.chargeMoney__box_button_logout}>
-          <button>
-            <BiLogOut />
-            Cerrar sesión
-          </button>
+          <ButtonForm title="Cerrar cesion" colorButton="red" />
         </div>
       </div>
     </section>

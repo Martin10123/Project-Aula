@@ -1,18 +1,14 @@
-import { BsArrowLeft } from "react-icons/bs";
-
 import { CreditCard } from "./CreditCard";
 import { InfoMoney } from "../ChargeMoney/InfoMoney";
 import { InfoUserItem } from "./InfoUserItem";
+import { NavbarReturn } from "../helpers";
 
 import styles from "./myAccount.module.css";
 
 export const MyAccounts = () => {
   return (
     <section className={styles.myAccounts__container}>
-      <div className={styles.myAccounts__return}>
-        <BsArrowLeft />
-        <p>Mi cuenta</p>
-      </div>
+      <NavbarReturn title="Mi cuenta" />
       <div className={styles.myAccounts__content}>
         <div className={styles.myAccounts__container_money_creditCard}>
           <InfoMoney showMessageAccount={false} />

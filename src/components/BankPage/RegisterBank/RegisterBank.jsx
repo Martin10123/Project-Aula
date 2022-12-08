@@ -1,5 +1,5 @@
 import { registerBank } from "../../../images";
-import { bankNames, ButtonForm, InputForm } from "../helpers";
+import { ButtonForm, InputForm, SelectBank } from "../helpers";
 
 import styles from "./registerBank.module.css";
 
@@ -57,14 +57,7 @@ export const RegisterBack = () => {
             />
           </div>
 
-          <select className={styles.registerBank__select}>
-            <option value="">Escoger banco</option>
-            {bankNames.map(({ name }) => (
-              <option key={name} value={name}>
-                {name}
-              </option>
-            ))}
-          </select>
+          <SelectBank />
 
           <div className={styles.registerBack__content_input}>
             <InputForm
