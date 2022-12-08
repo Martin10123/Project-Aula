@@ -1,30 +1,30 @@
 .myAccounts__return {
-  width: 100%;
-  display: flex;
-  padding: 1rem;
   align-items: center;
-  gap: 1rem;
   border-bottom: 1px solid gray;
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  width: 100%;
 }
 
 .myAccounts__return > svg {
-  font-size: 1.5rem;
   cursor: pointer;
+  font-size: 1.5rem;
 }
 
 .myAccounts__return > p {
-  font-size: 1.2rem;
   cursor: pointer;
+  font-size: 1.2rem;
 }
 
 .myAccounts__content {
-  width: 100%;
   padding: 1rem;
+  width: 100%;
 }
 
 .myAccounts__count_cards {
-  width: 100%;
   margin: 1rem 0;
+  width: 100%;
 }
 
 .myAccounts__count_cards > span {
@@ -34,8 +34,8 @@
 }
 
 .myAccounts__container_cards {
-  width: 100%;
   overflow: auto;
+  width: 100%;
 }
 
 .myAccounts__content_credit_card {
@@ -58,10 +58,10 @@
 }
 
 .myAccounts__check_card {
+  font-size: 1.3rem;
   position: absolute;
   right: 1rem;
   top: 1.2rem;
-  font-size: 1.3rem;
 }
 
 .myAccounts__card_number {
@@ -91,18 +91,18 @@
 }
 
 .myAccounts__list_servicies {
-  padding: 0.4rem 1rem;
   display: grid;
   gap: 0.3rem;
+  padding: 0.4rem 1rem;
 }
 
 @media (min-width: 1000px) {
   .myAccounts__return {
-    width: fit-content;
-    border: 1px solid gray;
     border-radius: 4rem;
-    margin: 1rem 4rem;
+    border: 1px solid gray;
     cursor: pointer;
+    margin: 1rem 4rem;
+    width: fit-content;
   }
 
   .myAccounts__container_money_creditCard {

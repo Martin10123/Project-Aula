@@ -70,8 +70,8 @@
 
 @media (min-width: 800px) {
   .register__content {
-    width: 30rem;
     height: 41rem;
+    width: 30rem;
   }
 
   .register__content_inputs {

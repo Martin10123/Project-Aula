@@ -1,13 +1,13 @@
 .loginBank__container {
-  width: 100%;
   height: 100vh;
+  width: 100%;
 }
 
 .loginBank__image {
-  padding: 2rem 0;
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: center;
+  padding: 2rem 0;
 }
 
 .loginBank__form {
@@ -19,44 +19,44 @@
 }
 
 .loginBank__form > p {
-  text-align: end;
-  margin: 0.5rem 0;
   color: #887e7e;
   cursor: pointer;
+  margin: 0.5rem 0;
+  text-align: end;
 }
 
 .loginBank__redirect_register {
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: center;
 }
 
 .loginBank__redirect_register > p {
-  font-size: 1.2rem;
   color: #887e7e;
   cursor: pointer;
+  font-size: 1.2rem;
 }
 
 .loginBank__img_footer > img {
-  width: 100%;
-  position: absolute;
   bottom: 0;
   left: 0;
+  position: absolute;
+  width: 100%;
   z-index: -1;
 }
 
 @media (min-width: 1000px) {
   .loginBank__container {
-    display: flex;
     align-items: center;
+    display: flex;
     justify-content: center;
   }
 
   .loginBank__content {
-    width: 30rem;
-    border: 1px solid gray;
     border-radius: 0.5rem;
-    padding: 0 0 1rem;
+    border: 1px solid gray;
     box-shadow: 1px 1px 11px grey;
+    padding: 0 0 1rem;
+    width: 30rem;
   }
 }

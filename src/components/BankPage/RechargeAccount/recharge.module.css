@@ -59,22 +59,22 @@
 }
 
 .recharge__money_send_buttons > p {
-  font-size: 1.3rem;
   color: #0075ff;
+  font-size: 1.3rem;
 }
 
 .recharge__buttons_options_money,
 .recharge__content_money_send > input {
-  width: 100%;
-  margin: 1rem 0;
   cursor: pointer;
+  margin: 1rem 0;
+  width: 100%;
 }
 
 .recharge__list_money {
-  width: 100%;
   display: grid;
   gap: 1rem;
   margin: 1rem 0 0;
+  width: 100%;
 }
 
 .recharge__list_money > li {
@@ -93,11 +93,11 @@
 }
 
 .recharge__button_confirm_new_money {
-  width: 100%;
-  margin: 1rem 0;
   display: grid;
-  grid-template-columns: 1fr 1fr;
   gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+  margin: 1rem 0;
+  width: 100%;
 }
 
 @media (min-width: 1000px) {

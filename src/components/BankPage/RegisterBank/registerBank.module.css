@@ -3,10 +3,10 @@
 }
 
 .registerBank__image {
-  padding: 2rem 0;
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: center;
+  padding: 2rem 0;
 }
 
 .registerBank__form {
@@ -32,18 +32,18 @@
 
 @media (min-width: 1000px) {
   .registerBank__container {
-    display: flex;
     align-items: center;
+    display: flex;
     justify-content: center;
   }
 
   .registerBank__content {
-    width: 30rem;
-    margin: 2rem 0;
-    border: 1px solid gray;
     border-radius: 0.5rem;
-    padding: 0 0 1rem;
+    border: 1px solid gray;
     box-shadow: 1px 1px 11px grey;
+    margin: 2rem 0;
+    padding: 0 0 1rem;
+    width: 30rem;
   }
 
   .registerBack__content_input {

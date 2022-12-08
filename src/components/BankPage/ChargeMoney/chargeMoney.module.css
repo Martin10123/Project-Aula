@@ -10,38 +10,38 @@
 }
 
 .chargeMoney__inside_background {
-  width: 15rem;
-  height: 15rem;
   background: #0046c9;
   border-radius: 50%;
+  height: 15rem;
   position: absolute;
-  top: -6rem;
   right: -5rem;
+  top: -6rem;
+  width: 15rem;
 }
 
 .chargeMoney__nav {
-  width: 100%;
-  padding: 1rem;
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: space-between;
+  padding: 1rem;
+  width: 100%;
 }
 
 .chargeMoney__image {
-  display: flex;
   align-items: center;
-  gap: 1rem;
   color: #fff;
   cursor: pointer;
+  display: flex;
+  gap: 1rem;
 }
 
 .chargeMoney__image > img,
 .chargeMoney__card_img > img {
-  width: 2.75rem;
-  height: 2.75rem;
-  object-fit: cover;
   border-radius: 50%;
   cursor: pointer;
+  height: 2.75rem;
+  object-fit: cover;
+  width: 2.75rem;
 }
 
 .chargeMoney__image > img {
@@ -55,8 +55,8 @@
 }
 
 .chargeMoney__content_all_info {
-  width: 100%;
   padding: 1rem;
+  width: 100%;
 }
 
 .chargeMoney__money_avaible {
@@ -100,18 +100,18 @@
 
 .chargeMoney__spinner,
 .chargeMoney__spinner:after {
-  width: 13rem;
-  height: 13rem;
   border-radius: 50%;
   display: block;
+  height: 13rem;
+  width: 13rem;
 }
 
 .chargeMoney__spinner {
   background-color: transparent;
-  border-top: 11px solid #0099ff;
-  border-right: 11px solid #428bca33;
   border-bottom: 11px solid transparent;
   border-left: 11px solid #0099ff;
+  border-right: 11px solid #428bca33;
+  border-top: 11px solid #0099ff;
   position: absolute;
   top: 1.5rem;
   z-index: -1;
@@ -127,29 +127,29 @@
 }
 
 .chargeMoney__content_list_options {
-  width: 100%;
-  margin: 1.5rem 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   align-items: center;
+  display: grid;
   gap: 0.5rem;
+  grid-template-columns: 1fr 1fr;
+  margin: 1.5rem 0;
+  width: 100%;
 }
 
 .chargeMoney__list_option {
-  width: 100%;
-  padding: 1rem;
-  display: flex;
   align-items: center;
-  gap: 0.5rem;
   background-color: #cacaca87;
   border-radius: 0.5rem;
   cursor: pointer;
+  display: flex;
+  gap: 0.5rem;
+  padding: 1rem;
+  width: 100%;
 }
 
 .chargeMoney__transition {
   background: #fff;
-  padding: 1rem;
   border-radius: 0.5rem;
+  padding: 1rem;
 }
 
 .chargeMoney__list_transition {
@@ -184,11 +184,11 @@
 }
 
 .chargeMoney__box_button_logout {
-  width: 100%;
-  padding: 0 1rem 1rem;
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: center;
+  padding: 0 1rem 1rem;
+  width: 100%;
 }
 
 @media (min-width: 1000px) {
@@ -197,15 +197,15 @@
   }
 
   .chargeMoney__content_all_info {
-    width: 60rem;
     margin: 0 auto;
+    width: 60rem;
   }
 
   .chargeMoney__contains_money_list {
-    width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
     gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
   }
 
   .chargeMoney__content_list_options {
@@ -223,8 +223,8 @@
   }
 
   .chargeMoney__list_transition {
-    padding: 1rem;
     grid-template-columns: 1fr 1fr;
+    padding: 1rem;
   }
 
   .chargeMoney__card_transition {

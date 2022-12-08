@@ -1,12 +1,12 @@
 .newCard__content_nav {
   align-items: center;
   border-bottom: 1px solid gray;
+  cursor: pointer;
   display: flex;
   font-size: 1.2rem;
   gap: 1rem;
   padding: 1rem;
   width: 100%;
-  cursor: pointer;
 }
 
 .newCard__content_nav > svg {
@@ -42,9 +42,9 @@
   }
 
   .newCard__box_info {
+    background-color: #fff;
     border-radius: 0.5rem;
     box-shadow: 1px 1px 37px #4545459e;
-    background-color: #fff;
   }
 
   .newCard__content_input {

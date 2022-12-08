@@ -1,37 +1,37 @@
 .editProfile__container {
-  width: 100%;
+  background: #fff;
   height: 100vh;
+  overflow: auto;
   position: fixed;
   top: 0;
-  background: #fff;
+  width: 100%;
   z-index: 9999;
-  overflow: auto;
 }
 
 .editProfile__content_info {
-  width: 100%;
-  height: 100%;
   display: grid;
   grid-template-rows: 0fr 1fr;
+  height: 100%;
+  width: 100%;
 }
 
 .editProfile__nav {
-  width: 100%;
-  padding: 0.7rem;
-  display: flex;
   align-items: center;
+  background-color: #fff;
   border-bottom: 1px solid #80808069;
+  display: flex;
+  padding: 0.7rem;
   position: sticky;
   top: 0;
-  background-color: #fff;
+  width: 100%;
   z-index: 100;
 }
 
 .editProfile__nav > svg {
+  cursor: pointer;
   font-size: 2rem;
   font-weight: bold;
   margin: 0 0.7rem 0 0;
-  cursor: pointer;
 }
 
 .editProfile__nav > p {
@@ -40,53 +40,53 @@
 }
 
 .editProfile__form {
-  width: 100%;
   padding: 0.7rem;
+  width: 100%;
 }
 
 .editProfile__form > input,
 .editProfile__select {
-  width: 100%;
-  height: 3.5rem;
-  padding: 0 1rem;
-  margin: 1rem 0;
+  border-radius: 0.5rem;
   border: 2px solid #8080804a;
   color: gray;
-  border-radius: 0.5rem;
   font-size: 1.1rem;
+  height: 3.5rem;
+  margin: 1rem 0;
   outline: none;
+  padding: 0 1rem;
+  width: 100%;
 }
 
 .editProfile__form > textarea {
-  width: 100%;
-  height: 15rem;
-  border: 2px solid #8080804a;
   border-radius: 0.5rem;
+  border: 2px solid #8080804a;
   color: gray;
-  padding: 1rem;
-  font-size: 1.1rem;
-  outline: none;
-  resize: none;
   font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.1rem;
+  height: 15rem;
+  outline: none;
+  padding: 1rem;
+  resize: none;
+  width: 100%;
 }
 
 .editProfile__buttons {
-  width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
   gap: 0.6rem;
+  grid-template-columns: 1fr 1fr;
   margin-top: 1rem;
+  width: 100%;
 }
 
 .editProfile__buttons > button {
-  width: 100%;
-  height: 3rem;
-  font-size: 1.1rem;
   background: #005dff;
   border-radius: 0.5rem;
   border: none;
   color: #fff;
   cursor: pointer;
+  font-size: 1.1rem;
+  height: 3rem;
+  width: 100%;
 }
 
 .editProfile__cancel {
@@ -95,8 +95,8 @@
 
 @media (min-width: 1000px) {
   .editProfile__container {
-    position: relative;
     border-radius: 0.3rem;
+    position: relative;
   }
 
   .editProfile__nav > svg {
