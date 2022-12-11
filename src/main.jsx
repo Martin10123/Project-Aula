@@ -1,10 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { SendMoney } from "./components/BankPage";
+import { RegisterApp } from "./components/AuthProfessional";
 import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <SendMoney />
+    <RegisterApp />
   </React.StrictMode>
 );

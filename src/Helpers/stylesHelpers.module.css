@@ -1,0 +1,25 @@
+/* ButtonForm */
+
+.buttonForm {
+  border-radius: 0.313rem;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.3rem;
+  height: 3.75rem;
+  margin: 1rem 0;
+  width: 100%;
+}
+
+/* InputForm */
+
+.inputForm {
+  border-radius: 0.5rem;
+  border: 1px solid #887e7e;
+  color: #887e7e;
+  font-size: 1.1rem;
+  height: 3.75rem;
+  margin: 0.5rem 0;
+  padding: 1rem;
+  width: 100%;
+}
