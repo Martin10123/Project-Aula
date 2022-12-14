@@ -1,5 +1,4 @@
-import { ButtonForm } from "../../Helpers";
-import { InputForm } from "../../Helpers/InputForm/InputForm";
+import { InputForm, ButtonForm } from "../../Helpers";
 import styles from "./registerApp.module.css";
 
 export const RegisterApp = () => {
