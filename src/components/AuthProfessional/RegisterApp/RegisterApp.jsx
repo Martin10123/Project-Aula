@@ -1,10 +1,75 @@
-export const RegisterApp = () => {
-  return (
-    <section className="register__container">
-      <div className="register__content">
-        <h3>Registarte y demustra tus habilidades</h3>
+import { useState } from "react";
+import { ButtonForm, InputForm } from "../../../Helpers";
+import { OptionsDays, OptionsProfession } from "./";
 
-        <div className="register__form"></div>
+import styles from "./registerApp.module.css";
+
+export const RegisterApp = () => {
+  const [openDays, setOpenDays] = useState(false);
+  const [openProfession, setOpenProfession] = useState(false);
+
+  console.log(openProfession);
+
+  return (
+    <section className={styles.register__container}>
+      <div className={styles.register__content}>
+        <h2>Registarte y demustra tus habilidades</h2>
+
+        <div className={styles.register__form}>
+          <InputForm
+            nameInput="name"
+            onChangeF={() => {}}
+            placeH="Nombre..."
+            type="text"
+            value=""
+          />
+          <InputForm
+            nameInput="email"
+            onChangeF={() => {}}
+            placeH="Correo..."
+            type="email"
+            value=""
+          />
+          <InputForm
+            nameInput="password1"
+            onChangeF={() => {}}
+            placeH="Contraseña..."
+            type="password"
+            value=""
+          />
+          <InputForm
+            nameInput="password2"
+            onChangeF={() => {}}
+            placeH="Confirmar contraseña..."
+            type="password"
+            value=""
+          />
+
+          <div
+            className={styles.register__profession}
+            onClick={() => setOpenProfession(true)}
+          >
+            <p>Escoger profesión</p>
+          </div>
+
+          {openProfession && (
+            <OptionsProfession setOpenProfession={setOpenProfession} />
+          )}
+
+          <div
+            className={styles.register__days}
+            onClick={() => setOpenDays(true)}
+          >
+            <p>Escoger dias disponibles</p>
+          </div>
+
+          {openDays && <OptionsDays setOpenDays={setOpenDays} />}
+
+          <div className={styles.register__buttons}>
+            <ButtonForm title="Registrarse" />
+            <ButtonForm title="Cancelar" colorButton="red" />
+          </div>
+        </div>
       </div>
     </section>
   );

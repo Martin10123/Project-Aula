@@ -1,4 +1,4 @@
-const homeServices = [
+export const homeServices = [
   "Plomero",
   "Electricista",
   "Albañl",
@@ -18,7 +18,7 @@ const homeServices = [
   "Mudanzas",
 ];
 
-const hoursAvaible = [
+export const hoursAvaible = [
   "6:00 a.m.",
   "7:00 a.m.",
   "8:00 a.m.",
@@ -34,4 +34,15 @@ const hoursAvaible = [
   "6:00 p.m.",
   "7:00 p.m.",
   "8:00 p.m.",
+];
+
+export const daysAvaible = [
+  "Lunes",
+  "Martes",
+  "Miercoles",
+  "Jueves",
+  "Viernes",
+  "Sabado",
+  "Domingo",
+  "Todos los dias",
 ];
