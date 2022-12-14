@@ -104,7 +104,14 @@
     background: #fff;
     border-radius: 1rem;
     box-shadow: 1px 1px 11px #3b3b3b;
-    width: 30rem;
+    width: 35rem;
+  }
+
+  .register__content_passwords {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
   }
 
   .register__content_list {

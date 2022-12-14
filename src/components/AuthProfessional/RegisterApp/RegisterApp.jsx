@@ -24,26 +24,42 @@ export const RegisterApp = () => {
             value=""
           />
           <InputForm
+            nameInput="username"
+            onChangeF={() => {}}
+            placeH="Nombre de usuario..."
+            type="text"
+            value=""
+          />
+          <InputForm
+            nameInput="nickName"
+            onChangeF={() => {}}
+            placeH="Apodo..."
+            type="text"
+            value=""
+          />
+          <InputForm
             nameInput="email"
             onChangeF={() => {}}
             placeH="Correo..."
             type="email"
             value=""
           />
-          <InputForm
-            nameInput="password1"
-            onChangeF={() => {}}
-            placeH="Contraseña..."
-            type="password"
-            value=""
-          />
-          <InputForm
-            nameInput="password2"
-            onChangeF={() => {}}
-            placeH="Confirmar contraseña..."
-            type="password"
-            value=""
-          />
+          <div className={styles.register__content_passwords}>
+            <InputForm
+              nameInput="password1"
+              onChangeF={() => {}}
+              placeH="Contraseña..."
+              type="password"
+              value=""
+            />
+            <InputForm
+              nameInput="password2"
+              onChangeF={() => {}}
+              placeH="Confirmar contraseña..."
+              type="password"
+              value=""
+            />
+          </div>
 
           <div
             className={styles.register__profession}
