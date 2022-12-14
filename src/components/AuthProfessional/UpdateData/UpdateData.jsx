@@ -1,19 +1,20 @@
 import { useState } from "react";
+
 import { ButtonForm, InputForm } from "../../../Helpers";
-import { OptionsDays, OptionsProfession } from "./";
+import { OptionsDays, OptionsProfession } from "../RegisterApp";
 
-import styles from "./registerApp.module.css";
+import styles from "./updateData.module.css";
 
-export const RegisterApp = () => {
+export const UpdateData = () => {
   const [openDays, setOpenDays] = useState(false);
   const [openProfession, setOpenProfession] = useState(false);
 
   return (
-    <section className={styles.register__container}>
-      <div className={styles.register__content}>
-        <h2>Registarte y demustra tus habilidades</h2>
+    <section className={styles.update__container}>
+      <div className={styles.update__content}>
+        <h2>Actualiza tus datos</h2>
 
-        <div className={styles.register__form}>
+        <div className={styles.update__form}>
           <InputForm
             nameInput="name"
             onChangeF={() => {}}
@@ -35,32 +36,9 @@ export const RegisterApp = () => {
             type="text"
             value=""
           />
-          <InputForm
-            nameInput="email"
-            onChangeF={() => {}}
-            placeH="Correo..."
-            type="email"
-            value=""
-          />
-          <div className={styles.register__content_passwords}>
-            <InputForm
-              nameInput="password1"
-              onChangeF={() => {}}
-              placeH="Contraseña..."
-              type="password"
-              value=""
-            />
-            <InputForm
-              nameInput="password2"
-              onChangeF={() => {}}
-              placeH="Confirmar contraseña..."
-              type="password"
-              value=""
-            />
-          </div>
 
           <div
-            className={styles.register__profession}
+            className={styles.update__profession}
             onClick={() => setOpenProfession(true)}
           >
             <p>Escoger profesión</p>
@@ -71,7 +49,7 @@ export const RegisterApp = () => {
           )}
 
           <div
-            className={styles.register__days}
+            className={styles.update__days}
             onClick={() => setOpenDays(true)}
           >
             <p>Escoger dias disponibles</p>
@@ -79,8 +57,8 @@ export const RegisterApp = () => {
 
           {openDays && <OptionsDays setOpenDays={setOpenDays} />}
 
-          <div className={styles.register__buttons}>
-            <ButtonForm title="Registrarse" />
+          <div className={styles.update__buttons}>
+            <ButtonForm title="Actualizar" />
             <ButtonForm title="Cancelar" colorButton="red" />
           </div>
         </div>

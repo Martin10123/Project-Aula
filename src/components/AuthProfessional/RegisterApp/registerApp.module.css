@@ -9,8 +9,7 @@
 }
 
 .register__profession,
-.register__days,
-.register__hours {
+.register__days {
   border-radius: 0.5rem;
   border: 1px solid #887e7e;
   color: #887e7e;
@@ -24,10 +23,6 @@
 
 .register__profession {
   margin: 0.4rem 0 0.8rem 0;
-}
-
-.register__hours {
-  margin: 0.8rem 0 0 0;
 }
 
 .register__buttons {
