@@ -21,6 +21,7 @@
 
 .nav__backg {
   background: #000000a3;
+  cursor: pointer;
   height: 100%;
   position: absolute;
   width: 100%;
@@ -41,6 +42,7 @@
 }
 
 .nav__li {
+  cursor: pointer;
   font-size: 1.1rem;
   margin: 2rem 0;
 }
@@ -76,4 +78,17 @@
 }
 .nav__buttons > button:nth-child(3) {
   background-color: #ff0000;
+}
+
+@media (min-width: 1000px) {
+  .nav__container {
+  }
+
+  .nav__content {
+    width: 30%;
+  }
+
+  .nav__hidden {
+    transform: translate(100rem);
+  }
 }
