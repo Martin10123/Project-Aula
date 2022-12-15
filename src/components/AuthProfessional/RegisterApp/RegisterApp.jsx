@@ -42,6 +42,13 @@ export const RegisterApp = () => {
             type="email"
             value=""
           />
+          <InputForm
+            nameInput="phone"
+            onChangeF={() => {}}
+            placeH="Telefono..."
+            type="tel"
+            value=""
+          />
           <div className={styles.register__content_passwords}>
             <InputForm
               nameInput="password1"
