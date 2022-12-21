@@ -41,3 +41,9 @@
 .menu__li:nth-child(3) {
   color: red;
 }
+
+@media (min-width: 1000px) {
+  .menu__container {
+    width: 18rem;
+  }
+}
