@@ -5,16 +5,16 @@ import styles from "./myAccount.module.css";
 
 export const CreditCard = () => {
   return (
-    <div className={styles.myAccounts__boxShadow_card}>
-      <div className={styles.myAccounts__count_cards}>
+    <div className={styles.boxShadow_card}>
+      <div className={styles.count_cards}>
         <p>Tienes 2 tarjetas</p>
         <span>
           <p>Desliza </p>
           <MdOutlineSwipe />
         </span>
       </div>
-      <div className={styles.myAccounts__container_cards}>
-        <div className={styles.myAccounts__content_credit_card}>
+      <div className={styles.container_cards}>
+        <div className={styles.content_credit_card}>
           <CreditCardItem />
         </div>
       </div>

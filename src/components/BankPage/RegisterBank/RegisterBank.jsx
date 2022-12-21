@@ -5,13 +5,13 @@ import styles from "./registerBank.module.css";
 
 export const RegisterBack = () => {
   return (
-    <div className={styles.registerBank__container}>
-      <div className={styles.registerBank__content}>
-        <figure className={styles.registerBank__image}>
+    <div className={styles.container}>
+      <div className={styles.content}>
+        <figure className={styles.image}>
           <img src={registerBank} alt="Logo register" />
         </figure>
 
-        <div className={styles.registerBank__form}>
+        <div className={styles.form}>
           <h2>Registrar cuenta bancaria</h2>
           <div className={styles.registerBack__content_input}>
             <InputForm

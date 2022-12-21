@@ -5,12 +5,12 @@ import styles from "./loginBank.module.css";
 
 export const LoginBank = () => {
   return (
-    <div className={styles.loginBank__container}>
-      <div className={styles.loginBank__content}>
-        <figure className={styles.loginBank__image}>
+    <div className={styles.container}>
+      <div className={styles.content}>
+        <figure className={styles.image}>
           <img src={loginBank} alt="" />
         </figure>
-        <div className={styles.loginBank__form}>
+        <div className={styles.form}>
           <h2>Ingresar al banco</h2>
           <InputForm
             nameInput="email"
@@ -30,12 +30,12 @@ export const LoginBank = () => {
 
           <ButtonForm title="Ingresar" />
         </div>
-        <div className={styles.loginBank__redirect_register}>
+        <div className={styles.redirect_register}>
           <p>¿No tienes cuenta? Registrate</p>
         </div>
       </div>
 
-      <div className={styles.loginBank__img_footer}>
+      <div className={styles.img_footer}>
         <img src={imgFooter} alt="" />
       </div>
     </div>

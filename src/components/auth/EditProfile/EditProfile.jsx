@@ -5,10 +5,10 @@ import styles from "./editProfile.module.css";
 
 export const EditProfile = ({ setOpenEditProfile }) => {
   return (
-    <section className={styles.editProfile__container}>
-      <div className={styles.editProfile__content_info}>
+    <section className={styles.container}>
+      <div className={styles.content_info}>
         <NavbarReturn title="Editar perfil" />
-        <form className={styles.editProfile__form}>
+        <form className={styles.form}>
           <InputForm
             nameInput="name"
             onChangeF={() => {}}
@@ -31,7 +31,7 @@ export const EditProfile = ({ setOpenEditProfile }) => {
             value=""
           />
 
-          <select className={styles.editProfile__select} name="gender">
+          <select className={styles.select} name="gender">
             <option value="Sin especificar">Sin especificar</option>
             <option value="Masculino">Hombre</option>
             <option value="Femenino">Mujer</option>
@@ -39,7 +39,7 @@ export const EditProfile = ({ setOpenEditProfile }) => {
 
           <textarea name="Biography" placeholder="Actualize su estado" />
 
-          <div className={styles.editProfile__buttons}>
+          <div className={styles.buttons}>
             <ButtonForm title="Guardar" />
             <ButtonForm title="Cancelar" colorButton="red" />
           </div>

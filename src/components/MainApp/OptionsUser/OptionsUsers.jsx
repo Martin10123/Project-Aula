@@ -6,22 +6,22 @@ import styles from "./optionsUsers.module.css";
 
 export const OptionsUsers = ({ setOpenUser }) => {
   return (
-    <div className={styles.menu__container}>
-      <div className={styles.menu__button_close}>
+    <div className={styles.container}>
+      <div className={styles.button_close}>
         <p>Martin Elias</p>
         <p onClick={() => setOpenUser(false)}>X</p>
       </div>
 
-      <ul className={styles.menu__list}>
-        <li className={styles.menu__li}>
+      <ul className={styles.list}>
+        <li className={styles.li}>
           <CgProfile />
           <p>Ver perfil</p>
         </li>
-        <li className={styles.menu__li}>
+        <li className={styles.li}>
           <IoMdNotificationsOutline />
           <p>Notificaciones</p>
         </li>
-        <li className={styles.menu__li}>
+        <li className={styles.li}>
           <BiLogOut />
           <p>Cerrar cesión</p>
         </li>

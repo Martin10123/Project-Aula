@@ -1,15 +1,15 @@
-.register__content {
+.content {
   width: 100%;
   padding: 1rem;
 }
 
-.register__content > h2 {
+.content > h2 {
   text-align: center;
   padding: 0 0 1rem;
 }
 
-.register__profession,
-.register__days {
+.profession,
+.days {
   border-radius: 0.5rem;
   border: 1px solid #887e7e;
   color: #887e7e;
@@ -21,11 +21,11 @@
   width: 100%;
 }
 
-.register__profession {
+.profession {
   margin: 0.4rem 0 0.8rem 0;
 }
 
-.register__buttons {
+.buttons {
   width: 100%;
   display: flex;
   align-items: center;
@@ -34,7 +34,7 @@
 
 /* Profession styles */
 
-.register__content_list {
+.content_list {
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -46,7 +46,7 @@
   z-index: 9999;
 }
 
-.register__background {
+.background {
   background: #000000ab;
   cursor: pointer;
   height: 100%;
@@ -57,7 +57,7 @@
   z-index: -1;
 }
 
-.register__list {
+.list {
   background-color: #fff;
   border-radius: 1rem 1rem 0 0;
   display: grid;
@@ -66,7 +66,7 @@
   width: 100%;
 }
 
-.register__list > li {
+.list > li {
   align-items: center;
   border-bottom: 1px solid gray;
   cursor: pointer;
@@ -77,14 +77,14 @@
 }
 
 @media (min-width: 1000px) {
-  .register__container {
+  .container {
     align-items: center;
     display: flex;
     justify-content: center;
     margin: 1rem 0;
   }
 
-  .register__container::before {
+  .container::before {
     background-color: #0099ff;
     content: "";
     height: 100vh;
@@ -95,26 +95,26 @@
     z-index: -1;
   }
 
-  .register__content {
+  .content {
     background: #fff;
     border-radius: 1rem;
     box-shadow: 1px 1px 11px #3b3b3b;
     width: 35rem;
   }
 
-  .register__content_passwords {
+  .content_passwords {
     display: grid;
     align-items: center;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
   }
 
-  .register__content_list {
+  .content_list {
     align-items: center;
     justify-content: center;
   }
 
-  .register__list {
+  .list {
     align-items: center;
     border-radius: 1rem;
     display: flex;
@@ -125,7 +125,7 @@
     width: 54rem;
   }
 
-  .register__list > li {
+  .list > li {
     background: #a7a7a747;
     border-radius: 4rem;
     border: 1px solid gray;

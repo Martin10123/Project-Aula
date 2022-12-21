@@ -1,4 +1,4 @@
-.recharge__nav_return {
+.nav_return {
   align-items: center;
   border-bottom: 1px solid gray;
   display: flex;
@@ -8,23 +8,23 @@
   width: 100%;
 }
 
-.recharge__nav_return > svg {
+.nav_return > svg {
   cursor: pointer;
   font-size: 1.5rem;
 }
 
-.recharge__content_info_bank {
+.content_info_bank {
   padding: 1rem;
   width: 100%;
 }
 
-.recharge__select_card > p,
-.recharge__buttons_options_money > p {
+.select_card > p,
+.buttons_options_money > p {
   font-size: 1.1rem;
   margin: 0 0 0.5rem 0;
 }
 
-.recharge__from_money {
+.from_money {
   border-radius: 0.5rem;
   border: 1px solid gray;
   cursor: pointer;
@@ -35,7 +35,7 @@
   width: 100%;
 }
 
-.recharge__money_send_buttons {
+.money_send_buttons {
   align-items: center;
   display: flex;
   justify-content: space-evenly;
@@ -43,8 +43,8 @@
   width: 100%;
 }
 
-.recharge__button_less,
-.recharge__button_more {
+.button_less,
+.button_more {
   align-items: center;
   background: #0075ff;
   border-radius: 50%;
@@ -58,26 +58,26 @@
   width: 2rem;
 }
 
-.recharge__money_send_buttons > p {
+.money_send_buttons > p {
   color: #0075ff;
   font-size: 1.3rem;
 }
 
-.recharge__buttons_options_money,
-.recharge__content_money_send > input {
+.buttons_options_money,
+.content_money_send > input {
   cursor: pointer;
   margin: 1rem 0;
   width: 100%;
 }
 
-.recharge__list_money {
+.list_money {
   display: grid;
   gap: 1rem;
   margin: 1rem 0 0;
   width: 100%;
 }
 
-.recharge__list_money > li {
+.list_money > li {
   align-items: center;
   background: #0075ff;
   border-radius: 0.5rem;
@@ -92,7 +92,7 @@
   width: 100%;
 }
 
-.recharge__button_confirm_new_money {
+.button_confirm_new_money {
   display: grid;
   gap: 1rem;
   grid-template-columns: 1fr 1fr;
@@ -101,7 +101,7 @@
 }
 
 @media (min-width: 1000px) {
-  .recharge__container {
+  .container {
     background: #fff;
     border-radius: 0.5rem;
     border: 1px solid gray;
@@ -111,7 +111,7 @@
     width: 42rem;
   }
 
-  .recharge__container::before {
+  .container::before {
     background: #0075ff;
     content: "";
     height: 100vh;
@@ -122,7 +122,7 @@
     z-index: -1;
   }
 
-  .recharge__nav_return {
+  .nav_return {
     background-color: #0075ff;
     border-radius: 0.5rem;
     border: 1px solid gray;

@@ -9,15 +9,15 @@ import styles from "./profileUser.module.css";
 export const OptionsList = ({ openMenu, setOpenMenu }) => {
   return (
     <ul
-      className={`${styles.profile_user__list} ${
+      className={`${styles.list} ${
         openMenu ? styles.showMenu : styles.hiddenMenu
       }`}
     >
       <div
-        className={styles.profile_user__background_list}
+        className={styles.background_list}
         onClick={() => setOpenMenu(false)}
       ></div>
-      <div className={styles.profile_user__content_items}>
+      <div className={styles.content_items}>
         <li>
           <BsCalendarDate />
           Mis citas confirmadas

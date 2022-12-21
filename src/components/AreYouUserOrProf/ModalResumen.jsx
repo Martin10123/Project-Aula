@@ -3,10 +3,10 @@ import styles from "./userOprof.module.css";
 export const ModalResumen = ({ setResumen }) => {
   return (
     <>
-      <div className={styles.choose__back_modal}></div>
-      <div className={styles.choose__modal_desc}>
+      <div className={styles.back_modal}></div>
+      <div className={styles.modal_desc}>
         <h2>Resumen</h2>
-        <p className={styles.choose__desc}>
+        <p className={styles.desc}>
           Nuestra aplicación trata de brindar ayudas a las personas, tales que
           contengan un don especial que estén relacionadas a la reparación y al
           mantenimiento locativo, gracias a que en nuestra aplicación podrá
@@ -27,7 +27,7 @@ export const ModalResumen = ({ setResumen }) => {
         </p>
 
         <button
-          className={styles.choose__modal_button}
+          className={styles.modal_button}
           onClick={() => setResumen(false)}
         >
           Cerrar

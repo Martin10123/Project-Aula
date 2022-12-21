@@ -1,4 +1,4 @@
-.myAccounts__return {
+.return {
   align-items: center;
   border-bottom: 1px solid gray;
   display: flex;
@@ -7,38 +7,38 @@
   width: 100%;
 }
 
-.myAccounts__return > svg {
+.return > svg {
   cursor: pointer;
   font-size: 1.5rem;
 }
 
-.myAccounts__return > p {
+.return > p {
   cursor: pointer;
   font-size: 1.2rem;
 }
 
-.myAccounts__content {
+.content {
   padding: 1rem;
   width: 100%;
 }
 
-.myAccounts__count_cards {
+.count_cards {
   margin: 1rem 0;
   width: 100%;
 }
 
-.myAccounts__count_cards > span {
+.count_cards > span {
   align-items: center;
   display: flex;
   gap: 1rem;
 }
 
-.myAccounts__container_cards {
+.container_cards {
   overflow: auto;
   width: 100%;
 }
 
-.myAccounts__content_credit_card {
+.content_credit_card {
   align-items: center;
   cursor: pointer;
   display: flex;
@@ -46,7 +46,7 @@
   width: fit-content;
 }
 
-.myAccounts__credit_card {
+.credit_card {
   background-color: #0099ff;
   border-radius: 0.5rem;
   box-shadow: 1px 1px 11px grey;
@@ -57,19 +57,19 @@
   width: 20.5rem;
 }
 
-.myAccounts__check_card {
+.check_card {
   font-size: 1.3rem;
   position: absolute;
   right: 1rem;
   top: 1.2rem;
 }
 
-.myAccounts__card_number {
+.card_number {
   font-size: 1.3rem;
   margin: 0.3rem 0;
 }
 
-.myAccounts__content_info_user {
+.content_info_user {
   background: #d4d4d42c;
   border-radius: 0.5rem;
   display: flex;
@@ -80,7 +80,7 @@
   width: 100%;
 }
 
-.myAccounts__personal_info {
+.personal_info {
   background: #fff;
   border-radius: 0.5rem;
   border: 1px solid gray;
@@ -90,14 +90,14 @@
   width: 100%;
 }
 
-.myAccounts__list_servicies {
+.list_servicies {
   display: grid;
   gap: 0.3rem;
   padding: 0.4rem 1rem;
 }
 
 @media (min-width: 1000px) {
-  .myAccounts__return {
+  .return {
     border-radius: 4rem;
     border: 1px solid gray;
     cursor: pointer;
@@ -105,7 +105,7 @@
     width: fit-content;
   }
 
-  .myAccounts__container_money_creditCard {
+  .container_money_creditCard {
     display: grid;
     gap: 1.5rem;
     grid-template-columns: 1fr 1fr;
@@ -113,12 +113,12 @@
     width: 60rem;
   }
 
-  .myAccounts__content_info_user {
+  .content_info_user {
     margin: 1rem auto;
     width: 60rem;
   }
 
-  .myAccounts__boxShadow_card {
+  .boxShadow_card {
     border-radius: 0.5rem;
     box-shadow: 1px 1px 11px grey;
     gap: 1rem;

@@ -1,4 +1,4 @@
-.newCard__content_nav {
+.content_nav {
   align-items: center;
   border-bottom: 1px solid gray;
   cursor: pointer;
@@ -9,16 +9,16 @@
   width: 100%;
 }
 
-.newCard__content_nav > svg {
+.content_nav > svg {
   font-size: 2rem;
 }
 
-.newCard__form {
+.form {
   padding: 1.5rem 1rem;
   width: 100%;
 }
 
-.newCard__select {
+.select {
   border-radius: 0.3rem;
   border: 2px solid #80808099;
   cursor: pointer;
@@ -32,7 +32,7 @@
 }
 
 @media (min-width: 1000px) {
-  .newCard__container {
+  .container {
     align-items: center;
     background: #0099ff;
     display: flex;
@@ -41,13 +41,13 @@
     width: 100%;
   }
 
-  .newCard__box_info {
+  .box_info {
     background-color: #fff;
     border-radius: 0.5rem;
     box-shadow: 1px 1px 37px #4545459e;
   }
 
-  .newCard__content_input {
+  .content_input {
     align-items: center;
     display: flex;
     gap: 1rem;

@@ -1,4 +1,4 @@
-.nav__container {
+.container {
   display: flex;
   height: 100vh;
   justify-content: flex-end;
@@ -9,17 +9,17 @@
   z-index: 100;
 }
 
-.nav__hidden {
+.hidden {
   transform: translate(45rem);
   transition: 0.5s ease-in-out;
 }
 
-.nav__show {
+.show {
   transform: translate(0);
   transition: 0.2s ease-in-out;
 }
 
-.nav__backg {
+.backg {
   background: #000000a3;
   cursor: pointer;
   height: 100%;
@@ -28,7 +28,7 @@
   z-index: -1;
 }
 
-.nav__content {
+.content {
   grid-template-rows: 0fr 0fr 1fr 1fr;
   background: #fff;
   display: grid;
@@ -36,18 +36,18 @@
   width: 85%;
 }
 
-.nav__name {
+.name {
   font-size: 0.9rem;
   font-weight: bold;
 }
 
-.nav__li {
+.li {
   cursor: pointer;
   font-size: 1.1rem;
   margin: 2rem 0;
 }
 
-.nav__buttons {
+.buttons {
   width: 100%;
   height: 100%;
   display: flex;
@@ -56,7 +56,7 @@
   justify-content: flex-end;
 }
 
-.nav__buttons > button {
+.buttons > button {
   align-items: center;
   border-radius: 0.313rem;
   border: none;
@@ -70,22 +70,22 @@
   width: 100%;
 }
 
-.nav__buttons > button:nth-child(1) {
+.buttons > button:nth-child(1) {
   background-color: #00ff00;
 }
-.nav__buttons > button:nth-child(2) {
+.buttons > button:nth-child(2) {
   background-color: #0099ff;
 }
-.nav__buttons > button:nth-child(3) {
+.buttons > button:nth-child(3) {
   background-color: #ff0000;
 }
 
 @media (min-width: 1000px) {
-  .nav__content {
+  .content {
     width: 30%;
   }
 
-  .nav__hidden {
+  .hidden {
     transform: translate(100rem);
   }
 }

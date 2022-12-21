@@ -6,13 +6,13 @@ import styles from "./loginPage.module.css";
 
 export const LoginAppUser = () => {
   return (
-    <div className={styles.login__container}>
-      <div className={styles.login__content}>
-        <div className={styles.login__title}>
+    <div className={styles.container}>
+      <div className={styles.content}>
+        <div className={styles.title}>
           <h2>Login App</h2>
         </div>
 
-        <form className={styles.login__form}>
+        <form className={styles.form}>
           <InputForm
             nameInput="email"
             onChangeF={() => {}}
@@ -30,11 +30,11 @@ export const LoginAppUser = () => {
           />
         </form>
 
-        <div className={styles.login__forgot_password}>
+        <div className={styles.forgot_password}>
           <h5>¿Olvidaste tu contraseña?</h5>
         </div>
 
-        <div className={styles.login__remember_data}>
+        <div className={styles.remember_data}>
           <input type="checkbox" name="" />
           <h5>Recordar mis datos</h5>
         </div>
@@ -42,19 +42,19 @@ export const LoginAppUser = () => {
         <ButtonForm title="Ingresar" />
         <hr />
 
-        <div className={styles.login__with_fa_or_go}>
+        <div className={styles.with_fa_or_go}>
           <h3>Ingresar tambien con</h3>
-          <div className={styles.login__content_logos}>
-            <div className={styles.login__logo_face}>
+          <div className={styles.content_logos}>
+            <div className={styles.logo_face}>
               <FaFacebookF />
             </div>
-            <div className={styles.login__logo_google}>
+            <div className={styles.logo_google}>
               <FcGoogle />
             </div>
           </div>
         </div>
 
-        <div className={styles.login__redirect_register}>
+        <div className={styles.redirect_register}>
           <p>
             ¿No tienes cuenta? <span>Registrate</span>
           </p>

@@ -3,11 +3,11 @@ import styles from "./registerApp.module.css";
 
 export const RegisterApp = () => {
   return (
-    <div className={styles.register__container}>
-      <div className={styles.register__content}>
+    <div className={styles.container}>
+      <div className={styles.content}>
         <h2>Crear cuenta</h2>
-        <form className={styles.register__form}>
-          <div className={styles.register__content_inputs}>
+        <form className={styles.form}>
+          <div className={styles.content_inputs}>
             <InputForm
               nameInput="name"
               onChangeF={() => {}}
@@ -45,7 +45,7 @@ export const RegisterApp = () => {
             type="email"
             value=""
           />
-          <div className={styles.register__content_inputs}>
+          <div className={styles.content_inputs}>
             <InputForm
               nameInput="password1"
               onChangeF={() => {}}
@@ -62,7 +62,7 @@ export const RegisterApp = () => {
             />
           </div>
 
-          <select name="gender" id="gender" className={styles.register__select}>
+          <select name="gender" id="gender" className={styles.select}>
             <option value="Masculino">Hombre</option>
             <option value="Femenino">Mujer</option>
             <option value="Sin especificar">Sin especificar</option>
@@ -70,7 +70,7 @@ export const RegisterApp = () => {
 
           <ButtonForm title="Registrarse" />
 
-          <p className={styles.register__redirect_login}>
+          <p className={styles.redirect_login}>
             ¿Ya tienes una cuenta? <span>Ingresar</span>
           </p>
         </form>

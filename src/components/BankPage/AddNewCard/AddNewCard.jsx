@@ -10,12 +10,12 @@ import styles from "./addCard.module.css";
 
 export const AddNewCard = () => {
   return (
-    <section className={styles.newCard__container}>
-      <div className={styles.newCard__box_info}>
+    <section className={styles.container}>
+      <div className={styles.box_info}>
         <NavbarReturn title="Agregar tarjeta" />
 
-        <div className={styles.newCard__form}>
-          <div className={styles.newCard__content_input}>
+        <div className={styles.form}>
+          <div className={styles.content_input}>
             <InputForm
               nameInput="name"
               onChangeF={() => {}}
@@ -42,7 +42,7 @@ export const AddNewCard = () => {
 
           <SelectBank />
 
-          <div className={styles.newCard__content_input}>
+          <div className={styles.content_input}>
             <InputForm
               maxLenght={4}
               nameInput="passwordAccount1"

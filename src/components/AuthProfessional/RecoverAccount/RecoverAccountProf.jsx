@@ -4,8 +4,8 @@ import styles from "./recoverProfe.module.css";
 
 export const RecoverAccountProf = () => {
   return (
-    <div className={styles.recover__container}>
-      <div className={styles.recover__content}>
+    <div className={styles.container}>
+      <div className={styles.content}>
         <h2>Recuperar tu cuenta</h2>
 
         <InputForm

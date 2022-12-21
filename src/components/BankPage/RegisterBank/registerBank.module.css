@@ -1,23 +1,23 @@
-.registerBank__container {
+.container {
   width: 100%;
 }
 
-.registerBank__image {
+.image {
   align-items: center;
   display: flex;
   justify-content: center;
   padding: 2rem 0;
 }
 
-.registerBank__form {
+.form {
   padding: 1rem;
 }
 
-.registerBank__form > h2 {
+.form > h2 {
   padding: 1rem 0;
 }
 
-.registerBank__select {
+.select {
   border-radius: 0.3rem;
   border: 2px solid #80808099;
   cursor: pointer;
@@ -31,13 +31,13 @@
 }
 
 @media (min-width: 1000px) {
-  .registerBank__container {
+  .container {
     align-items: center;
     display: flex;
     justify-content: center;
   }
 
-  .registerBank__content {
+  .content {
     border-radius: 0.5rem;
     border: 1px solid gray;
     box-shadow: 1px 1px 11px grey;

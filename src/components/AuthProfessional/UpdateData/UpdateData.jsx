@@ -10,11 +10,11 @@ export const UpdateData = () => {
   const [openProfession, setOpenProfession] = useState(false);
 
   return (
-    <section className={styles.update__container}>
-      <div className={styles.update__content}>
+    <section className={styles.container}>
+      <div className={styles.content}>
         <h2>Actualiza tus datos</h2>
 
-        <div className={styles.update__form}>
+        <div className={styles.form}>
           <InputForm
             nameInput="name"
             onChangeF={() => {}}
@@ -38,7 +38,7 @@ export const UpdateData = () => {
           />
 
           <div
-            className={styles.update__profession}
+            className={styles.profession}
             onClick={() => setOpenProfession(true)}
           >
             <p>Escoger profesión</p>
@@ -48,16 +48,13 @@ export const UpdateData = () => {
             <OptionsProfession setOpenProfession={setOpenProfession} />
           )}
 
-          <div
-            className={styles.update__days}
-            onClick={() => setOpenDays(true)}
-          >
+          <div className={styles.days} onClick={() => setOpenDays(true)}>
             <p>Escoger dias disponibles</p>
           </div>
 
           {openDays && <OptionsDays setOpenDays={setOpenDays} />}
 
-          <div className={styles.update__buttons}>
+          <div className={styles.buttons}>
             <ButtonForm title="Actualizar" />
             <ButtonForm title="Cancelar" colorButton="red" />
           </div>

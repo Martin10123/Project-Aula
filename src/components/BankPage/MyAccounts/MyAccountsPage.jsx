@@ -7,17 +7,17 @@ import styles from "./myAccount.module.css";
 
 export const MyAccounts = () => {
   return (
-    <section className={styles.myAccounts__container}>
+    <section className={styles.container}>
       <NavbarReturn title="Mi cuenta" />
-      <div className={styles.myAccounts__content}>
-        <div className={styles.myAccounts__container_money_creditCard}>
+      <div className={styles.content}>
+        <div className={styles.container_money_creditCard}>
           <InfoMoney showMessageAccount={false} />
 
           <CreditCard />
         </div>
 
-        <div className={styles.myAccounts__content_info_user}>
-          <div className={styles.myAccounts__personal_info}>
+        <div className={styles.content_info_user}>
+          <div className={styles.personal_info}>
             <h3>Información personal</h3>
           </div>
 
@@ -26,9 +26,9 @@ export const MyAccounts = () => {
           <InfoUserItem title="2 tarjetas de credito" />
           <InfoUserItem title="Ha gastado $200.000.000" />
 
-          <div className={styles.myAccounts__personal_info}>
+          <div className={styles.personal_info}>
             <p>Servicios adquiridos</p>
-            <ul className={styles.myAccounts__list_servicies}>
+            <ul className={styles.list_servicies}>
               <li>Albañil</li>
               <li>Electricista</li>
             </ul>

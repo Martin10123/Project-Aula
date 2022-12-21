@@ -1,13 +1,13 @@
-.recover__content {
+.content {
   padding: 1rem;
   width: 100%;
 }
 
-.recover__content > h2 {
+.content > h2 {
   padding: 1rem 0;
 }
 
-.recover__content > p {
+.content > p {
   color: #0099ff;
   cursor: pointer;
   font-size: 1.1rem;
@@ -16,7 +16,7 @@
 }
 
 @media (min-width: 800px) {
-  .recover__container {
+  .container {
     align-items: center;
     display: flex;
     height: 100vh;
@@ -24,7 +24,7 @@
     width: 100%;
   }
 
-  .recover__container::before {
+  .container::before {
     background-color: #0099ff;
     content: "";
     height: 100vh;
@@ -35,7 +35,7 @@
     z-index: -1;
   }
 
-  .recover__content {
+  .content {
     background: #fff;
     border-radius: 1rem;
     box-shadow: 1px 1px 11px #363535;

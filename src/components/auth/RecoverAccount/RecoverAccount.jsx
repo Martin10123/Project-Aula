@@ -4,11 +4,11 @@ import styles from "./recoverAccount.module.css";
 
 export const RecoverAccount = () => {
   return (
-    <div className={styles.recover_account__container}>
-      <div className={styles.recover_account__content}>
+    <div className={styles.container}>
+      <div className={styles.content}>
         <h2>Recuperar cuenta</h2>
 
-        <form className={styles.recover_account__form}>
+        <form className={styles.form}>
           <InputForm
             nameInput="email"
             onChangeF={() => {}}
@@ -20,8 +20,8 @@ export const RecoverAccount = () => {
           <ButtonForm title="Recuperar" />
         </form>
 
-        <p className={styles.recover_account__login}>Ya tengo una cuenta</p>
-        <p className={styles.recover_account__register}>Crear una cuenta</p>
+        <p className={styles.login}>Ya tengo una cuenta</p>
+        <p className={styles.register}>Crear una cuenta</p>
       </div>
     </div>
   );

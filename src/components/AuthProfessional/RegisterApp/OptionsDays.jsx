@@ -4,12 +4,12 @@ import styles from "./registerApp.module.css";
 
 export const OptionsDays = ({ setOpenDays }) => {
   return (
-    <div className={styles.register__content_list}>
+    <div className={styles.content_list}>
       <div
-        className={styles.register__background}
+        className={styles.background}
         onClick={() => setOpenDays(false)}
       ></div>
-      <ul className={styles.register__list}>
+      <ul className={styles.list}>
         {daysAvaible.map((day) => (
           <li key={day}>{day} </li>
         ))}

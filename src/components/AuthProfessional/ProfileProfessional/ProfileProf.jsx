@@ -17,19 +17,19 @@ export const ProfileProf = () => {
   const [openMenu, setOpenMenu] = useState(false);
 
   return (
-    <section className={styles.profile__container}>
-      <div className={styles.profile__navbar}>
+    <section className={styles.container}>
+      <div className={styles.navbar}>
         <BsFillMenuButtonWideFill onClick={() => setOpenMenu(true)} />
       </div>
-      <div className={styles.profile__content}>
-        <figure className={styles.profile__image_user}>
+      <div className={styles.content}>
+        <figure className={styles.image_user}>
           <img src={photoUser} alt="Foto de perfil de usuario" />
           <figcaption>Martin Elias</figcaption>
         </figure>
 
         <StatisticsUser />
 
-        <div className={styles.profile__state_prof}>
+        <div className={styles.state_prof}>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam
             delectus soluta optio harum accusamus labore, praesentium facere eum
@@ -38,7 +38,7 @@ export const ProfileProf = () => {
           </p>
         </div>
 
-        <div className={styles.profile__info_personal}>
+        <div className={styles.info_personal}>
           <DataPersonal Icon={FaUserTie} title="Nombre" desc="Martin Elias" />
 
           <DataPersonal Icon={GiHypersonicMelon} title="Apodo" desc="Tinti" />

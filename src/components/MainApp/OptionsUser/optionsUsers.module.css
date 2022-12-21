@@ -1,4 +1,4 @@
-.menu__container {
+.container {
   background: #fff;
   border-radius: 1rem;
   box-shadow: 1px 1px 11px grey;
@@ -9,23 +9,23 @@
   width: 92vw;
 }
 
-.menu__button_close {
+.button_close {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.menu__button_close > p {
+.button_close > p {
   font-size: 1.4rem;
   font-weight: 500;
   cursor: pointer;
 }
 
-.menu__list {
+.list {
   padding: 1rem 0 0;
 }
 
-.menu__li {
+.li {
   align-items: center;
   display: flex;
   font-size: 1.3rem;
@@ -34,16 +34,16 @@
   width: 100%;
 }
 
-.menu__li > svg {
+.li > svg {
   font-size: 2rem;
 }
 
-.menu__li:nth-child(3) {
+.li:nth-child(3) {
   color: red;
 }
 
 @media (min-width: 1000px) {
-  .menu__container {
+  .container {
     width: 18rem;
   }
 }

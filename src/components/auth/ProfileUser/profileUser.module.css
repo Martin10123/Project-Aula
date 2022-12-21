@@ -1,10 +1,10 @@
-.profile_user__container {
+.container {
   background-color: #f0f1f5;
   height: fit-content;
   width: 100%;
 }
 
-.profile_user__nav {
+.nav {
   align-items: center;
   display: flex;
   justify-content: space-between;
@@ -12,23 +12,23 @@
   width: 100%;
 }
 
-.profile_user__imgLogo {
+.imgLogo {
   cursor: pointer;
   height: 3rem;
   object-fit: cover;
   width: 3rem;
 }
 
-.profile_user__content_menu {
+.content_menu {
   position: relative;
 }
 
-.profile_user__svg {
+.svg {
   cursor: pointer;
   font-size: 2rem;
 }
 
-.profile_user__list {
+.list {
   flex-direction: column;
   height: 100vh;
   justify-content: flex-end;
@@ -39,7 +39,7 @@
   z-index: 9999;
 }
 
-.profile_user__background_list {
+.background_list {
   background: #000000ab;
   height: 100%;
   left: 0;
@@ -57,14 +57,14 @@
   display: flex;
 }
 
-.profile_user__content_items {
+.content_items {
   border-radius: 1rem 1rem 0 0;
   background-color: #fff;
   display: grid;
   width: 100%;
 }
 
-.profile_user__content_items > li {
+.content_items > li {
   align-items: center;
   border-bottom: 1px solid gray;
   cursor: pointer;
@@ -74,7 +74,7 @@
   padding: 1.5rem 1rem;
 }
 
-.profile_user__data_user {
+.data_user {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -82,7 +82,7 @@
   width: 100%;
 }
 
-.profile_user__imgProfile {
+.imgProfile {
   border-radius: 50%;
   cursor: pointer;
   height: 15rem;
@@ -90,13 +90,13 @@
   width: 15rem;
 }
 
-.profile_user__name_user {
+.name_user {
   font-size: 2rem;
   font-weight: bold;
   padding: 1rem 0;
 }
 
-.profile_user__country_year {
+.country_year {
   align-items: center;
   color: grey;
   display: flex;
@@ -104,17 +104,17 @@
   gap: 5rem;
 }
 
-.profile_user__description_yourself {
+.description_yourself {
   font-size: 1.1rem;
   padding: 0 1rem 1rem;
   text-align: center;
 }
 
-.profile_user__description_yourself > h3 {
+.description_yourself > h3 {
   display: none;
 }
 
-.profile_user__other_data {
+.other_data {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -122,25 +122,25 @@
   width: 100%;
 }
 
-.profile_user__other_data > p {
+.other_data > p {
   color: grey;
   font-size: 1rem;
 }
 
-.profile_user__other_data > p > span {
+.other_data > p > span {
   color: #000;
   font-size: 1.1rem;
   font-weight: bold;
 }
 
-.profile_user__buttons {
+.buttons {
   display: grid;
   gap: 1rem;
   padding: 1rem;
   width: 100%;
 }
 
-.profile_user__buttons > button {
+.buttons > button {
   border-radius: 0.4rem;
   border: 1px solid gray;
   color: #fff;
@@ -150,25 +150,25 @@
   width: 100%;
 }
 
-.profile_user__edit {
+.edit {
   background-color: #00ff00;
 }
 
-.profile_user__delete,
-.profile_user__content_items > li:nth-child(6) {
+.delete,
+.content_items > li:nth-child(6) {
   background-color: #ff0000;
   color: #fff;
 }
 
 @media (min-width: 1000px) {
-  .profile_user__container {
+  .container {
     background: #fff;
     border-radius: 0.5rem;
     margin: 1rem auto;
     width: 54rem;
   }
 
-  .profile_user__container::before {
+  .container::before {
     background: #f0f1f5;
     content: "";
     height: 100vh;
@@ -183,32 +183,32 @@
     display: block;
   }
 
-  .profile_user__nav {
+  .nav {
     align-items: flex-start;
     flex-direction: column;
     gap: 2rem;
   }
 
-  .profile_user__nav > img {
+  .nav > img {
     margin: 0.5rem 0 0;
   }
 
-  .profile_user__svg,
-  .profile_user__background_list {
+  .svg,
+  .background_list {
     display: none;
   }
 
-  .profile_user__content_menu {
+  .content_menu {
     width: 100%;
   }
 
-  .profile_user__list {
+  .list {
     position: relative;
     height: fit-content;
     z-index: 1;
   }
 
-  .profile_user__content_items {
+  .content_items {
     background: transparent;
     box-shadow: none;
     display: grid;
@@ -218,7 +218,7 @@
     width: 100%;
   }
 
-  .profile_user__content_items > li {
+  .content_items > li {
     border-radius: 0.5rem;
     border: 1px solid gray;
     font-size: 1.1rem;
@@ -226,37 +226,37 @@
     transition: 1s ease-in-out;
   }
 
-  .profile_user__content_items > li:hover {
+  .content_items > li:hover {
     transform: scale(1.05);
     transition: 1s ease-in-out;
   }
 
-  .profile_user__content_items > li > svg {
+  .content_items > li > svg {
     font-size: 1.4rem;
   }
 
-  .profile_user__description_yourself {
+  .description_yourself {
     margin: 0 auto;
     width: 32rem;
   }
 
-  .profile_user__other_data {
+  .other_data {
     gap: 0.5rem;
   }
 
-  .profile_user__other_data > p {
+  .other_data > p {
     border-radius: 0.5rem;
     border: 1px solid gray;
     padding: 1rem;
   }
 
-  .profile_user__buttons {
+  .buttons {
     grid-template-columns: 1fr 1fr;
     margin: 0 auto;
     width: 80%;
   }
 
-  .profile_user__buttons > button {
+  .buttons > button {
     height: 3.5rem;
   }
 }

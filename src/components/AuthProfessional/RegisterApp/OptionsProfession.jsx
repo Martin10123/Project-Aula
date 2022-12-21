@@ -4,12 +4,12 @@ import styles from "./registerApp.module.css";
 
 export const OptionsProfession = ({ setOpenProfession }) => {
   return (
-    <div className={styles.register__content_list}>
+    <div className={styles.content_list}>
       <div
-        className={styles.register__background}
+        className={styles.background}
         onClick={() => setOpenProfession(false)}
       ></div>
-      <ul className={styles.register__list}>
+      <ul className={styles.list}>
         {homeServices.map((service) => (
           <li key={service}>{service} </li>
         ))}

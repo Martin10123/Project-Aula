@@ -1,4 +1,4 @@
-.main__container::before {
+.container::before {
   content: "";
   width: 100%;
   height: 100vh;
@@ -9,7 +9,7 @@
   background: url("../../images/cool-background.png");
 }
 
-.main__navbar {
+.navbar {
   align-items: center;
   display: flex;
   justify-content: space-between;
@@ -17,12 +17,12 @@
   width: 100%;
 }
 
-.main__content {
+.content {
   padding: 1rem;
   width: 100%;
 }
 
-.main__image {
+.image {
   align-items: center;
   display: flex;
   flex-direction: row-reverse;
@@ -31,8 +31,8 @@
   position: relative;
 }
 
-.main__image > img,
-.main__navbar > img {
+.image > img,
+.navbar > img {
   border-radius: 50%;
   border: 2px solid #000;
   cursor: pointer;
@@ -41,21 +41,21 @@
   width: 3rem;
 }
 
-.main__navbar > img {
+.navbar > img {
   border: none;
   border-radius: 0;
 }
 
-.main__info_app > h2 {
+.info_app > h2 {
   font-size: 1.8rem;
   margin: 0 0 1rem 0;
 }
 
-.main__info_app p {
+.info_app p {
   font-size: 1.1rem;
 }
 
-.main__buttons {
+.buttons {
   align-items: center;
   display: grid;
   gap: 1rem;
@@ -64,8 +64,8 @@
   width: 100%;
 }
 
-.main__button_appo,
-.main__button_see {
+.button_appo,
+.button_see {
   background: #000;
   border: none;
   color: #fff;
@@ -76,14 +76,14 @@
   width: 100%;
 }
 
-.main__options {
+.options {
   display: grid;
   gap: 2rem;
   margin: 2rem 0 1rem;
   width: 100%;
 }
 
-.main__item {
+.item {
   align-items: center;
   border-radius: 0.5rem;
   border: 1px solid;
@@ -97,18 +97,18 @@
   width: 100%;
 }
 
-.main__item > svg {
+.item > svg {
   font-size: 1.8rem;
   margin: 0 0 0.4rem;
 }
 
-.main__item > p {
+.item > p {
   font-size: 1.2rem;
   font-weight: 500;
 }
 
 @media (min-width: 1000px) {
-  .main__info_app {
+  .info_app {
     display: flex;
     flex-direction: column;
     height: 86vh;
@@ -117,21 +117,21 @@
     width: 32rem;
   }
 
-  .main__button_appo:hover,
-  .main__button_see:hover,
-  .main__item:hover {
+  .button_appo:hover,
+  .button_see:hover,
+  .item:hover {
     transform: scale(1.05);
     transition: 1s ease-in-out;
   }
 
-  .main__options {
+  .options {
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
     margin: 3rem auto;
     width: 80%;
   }
 
-  .main__item {
+  .item {
     background: #fff;
     border: none;
     box-shadow: 1px 1px 11px grey;

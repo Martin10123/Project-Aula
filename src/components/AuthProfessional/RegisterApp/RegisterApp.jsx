@@ -9,11 +9,11 @@ export const RegisterApp = () => {
   const [openProfession, setOpenProfession] = useState(false);
 
   return (
-    <section className={styles.register__container}>
-      <div className={styles.register__content}>
+    <section className={styles.container}>
+      <div className={styles.content}>
         <h2>Registarte y demustra tus habilidades</h2>
 
-        <div className={styles.register__form}>
+        <div className={styles.form}>
           <InputForm
             nameInput="name"
             onChangeF={() => {}}
@@ -49,7 +49,7 @@ export const RegisterApp = () => {
             type="tel"
             value=""
           />
-          <div className={styles.register__content_passwords}>
+          <div className={styles.content_passwords}>
             <InputForm
               nameInput="password1"
               onChangeF={() => {}}
@@ -67,7 +67,7 @@ export const RegisterApp = () => {
           </div>
 
           <div
-            className={styles.register__profession}
+            className={styles.profession}
             onClick={() => setOpenProfession(true)}
           >
             <p>Escoger profesión</p>
@@ -77,16 +77,13 @@ export const RegisterApp = () => {
             <OptionsProfession setOpenProfession={setOpenProfession} />
           )}
 
-          <div
-            className={styles.register__days}
-            onClick={() => setOpenDays(true)}
-          >
+          <div className={styles.days} onClick={() => setOpenDays(true)}>
             <p>Escoger dias disponibles</p>
           </div>
 
           {openDays && <OptionsDays setOpenDays={setOpenDays} />}
 
-          <div className={styles.register__buttons}>
+          <div className={styles.buttons}>
             <ButtonForm title="Registrarse" />
             <ButtonForm title="Cancelar" colorButton="red" />
           </div>

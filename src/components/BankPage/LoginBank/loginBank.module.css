@@ -1,43 +1,43 @@
-.loginBank__container {
+.container {
   height: 100vh;
   width: 100%;
 }
 
-.loginBank__image {
+.image {
   align-items: center;
   display: flex;
   justify-content: center;
   padding: 2rem 0;
 }
 
-.loginBank__form {
+.form {
   padding: 1rem;
 }
 
-.loginBank__form > h2 {
+.form > h2 {
   padding: 1rem 0;
 }
 
-.loginBank__form > p {
+.form > p {
   color: #887e7e;
   cursor: pointer;
   margin: 0.5rem 0;
   text-align: end;
 }
 
-.loginBank__redirect_register {
+.redirect_register {
   align-items: center;
   display: flex;
   justify-content: center;
 }
 
-.loginBank__redirect_register > p {
+.redirect_register > p {
   color: #887e7e;
   cursor: pointer;
   font-size: 1.2rem;
 }
 
-.loginBank__img_footer > img {
+.img_footer > img {
   bottom: 0;
   left: 0;
   position: absolute;
@@ -46,13 +46,13 @@
 }
 
 @media (min-width: 1000px) {
-  .loginBank__container {
+  .container {
     align-items: center;
     display: flex;
     justify-content: center;
   }
 
-  .loginBank__content {
+  .content {
     border-radius: 0.5rem;
     border: 1px solid gray;
     box-shadow: 1px 1px 11px grey;

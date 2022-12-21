@@ -19,12 +19,12 @@ export const ProfileUser = () => {
 
   return (
     <>
-      <section className={styles.profile_user__container}>
-        <nav className={styles.profile_user__nav}>
-          <img className={styles.profile_user__imgLogo} src={logoApp} alt="" />
-          <div className={styles.profile_user__content_menu}>
+      <section className={styles.container}>
+        <nav className={styles.nav}>
+          <img className={styles.imgLogo} src={logoApp} alt="" />
+          <div className={styles.content_menu}>
             <GiHamburgerMenu
-              className={styles.profile_user__svg}
+              className={styles.svg}
               onClick={() => setOpenMenu(!openMenu)}
             />
 
@@ -32,8 +32,8 @@ export const ProfileUser = () => {
           </div>
         </nav>
 
-        <div className={styles.profile_user__content_box_info}>
-          <div className={styles.profile_user__box_info_perso_user}>
+        <div className={styles.content_box_info}>
+          <div className={styles.box_info_perso_user}>
             <InfoPersonalUser />
 
             <DescriptionYourself />
@@ -42,16 +42,14 @@ export const ProfileUser = () => {
 
           <DataCompleteUser />
 
-          <div className={styles.profile_user__buttons}>
+          <div className={styles.buttons}>
             <button
-              className={styles.profile_user__edit}
+              className={styles.edit}
               onClick={() => setOpenEditProfile(!openEditProfile)}
             >
               Editar datos
             </button>
-            <button className={styles.profile_user__delete}>
-              Eliminar cuenta
-            </button>
+            <button className={styles.delete}>Eliminar cuenta</button>
           </div>
         </div>
       </section>

@@ -1,4 +1,4 @@
-.register__container {
+.container {
   align-items: center;
   background: linear-gradient(
     184deg,
@@ -11,7 +11,7 @@
   width: 100%;
 }
 
-.register__content {
+.content {
   background: #fff;
   border-radius: 1rem;
   height: 38rem;
@@ -20,11 +20,11 @@
   width: 94%;
 }
 
-.register__content > h2 {
+.content > h2 {
   padding: 1rem 0.4rem;
 }
 
-.register__form {
+.form {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -33,7 +33,7 @@
   width: 100%;
 }
 
-.register__select {
+.select {
   border-radius: 0.3rem;
   border: 2px solid #80808099;
   cursor: pointer;
@@ -45,7 +45,7 @@
   width: 100%;
 }
 
-.register__button {
+.button {
   background: #0b6efe;
   border-radius: 0.3rem;
   border: 2px solid #80808099;
@@ -57,24 +57,24 @@
   width: 100%;
 }
 
-.register__redirect_login {
+.redirect_login {
   color: #808080c9;
   text-align: end;
   width: 100%;
 }
 
-.register__redirect_login > span {
+.redirect_login > span {
   color: #0b6efe;
   cursor: pointer;
 }
 
 @media (min-width: 800px) {
-  .register__content {
+  .content {
     height: 41rem;
     width: 30rem;
   }
 
-  .register__content_inputs {
+  .content_inputs {
     align-items: center;
     display: flex;
     gap: 1rem;

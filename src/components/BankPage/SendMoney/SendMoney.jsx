@@ -10,11 +10,11 @@ import styles from "./sentMoney.module.css";
 
 export const SendMoney = () => {
   return (
-    <section className={styles.sendMoney__container}>
-      <div className={styles.sendMoney__content}>
+    <section className={styles.container}>
+      <div className={styles.content}>
         <NavbarReturn title="Transferir" />
 
-        <div className={styles.sendMoney__form}>
+        <div className={styles.form}>
           <InputForm
             nameInput="name"
             onChangeF={() => {}}
@@ -49,25 +49,25 @@ export const SendMoney = () => {
             placeH="Numero de cuenta..."
           />
 
-          <div className={styles.sendMoney__select_card}>
+          <div className={styles.select_card}>
             <p>Selecciona tu cuenta</p>
-            <select className={styles.sendMoney__select_from_money}>
+            <select className={styles.select_from_money}>
               <option value="">Banco bogota $2000</option>
             </select>
           </div>
 
-          <div className={styles.sendMoney__content_money_send}>
-            <div className={styles.sendMoney__money_send_buttons}>
-              <button className={styles.sendMoney__button_less}>-</button>
+          <div className={styles.content_money_send}>
+            <div className={styles.money_send_buttons}>
+              <button className={styles.button_less}>-</button>
               <p>$ {10000}</p>
-              <button className={styles.sendMoney__button_more}>+</button>
+              <button className={styles.button_more}>+</button>
             </div>
             <input type="range" name="range" min="0" max="1000000" />
           </div>
 
-          <div className={styles.sendMoney__buttons_options_money}>
+          <div className={styles.buttons_options_money}>
             <p>Esoger monto a recargar</p>
-            <ul className={styles.sendMoney__list_money}>
+            <ul className={styles.list_money}>
               <li>$ {convertNumDece(200000)}</li>
               <li>$ {convertNumDece(400000)}</li>
               <li>$ {convertNumDece(600000)}</li>

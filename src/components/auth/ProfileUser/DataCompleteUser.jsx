@@ -2,8 +2,8 @@ import styles from "./profileUser.module.css";
 
 export const DataCompleteUser = () => {
   return (
-    <div className={styles.profile_user__container_other_data}>
-      <div className={styles.profile_user__other_data}>
+    <div className={styles.container_other_data}>
+      <div className={styles.other_data}>
         <p>
           <span>Telefono:</span> 3002224444
         </p>

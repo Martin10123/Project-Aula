@@ -2,7 +2,7 @@ import styles from "./profileUser.module.css";
 
 export const DescriptionYourself = () => {
   return (
-    <div className={styles.profile_user__description_yourself}>
+    <div className={styles.description_yourself}>
       <h3>Mi biografia</h3>
       <p>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam,

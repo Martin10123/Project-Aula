@@ -1,23 +1,23 @@
-.choose__container {
+.container {
   width: 100%;
   height: 100vh;
   padding: 0 1rem;
   background: linear-gradient(159deg, #4fc7e2 40%, #47e7c8 60%);
 }
 
-.choose__welcome {
+.welcome {
   color: #fff;
   text-align: center;
   padding: 2rem 0;
 }
 
-.choose__title {
+.title {
   text-align: center;
   padding: 0 0 1.5rem;
   color: #fff;
 }
 
-.choose__resumen {
+.resumen {
   font-size: 1.3rem;
   margin: 0rem 0 2rem;
   text-align: center;
@@ -25,7 +25,7 @@
   cursor: pointer;
 }
 
-.choose__modal_desc {
+.modal_desc {
   width: 92%;
   height: fit-content;
   padding: 1rem;
@@ -38,11 +38,11 @@
   z-index: 10;
 }
 
-.choose__modal_desc > h2 {
+.modal_desc > h2 {
   margin-bottom: 1rem;
 }
 
-.choose__back_modal {
+.back_modal {
   content: "";
   width: 100%;
   height: 100vh;
@@ -53,7 +53,7 @@
   background-color: #000000a1;
 }
 
-.choose__modal_button {
+.modal_button {
   width: 100%;
   height: 3rem;
   margin: 1.2rem 0;
@@ -65,15 +65,15 @@
   cursor: pointer;
 }
 
-.choose__content_cards {
+.content_cards {
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 
-.choose__card_user,
-.choose__card_prof {
+.card_user,
+.card_prof {
   align-items: center;
   background-color: #fff;
   border-radius: 0.3rem;
@@ -87,20 +87,20 @@
   width: 100%;
 }
 
-.choose__card_user > svg,
-.choose__card_prof > svg {
+.card_user > svg,
+.card_prof > svg {
   font-size: 3rem;
   margin: 0.5rem 0;
   color: #47e7c8;
 }
 
-.choose__card_user > p,
-.choose__card_prof > p {
+.card_user > p,
+.card_prof > p {
   font-size: 1.1rem;
 }
 
 @media (min-width: 1000px) {
-  .choose__container {
+  .container {
     width: 75%;
     margin: 0 auto;
     border-left: 3px solid #fff;
@@ -111,7 +111,7 @@
     align-items: center;
   }
 
-  .choose__container::before {
+  .container::before {
     content: "";
     width: 100%;
     height: 100vh;
@@ -122,23 +122,23 @@
     z-index: -1;
   }
 
-  .choose__content_cards {
+  .content_cards {
     flex-direction: row;
   }
 
-  .choose__card_user,
-  .choose__card_prof {
+  .card_user,
+  .card_prof {
     height: 12rem;
     transition: 1s ease-in-out;
   }
 
-  .choose__modal_desc {
+  .modal_desc {
     width: 34rem;
     box-shadow: 1px 1px 15px grey;
   }
 
-  .choose__card_user:hover,
-  .choose__card_prof:hover {
+  .card_user:hover,
+  .card_prof:hover {
     transform: scale(1.05);
     transition: 1s ease-in-out;
   }

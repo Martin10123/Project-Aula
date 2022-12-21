@@ -17,13 +17,10 @@ export const MainPage = () => {
   const [openUser, setOpenUser] = useState(false);
 
   return (
-    <main className={styles.main__container}>
-      <nav className={styles.main__navbar}>
+    <main className={styles.container}>
+      <nav className={styles.navbar}>
         <img src={LogoApp} alt="Logo de la app" />
-        <figure
-          className={styles.main__image}
-          onClick={() => setOpenUser(!openUser)}
-        >
+        <figure className={styles.image} onClick={() => setOpenUser(!openUser)}>
           <img src={photoUser} alt="Foto de perfil" />
           <figcaption>Martin</figcaption>
         </figure>
@@ -31,8 +28,8 @@ export const MainPage = () => {
 
       {openUser && <OptionsUsers setOpenUser={setOpenUser} />}
 
-      <div className={styles.main__content}>
-        <div className={styles.main__info_app}>
+      <div className={styles.content}>
+        <div className={styles.info_app}>
           <h2>
             La mejor manera de contratar profesionales para tus reparaciones
             locativas, facil y sencillo sin salir de tu casa.
@@ -44,15 +41,13 @@ export const MainPage = () => {
             habilidades. Podras obtener mas información o ver un breve resumen
             de como funciona nuestra app.
           </p>
-          <div className={styles.main__buttons}>
-            <button className={styles.main__button_appo}>Como funciona?</button>
-            <button className={styles.main__button_see}>
-              Comprar productos
-            </button>
+          <div className={styles.buttons}>
+            <button className={styles.button_appo}>Como funciona?</button>
+            <button className={styles.button_see}>Comprar productos</button>
           </div>
         </div>
 
-        <div className={styles.main__options}>
+        <div className={styles.options}>
           <OptionItem Icon={GrSchedule} title="Agendar cita" />
           <OptionItem Icon={BiShowAlt} title="Ver mis citas" />
           <OptionItem Icon={AiOutlineEdit} title="Actualizar cita" />

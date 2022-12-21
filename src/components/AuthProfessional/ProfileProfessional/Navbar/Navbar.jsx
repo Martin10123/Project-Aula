@@ -7,19 +7,16 @@ import styles from "./navbarProf.module.css";
 export const NavbarProf = ({ openMenu, setOpenMenu }) => {
   return (
     <div
-      className={`${styles.nav__container} ${
-        openMenu ? styles.nav__show : styles.nav__hidden
+      className={`${styles.container} ${
+        openMenu ? styles.show : styles.hidden
       }`}
     >
-      <div
-        className={styles.nav__backg}
-        onClick={() => setOpenMenu(false)}
-      ></div>
-      <div className={styles.nav__content}>
-        <p className={styles.nav__name}>Martin Elias</p>
+      <div className={styles.backg} onClick={() => setOpenMenu(false)}></div>
+      <div className={styles.content}>
+        <p className={styles.name}>Martin Elias</p>
         <hr />
 
-        <ul className={styles.nav__list}>
+        <ul className={styles.list}>
           <ListItem title="Confirmar cita" />
 
           <ListItem title="Ver citas confirmadas" />
@@ -33,7 +30,7 @@ export const NavbarProf = ({ openMenu, setOpenMenu }) => {
           <ListItem title="Comunicarme con un cliente" />
         </ul>
 
-        <div className={styles.nav__buttons}>
+        <div className={styles.buttons}>
           <button>
             <AiOutlineEdit />
             Editar mis datos

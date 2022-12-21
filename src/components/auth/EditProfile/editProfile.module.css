@@ -1,4 +1,4 @@
-.editProfile__container {
+.container {
   background: #fff;
   height: 100vh;
   overflow: auto;
@@ -8,18 +8,18 @@
   z-index: 9999;
 }
 
-.editProfile__content_info {
+.content_info {
   display: grid;
   grid-template-rows: 0fr 1fr;
   width: 100%;
 }
 
-.editProfile__form {
+.form {
   padding: 0.7rem;
   width: 100%;
 }
 
-.editProfile__select {
+.select {
   border-radius: 0.5rem;
   border: 1px solid gray;
   color: gray;
@@ -32,7 +32,7 @@
   width: 100%;
 }
 
-.editProfile__form > textarea {
+.form > textarea {
   border-radius: 0.5rem;
   border: 1px solid gray;
   color: gray;
@@ -44,7 +44,7 @@
   width: 100%;
 }
 
-.editProfile__buttons {
+.buttons {
   display: grid;
   gap: 0.6rem;
   grid-template-columns: 1fr 1fr;
@@ -52,11 +52,11 @@
 }
 
 @media (min-width: 1000px) {
-  .editProfile__container {
+  .container {
     background: #31313178;
   }
 
-  .editProfile__content_info {
+  .content_info {
     background: #fff;
     border-radius: 0.5rem;
     box-shadow: 1px 1px 11px gray;
@@ -64,7 +64,7 @@
     width: 30rem;
   }
 
-  .editProfile__form > textarea {
+  .form > textarea {
     height: 11rem;
   }
 }

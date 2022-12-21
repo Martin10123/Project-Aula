@@ -1,4 +1,4 @@
-.chargeMoney__div_color_back {
+.div_color_back {
   background: blue;
   border-radius: 0 0 3rem 0;
   height: 16rem;
@@ -9,7 +9,7 @@
   z-index: -1;
 }
 
-.chargeMoney__inside_background {
+.inside_background {
   background: #0046c9;
   border-radius: 50%;
   height: 15rem;
@@ -19,7 +19,7 @@
   width: 15rem;
 }
 
-.chargeMoney__nav {
+.nav {
   align-items: center;
   display: flex;
   justify-content: space-between;
@@ -27,7 +27,7 @@
   width: 100%;
 }
 
-.chargeMoney__image {
+.image {
   align-items: center;
   color: #fff;
   cursor: pointer;
@@ -35,8 +35,8 @@
   gap: 1rem;
 }
 
-.chargeMoney__image > img,
-.chargeMoney__card_img > img {
+.image > img,
+.card_img > img {
   border-radius: 50%;
   cursor: pointer;
   height: 2.75rem;
@@ -44,22 +44,22 @@
   width: 2.75rem;
 }
 
-.chargeMoney__image > img {
+.image > img {
   border: 2px solid #fff;
 }
 
-.chargeMoney__svgs_nav {
+.svgs_nav {
   color: #fff;
   cursor: pointer;
   font-size: 1.6rem;
 }
 
-.chargeMoney__content_all_info {
+.content_all_info {
   padding: 1rem;
   width: 100%;
 }
 
-.chargeMoney__money_avaible {
+.money_avaible {
   background: #fff;
   border-radius: 0.5rem;
   box-shadow: 1px 1px 11px grey;
@@ -70,7 +70,7 @@
   width: 100%;
 }
 
-.chargeMoney__name_bank {
+.name_bank {
   align-items: center;
   display: flex;
   font-size: 0.9rem;
@@ -78,16 +78,16 @@
   width: 100%;
 }
 
-.chargeMoney__name_bank > p:nth-child(1) > span {
+.name_bank > p:nth-child(1) > span {
   color: gray;
 }
 
-.chargeMoney__name_bank > p:nth-child(2) {
+.name_bank > p:nth-child(2) {
   color: #1d1de6;
   cursor: pointer;
 }
 
-.chargeMoney__quantifi_money {
+.quantifi_money {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -98,15 +98,15 @@
   z-index: 1;
 }
 
-.chargeMoney__spinner,
-.chargeMoney__spinner:after {
+.spinner,
+.spinner:after {
   border-radius: 50%;
   display: block;
   height: 13rem;
   width: 13rem;
 }
 
-.chargeMoney__spinner {
+.spinner {
   background-color: transparent;
   border-bottom: 11px solid transparent;
   border-left: 11px solid #0099ff;
@@ -117,16 +117,16 @@
   z-index: -1;
 }
 
-.chargeMoney__quantifi_money > svg {
+.quantifi_money > svg {
   font-size: 1.6rem;
 }
 
-.chargeMoney__quantifi_money > p {
+.quantifi_money > p {
   font-size: 1.1rem;
   font-weight: 500;
 }
 
-.chargeMoney__content_list_options {
+.content_list_options {
   align-items: center;
   display: grid;
   gap: 0.5rem;
@@ -135,7 +135,7 @@
   width: 100%;
 }
 
-.chargeMoney__list_option {
+.list_option {
   align-items: center;
   background-color: #cacaca87;
   border-radius: 0.5rem;
@@ -146,13 +146,13 @@
   width: 100%;
 }
 
-.chargeMoney__transition {
+.transition {
   background: #fff;
   border-radius: 0.5rem;
   padding: 1rem;
 }
 
-.chargeMoney__list_transition {
+.list_transition {
   display: grid;
   gap: 1rem;
   margin: 1rem 0 0;
@@ -162,7 +162,7 @@
   width: 100%;
 }
 
-.chargeMoney__card_transition {
+.card_transition {
   align-items: center;
   background: #fff;
   border-radius: 0.7rem;
@@ -174,16 +174,16 @@
   width: 100%;
 }
 
-.chargeMoney__content_info_bank {
+.content_info_bank {
   display: flex;
   gap: 1rem;
 }
 
-.chargeMoney__card_title {
+.card_title {
   font-size: 0.9rem;
 }
 
-.chargeMoney__box_button_logout {
+.box_button_logout {
   align-items: center;
   display: flex;
   justify-content: center;
@@ -192,50 +192,50 @@
 }
 
 @media (min-width: 1000px) {
-  .chargeMoney__div_color_back {
+  .div_color_back {
     height: 20rem;
   }
 
-  .chargeMoney__content_all_info {
+  .content_all_info {
     margin: 0 auto;
     width: 60rem;
   }
 
-  .chargeMoney__contains_money_list {
+  .contains_money_list {
     display: grid;
     gap: 2rem;
     grid-template-columns: 1fr 1fr;
     width: 100%;
   }
 
-  .chargeMoney__content_list_options {
+  .content_list_options {
     grid-template-columns: none;
     margin: 0;
   }
 
-  .chargeMoney__list_option {
+  .list_option {
     background-color: #fff;
     box-shadow: 1px 1px 11px gray;
   }
 
-  .chargeMoney__contains_money_list {
+  .contains_money_list {
     margin: 2rem auto 2rem;
   }
 
-  .chargeMoney__list_transition {
+  .list_transition {
     grid-template-columns: 1fr 1fr;
     padding: 1rem;
   }
 
-  .chargeMoney__card_transition {
+  .card_transition {
     width: 25.9rem;
   }
 
-  .chargeMoney__list_option > svg {
+  .list_option > svg {
     font-size: 1.6rem;
   }
 
-  .chargeMoney__box_button_logout {
+  .box_button_logout {
     width: 24rem;
     margin: 0 auto;
   }
