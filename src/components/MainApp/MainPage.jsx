@@ -4,7 +4,7 @@ import { AiOutlineEdit } from "react-icons/ai";
 import { BiShowAlt } from "react-icons/bi";
 import { BsCartCheck } from "react-icons/bs";
 import { GrSchedule } from "react-icons/gr";
-import { MdFreeCancellation } from "react-icons/md";
+import { MdFreeCancellation, MdOutlineSell } from "react-icons/md";
 
 import { FooterPage } from "./Footer/Footer";
 import { LogoApp, photoUser } from "../../images";
@@ -58,6 +58,7 @@ export const MainPage = () => {
           <OptionItem Icon={AiOutlineEdit} title="Actualizar cita" />
           <OptionItem Icon={MdFreeCancellation} title="Cancelar cita" />
           <OptionItem Icon={BsCartCheck} title="Comprar productos" />
+          <OptionItem Icon={MdOutlineSell} title="Vender productos" />
         </div>
       </div>
 

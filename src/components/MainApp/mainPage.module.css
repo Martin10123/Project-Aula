@@ -125,17 +125,17 @@
   }
 
   .main__options {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    margin: 3rem auto;
+    width: 80%;
   }
 
   .main__item {
     background: #fff;
     border: none;
     box-shadow: 1px 1px 11px grey;
-    height: 22rem;
-    width: 18rem;
+    height: 15rem;
+    width: 100%;
   }
 }
