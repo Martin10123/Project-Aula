@@ -81,9 +81,6 @@
 }
 
 @media (min-width: 1000px) {
-  .nav__container {
-  }
-
   .nav__content {
     width: 30%;
   }

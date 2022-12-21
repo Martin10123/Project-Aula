@@ -1,10 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { ProfileProf } from "./components/AuthProfessional";
+import { MainPage } from "./components/MainApp/MainPage";
 import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <ProfileProf />
+    <MainPage />
   </React.StrictMode>
 );
