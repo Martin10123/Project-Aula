@@ -1,0 +1,53 @@
+/* List options */
+
+.list_profession {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: flex-end;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.back_close {
+  background: #0000008a;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.content_list {
+  background: #fff;
+  border-radius: 1.5rem 1.5rem 0 0;
+  box-shadow: 1px 1px 11px #434242;
+  height: 38rem;
+  overflow: auto;
+  padding: 1rem;
+  width: 100%;
+}
+
+.item {
+  cursor: pointer;
+  font-size: 1.1rem;
+  padding: 0.5rem 0;
+}
+
+/* Schedule */
+
+@media (min-width: 1000px) {
+  .list_profession {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .content_list {
+    border-radius: 1rem;
+    width: 40rem;
+  }
+}

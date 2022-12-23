@@ -1,0 +1,149 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  padding: 0 1rem;
+}
+
+.container::before {
+  background: url("../images/cool-background.png");
+  content: "";
+  height: 100vh;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.welcome {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.title {
+  text-align: center;
+  padding: 0 0 1.5rem;
+}
+
+.resumen {
+  font-size: 1.3rem;
+  margin: 0rem 0 2rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.modal_desc {
+  background: #fff;
+  border-radius: 0.6rem;
+  height: 85%;
+  left: 50%;
+  overflow: auto;
+  padding: 1rem;
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 92%;
+  z-index: 10;
+}
+
+.modal_desc > h2 {
+  margin-bottom: 1rem;
+}
+
+.back_modal {
+  content: "";
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: #000000a1;
+}
+
+.modal_button {
+  width: 100%;
+  height: 3rem;
+  margin: 1.2rem 0;
+  font-size: 1rem;
+  border-radius: 0.4rem;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.content_cards {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.card_user,
+.card_prof {
+  align-items: center;
+  background-color: #000;
+  border-radius: 0.3rem;
+  box-shadow: 1px 1px 11px #808080b5;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  height: 9rem;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+.card_user > svg,
+.card_prof > svg {
+  font-size: 3rem;
+  margin: 0.5rem 0;
+  color: #fff;
+}
+
+.card_user > p,
+.card_prof > p {
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+@media (min-width: 1000px) {
+  .container {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 0 0 4rem;
+    width: 53%;
+  }
+
+  .content_cards {
+    flex-direction: row;
+  }
+
+  .modal_desc {
+    width: 36rem;
+    height: fit-content;
+  }
+
+  .modal_button {
+    height: 3.75rem;
+    font-size: 1.2rem;
+  }
+
+  .title {
+    text-align: start;
+  }
+
+  .card_user,
+  .card_prof {
+    transition: 1s ease-in-out;
+  }
+
+  .card_user:hover,
+  .card_prof:hover {
+    transform: scale(1.05);
+    transition: 1s ease-in-out;
+  }
+}

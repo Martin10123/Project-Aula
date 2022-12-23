@@ -1,0 +1,38 @@
+.content_buttons {
+  display: grid;
+  gap: 1rem;
+  margin: 2rem 0 0;
+  width: 100%;
+}
+
+.buttons_votes {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+.content_buttons button,
+.buttons_votes button {
+  align-items: center;
+  border: 1px solid;
+  border-radius: 4rem;
+  color: #ffffff;
+  cursor: pointer;
+  display: flex;
+  font-size: 1.1rem;
+  gap: 1rem;
+  height: 3rem;
+  justify-content: center;
+}
+
+.button_message {
+  background-color: #0099ff;
+}
+
+.button_vote_good {
+  background-color: #00ff00;
+}
+
+.button_vote_bad {
+  background-color: #ff0000;
+}
