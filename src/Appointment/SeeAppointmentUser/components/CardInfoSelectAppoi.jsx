@@ -18,8 +18,6 @@ export const CardInfoSelectAppoi = () => {
       </div>
 
       <div className={styles.container_select_appoi}>
-        <SelectAppoi info="Confirmada" />
-
         <SelectAppoi info="300-000-0000" />
 
         <SelectAppoi info="Miercoles" />
@@ -27,6 +25,8 @@ export const CardInfoSelectAppoi = () => {
         <SelectAppoi info="10:00 a.m." />
 
         <SelectAppoi info="$3.000.000" />
+
+        <SelectAppoi info="Confirmada" />
       </div>
 
       <ButtonsCard />

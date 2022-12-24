@@ -46,7 +46,8 @@
 
 .name_each_info,
 .other_options,
-.sidebar_color {
+.sidebar_color,
+.show_name_button {
   display: none;
 }
 
@@ -115,11 +116,11 @@
   padding: 0.5rem;
 }
 
-.container_buttons button:nth-child(2) svg {
+.container_buttons button:nth-child(3) svg {
   color: #00ff00;
 }
 
-.container_buttons button:nth-child(3) svg {
+.container_buttons button:nth-child(4) svg {
   color: #ff0000;
 }
 
@@ -188,8 +189,8 @@
   }
 
   .image_prof img {
-    width: 2.5rem;
     height: 2.5rem;
+    width: 2.5rem;
   }
 
   .name_profession p:nth-child(1),
@@ -209,7 +210,40 @@
   .container_buttons {
     align-items: center;
     display: flex;
+    position: relative;
     width: fit-content;
+  }
+
+  .container_buttons button p {
+    background: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 11px #808080ad;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    transition: 0.5s ease-in-out;
+  }
+
+  .container_buttons button:nth-child(1) p {
+    top: -1.5rem;
+    width: 5rem;
+  }
+
+  .container_buttons button:nth-child(2) p {
+    top: -1.5rem;
+    width: 6rem;
+  }
+
+  .container_buttons button:nth-child(3) p {
+    top: -1.5rem;
+    width: 7rem;
+  }
+
+  .container_buttons button:nth-child(1):hover p,
+  .container_buttons button:nth-child(2):hover p,
+  .container_buttons button:nth-child(3):hover p {
+    opacity: 1;
+    visibility: visible;
   }
 
   .container_buttons button {
