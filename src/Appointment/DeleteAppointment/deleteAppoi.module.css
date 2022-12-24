@@ -1,0 +1,60 @@
+.container {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
+
+.container::before {
+  background: #f7f7f7;
+  content: "";
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.content {
+  background: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 11px grey;
+  padding: 1rem;
+  width: 90%;
+}
+
+.title {
+  font-size: 1.3rem;
+}
+
+.info_appoint {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.buttons {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+}
+
+@media (min-width: 800px) {
+  .content {
+    width: 65%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .content {
+    width: 30rem;
+  }
+}

@@ -1,4 +1,4 @@
-export * from "./DeleteAppointment";
+export * from "./DeleteAppointment/DeleteAppoi";
 export * from "./ScheduleAppointment/Pages";
 export * from "./SeeAppointmentUser/pages/SeeAppointment";
 export * from "./UpdateAppointment/UpdateAppoi";
