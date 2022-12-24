@@ -1,21 +1,19 @@
 import { useState } from "react";
 
-import { daysAvaible, hoursAvaible } from "../../../../AuthProfessional";
-import { NavbarReturn } from "../../../../BankPage/helpers";
-import { OptionsFilter } from "../../components/OptionsFilter";
-import { InputForm, ButtonForm } from "../../../../Helpers";
-import { CardPreview } from "../../components";
+import { ButtonForm, InputForm } from "../../Helpers";
+import { CardPreview, OptionsFilter } from "../ScheduleAppointment/components";
+import { NavbarReturn } from "../../BankPage/helpers";
 
-import styles from "./scheduleAppoi.module.css";
+import styles from "../ScheduleAppointment/Pages/ScheduleAppoi/scheduleAppoi.module.css";
 
-export const ScheduleAppoi = () => {
+export const UpdateAppointment = () => {
   const [openDays, setOpenDays] = useState(false);
   const [openHours, setOpenHours] = useState(false);
 
   return (
     <div className={styles.container_schedule}>
       <span className={styles.return_nav_close}>
-        <NavbarReturn title="Agendar cita" />
+        <NavbarReturn title="Actualizar cita" />
       </span>
 
       <div className={styles.container_preview}>
@@ -24,7 +22,7 @@ export const ScheduleAppoi = () => {
             className={styles.select_option}
             onClick={() => setOpenDays(true)}
           >
-            <p>Elegir dia</p>
+            <p>Cambiar dia</p>
           </div>
 
           {openDays && (
@@ -35,7 +33,7 @@ export const ScheduleAppoi = () => {
             className={styles.select_option}
             onClick={() => setOpenHours(true)}
           >
-            <p>Elegir Hora</p>
+            <p>Cambiar Hora</p>
           </div>
 
           {openHours && (
@@ -43,7 +41,7 @@ export const ScheduleAppoi = () => {
           )}
 
           <div className={styles.type_service}>
-            <h3>Tipo de servicio</h3>
+            <h3>Cambiar tipo de servicio</h3>
 
             <div className={styles.select_option}>
               <p>Reparaciones</p>
@@ -66,7 +64,7 @@ export const ScheduleAppoi = () => {
           </div>
 
           <div className={styles.price}>
-            <h3>Estimar un precio</h3>
+            <h3>Estimar un nuevo precio</h3>
             <InputForm
               nameInput="price"
               onChangeF={() => {}}
@@ -78,7 +76,7 @@ export const ScheduleAppoi = () => {
           </div>
 
           <div className={styles.buttons}>
-            <ButtonForm title="Agendar" />
+            <ButtonForm title="Actualizar" />
             <ButtonForm title="Cancelar" colorButton="red" />
           </div>
         </div>

@@ -30,11 +30,19 @@
 }
 
 .text_desc_problem > textarea {
-  font-size: 1rem;
+  font-size: 1.1rem;
   height: 12rem;
-  margin: 1rem 0;
+  margin: 1rem 0 0;
   padding: 1rem;
   resize: none;
+  width: 100%;
+}
+
+.text_optional {
+  color: #808080;
+  display: block;
+  font-size: 1.1rem;
+  text-align: end;
   width: 100%;
 }
 
