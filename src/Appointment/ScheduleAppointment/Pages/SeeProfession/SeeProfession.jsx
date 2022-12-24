@@ -5,7 +5,7 @@ import { CardProfessional, OptionsFilter } from "../../components";
 
 import styles from "./seeProf.module.css";
 
-export const SeeAppointment = () => {
+export const SeeProfessional = () => {
   const [openFilter, setOpenFilter] = useState(false);
 
   return (
