@@ -3,7 +3,7 @@ import { imagenWork } from "../../../images";
 
 import { InfoProduct, InfoSeller } from "../components";
 
-import styles from "../selfArticle.module.css";
+import styles from "../viewArticle.module.css";
 
 export const SelfArticle = () => {
   return (

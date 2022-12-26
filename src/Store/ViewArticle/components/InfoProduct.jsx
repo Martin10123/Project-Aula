@@ -1,4 +1,4 @@
-import styles from "../selfArticle.module.css";
+import styles from "../viewArticle.module.css";
 
 export const InfoProduct = () => {
   return (

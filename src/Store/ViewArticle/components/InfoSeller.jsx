@@ -1,6 +1,6 @@
 import { photoUser } from "../../../images";
 
-import styles from "../selfArticle.module.css";
+import styles from "../viewArticle.module.css";
 
 export const InfoSeller = () => {
   return (
