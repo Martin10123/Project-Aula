@@ -3,7 +3,7 @@ import { useState } from "react";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { BsFilterLeft, BsFilterRight } from "react-icons/bs";
 import { herramient } from "../../helpers/CategoriesStore";
-import { OptionsFilter } from "../../../Appointment/ScheduleAppointment/components/OptionsFilter";
+import { OptionsFilter } from "../../../Appointment/ScheduleAppointment/components";
 
 import { CardProduct, SideBar } from "../components";
 

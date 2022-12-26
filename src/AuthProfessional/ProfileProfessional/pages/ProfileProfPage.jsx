@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 import { BsPhoneFill, BsFillMenuButtonWideFill } from "react-icons/bs";
-import { FaUserTie } from "react-icons/fa";
+import { FaUserTie, FaCity } from "react-icons/fa";
 import { GiHypersonicMelon } from "react-icons/gi";
 import { MdWork, MdAlternateEmail, MdEventAvailable } from "react-icons/md";
 import { RiUserSmileFill } from "react-icons/ri";
@@ -46,6 +46,8 @@ export const ProfileProf = () => {
             title="Usuario"
             desc="Martin1223"
           />
+
+          <DataPersonal Icon={FaCity} title="Pais" desc="Colombia" />
 
           <DataPersonal Icon={MdWork} title="Ocupación" desc="Programador" />
 

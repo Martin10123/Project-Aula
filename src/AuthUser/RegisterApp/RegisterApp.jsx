@@ -1,4 +1,5 @@
-import { InputForm, ButtonForm } from "../../Helpers";
+import { InputForm, ButtonForm, dataCountrys } from "../../Helpers";
+
 import styles from "./registerApp.module.css";
 
 export const RegisterAppUser = () => {
@@ -61,6 +62,15 @@ export const RegisterAppUser = () => {
               value=""
             />
           </div>
+
+          <select name="gender" id="gender" className={styles.select}>
+            <option value="">Pais</option>
+            {dataCountrys.map((country) => (
+              <option key={country} value={country}>
+                {country}
+              </option>
+            ))}
+          </select>
 
           <select name="gender" id="gender" className={styles.select}>
             <option value="Masculino">Hombre</option>

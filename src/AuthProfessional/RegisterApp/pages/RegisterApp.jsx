@@ -1,12 +1,15 @@
 import { useState } from "react";
-import { ButtonForm, InputForm } from "../../../Helpers";
-import { OptionsDays, OptionsProfession } from "..";
+
+import { ButtonForm, dataCountrys, InputForm } from "../../../Helpers";
+import { daysAvaible, homeServices } from "../../helpers/OptionsProf";
+import { OptionsFilter } from "../../../Appointment/ScheduleAppointment/components";
 
 import styles from "../registerApp.module.css";
 
 export const RegisterAppProf = () => {
   const [openDays, setOpenDays] = useState(false);
   const [openProfession, setOpenProfession] = useState(false);
+  const [openCountry, setOpenCountry] = useState(false);
 
   return (
     <section className={styles.container}>
@@ -68,20 +71,36 @@ export const RegisterAppProf = () => {
 
           <div
             className={styles.profession}
+            onClick={() => setOpenCountry(true)}
+          >
+            <p>Pais</p>
+          </div>
+
+          {openCountry && (
+            <OptionsFilter data={dataCountrys} setOpenFilter={setOpenCountry} />
+          )}
+
+          <div
+            className={styles.profession}
             onClick={() => setOpenProfession(true)}
           >
             <p>Escoger profesión</p>
           </div>
 
           {openProfession && (
-            <OptionsProfession setOpenProfession={setOpenProfession} />
+            <OptionsFilter
+              data={homeServices}
+              setOpenFilter={setOpenProfession}
+            />
           )}
 
           <div className={styles.days} onClick={() => setOpenDays(true)}>
             <p>Escoger dias disponibles</p>
           </div>
 
-          {openDays && <OptionsDays setOpenDays={setOpenDays} />}
+          {openDays && (
+            <OptionsFilter data={daysAvaible} setOpenFilter={setOpenDays} />
+          )}
 
           <div className={styles.buttons}>
             <ButtonForm title="Registrarse" />
