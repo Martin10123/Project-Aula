@@ -15,7 +15,7 @@
     background: #fff;
     border-radius: 1rem;
     box-shadow: 1px 1px 15px grey;
-    height: 90%;
+    height: fit-content;
     padding: 0.5rem;
     width: 100%;
   }
@@ -50,6 +50,7 @@
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    height: 30rem;
     justify-content: center;
   }
 
@@ -81,22 +82,7 @@
   }
 
   .price {
-    color: gray;
-    font-size: 1.2rem;
-    line-break: anywhere;
-    margin: 0 0 0.2rem;
-  }
-
-  .location {
-    color: #8080808a;
-    font-size: 1.1rem;
-    line-break: anywhere;
-    margin: 0 0 1rem;
-  }
-
-  .state,
-  .category {
-    color: #8080808a;
+    color: #80808099;
     font-size: 1.1rem;
     line-break: anywhere;
     margin: 0 0 1rem;
@@ -118,28 +104,21 @@
     align-items: center;
     display: flex;
     gap: 1rem;
+    margin: 0 0 1rem;
     width: 100%;
   }
 
   .user_figure > img {
     border-radius: 50%;
     cursor: pointer;
-    height: 4rem;
+    height: 3rem;
     object-fit: cover;
-    width: 4rem;
+    width: 3rem;
   }
 
   .user_name {
     color: #8080808a;
     font-size: 1.4rem;
-  }
-
-  .user_number,
-  .user_location,
-  .user_adress {
-    color: #8080808a;
-    font-size: 1.2rem;
-    margin: 1rem 0;
   }
 }
 
