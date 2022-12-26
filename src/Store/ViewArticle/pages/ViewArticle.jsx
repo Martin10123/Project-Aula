@@ -5,7 +5,7 @@ import { InfoProduct, InfoSeller } from "../components";
 
 import styles from "../viewArticle.module.css";
 
-export const SelfArticle = () => {
+export const ViewArticle = () => {
   return (
     <div className={styles.container}>
       <button className={styles.button_return}>

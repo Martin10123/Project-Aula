@@ -60,3 +60,10 @@ export const herramient = [
   "CARRETILLA",
   "LLAVE INGLESA",
 ];
+
+export const state_product = [
+  "Nuevo",
+  "Usado - Como nuevo",
+  "Usado - Buen estado",
+  "Usado - Aceptable",
+];
