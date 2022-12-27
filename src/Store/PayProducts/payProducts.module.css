@@ -1,0 +1,53 @@
+.container {
+  background: #fff;
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+.nav_return {
+  align-items: center;
+  border-bottom: 2px solid #80808069;
+  cursor: pointer;
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  width: 100%;
+}
+
+.nav_return svg {
+  font-size: 1.6rem;
+}
+
+.nav_return p {
+  font-size: 1.2rem;
+}
+
+.form_product {
+  padding: 1rem;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 1000px) {
+  .container {
+    align-items: center;
+    background: #0000001c;
+    display: flex;
+    justify-content: center;
+  }
+
+  .content {
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 6px grey;
+    width: 32rem;
+  }
+}
