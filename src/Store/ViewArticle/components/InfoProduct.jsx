@@ -36,7 +36,8 @@ export const InfoProduct = () => {
         </div>
 
         <div className={styles.button_buy_product}>
-          <button>Comprar</button>
+          <button>Agregar al carrito</button>
+          <button>Comprar ya</button>
         </div>
       </div>
     </div>
