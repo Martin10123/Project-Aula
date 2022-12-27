@@ -2,10 +2,11 @@ import { useState } from "react";
 
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { BsFilterLeft, BsFilterRight } from "react-icons/bs";
-import { herramient } from "../../helpers/CategoriesStore";
-import { OptionsFilter } from "../../../Appointment/ScheduleAppointment/components";
+import { FcLike } from "react-icons/fc";
 
 import { CardProduct, SideBar } from "../components";
+import { herramient } from "../../helpers/CategoriesStore";
+import { OptionsFilter } from "../../../Appointment/ScheduleAppointment/components";
 
 import styles from "./mainStore.module.css";
 
@@ -34,8 +35,15 @@ export const MainStore = () => {
 
         <div className={styles.title}>
           <p>Productos</p>
-          <div className={styles.search_filter}>
-            <BsFilterRight onClick={() => setOpenFilter(true)} />
+
+          <div className={styles.content_options_svg}>
+            <div className={styles.search_filter}>
+              <BsFilterRight onClick={() => setOpenFilter(true)} />
+            </div>
+
+            <div className={styles.search_filter}>
+              <FcLike />
+            </div>
           </div>
 
           {openFilter && (
