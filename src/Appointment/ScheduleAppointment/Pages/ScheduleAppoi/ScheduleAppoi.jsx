@@ -28,7 +28,7 @@ export const ScheduleAppoi = () => {
           </div>
 
           {openDays && (
-            <OptionsFilter data={hoursAvaible} setOpenFilter={setOpenDays} />
+            <OptionsFilter data={daysAvaible} setOpenFilter={setOpenDays} />
           )}
 
           <div
@@ -39,7 +39,7 @@ export const ScheduleAppoi = () => {
           </div>
 
           {openHours && (
-            <OptionsFilter data={daysAvaible} setOpenFilter={setOpenHours} />
+            <OptionsFilter data={hoursAvaible} setOpenFilter={setOpenHours} />
           )}
 
           <div className={styles.type_service}>

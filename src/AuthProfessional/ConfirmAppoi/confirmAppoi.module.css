@@ -94,6 +94,41 @@
   background: #ff0000;
 }
 
+/* Update Appoi */
+
+.upd__container {
+  background: #fff;
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.upd__title_comp {
+  padding: 1rem 1rem 0;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.upd__form {
+  padding: 1rem;
+}
+
+.upd__select_option {
+  align-items: center;
+  border-radius: 0.5rem;
+  border: 1px solid gray;
+  cursor: pointer;
+  display: flex;
+  font-size: 1.1rem;
+  height: 4rem;
+  justify-content: center;
+  margin: 0 0 1rem 0;
+  width: 100%;
+}
+
 @media (min-width: 1000px) {
   .card_appoi {
     width: 16rem;
@@ -121,6 +156,27 @@
   }
 
   .return_nav p {
+    display: none;
+  }
+
+  /* Update appoi */
+
+  .upd__container {
+    align-items: center;
+    background: #00000069;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .upd__content {
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 6px #000;
+    width: 21rem;
+  }
+
+  .upd__return_nav_close {
     display: none;
   }
 }

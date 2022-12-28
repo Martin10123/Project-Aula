@@ -1,11 +1,14 @@
+import { useState } from "react";
 import { BsArrowLeft } from "react-icons/bs";
 
 import { photoUser } from "../../../images";
-import { DetailsItem } from "../components";
+import { DetailsItem, UpdateAppoi } from "../components";
 
 import styles from "../confirmAppoi.module.css";
 
 export const ConfirmAppoi = () => {
+  const [openUpdate, setOpenUpdate] = useState(false);
+
   return (
     <div className={styles.container}>
       <div className={styles.return_nav}>
@@ -40,11 +43,13 @@ export const ConfirmAppoi = () => {
           <div className={styles.buttons}>
             <button>Ver perfil</button>
             <button>Aceptar</button>
-            <button>Modificar</button>
+            <button onClick={() => setOpenUpdate(true)}>Modificar</button>
             <button>Cancelar</button>
           </div>
         </div>
       </div>
+
+      {openUpdate && <UpdateAppoi setOpenUpdate={setOpenUpdate} />}
     </div>
   );
 };
