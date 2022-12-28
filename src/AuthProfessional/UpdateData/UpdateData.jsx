@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 import { ButtonForm, InputForm } from "../../Helpers";
-import { OptionsDays, OptionsProfession } from "../RegisterApp";
+import { OptionsDays, OptionsProfession } from "../RegisterAppProf";
 
 import styles from "./updateData.module.css";
 

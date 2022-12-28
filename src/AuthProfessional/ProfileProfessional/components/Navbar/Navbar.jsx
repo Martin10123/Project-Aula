@@ -21,13 +21,9 @@ export const NavbarProf = ({ openMenu, setOpenMenu }) => {
 
           <ListItem title="Ver citas confirmadas" />
 
-          <ListItem title="Opiniones sobre mi" />
-
           <ListItem title="Mis ingresos" />
 
-          <ListItem title="Cancelar cita" />
-
-          <ListItem title="Comunicarme con un cliente" />
+          <ListItem title="Mensajeria" />
         </ul>
 
         <div className={styles.buttons}>

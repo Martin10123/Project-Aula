@@ -1,0 +1,36 @@
+.container {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 100%;
+}
+
+.content {
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 1px 1px 6px #80808083;
+  padding: 1rem;
+  width: 95%;
+}
+
+.title,
+.forgot_password {
+  font-size: 1.3rem;
+  margin: 1rem 0;
+}
+
+.redirect_register {
+  font-size: 1.2rem;
+}
+
+.redirect_register span {
+  color: #0099ff;
+  font-weight: bold;
+}
+
+@media (min-width: 1000px) {
+  .content {
+    width: 22rem;
+  }
+}

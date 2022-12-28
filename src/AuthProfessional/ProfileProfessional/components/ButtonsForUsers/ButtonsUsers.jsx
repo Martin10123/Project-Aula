@@ -14,11 +14,15 @@ export const ButtonsUsers = () => {
           <BiDownvote />
           Votar
         </button>
+        <button className={styles.button_message}>
+          <BiMessageRounded />
+          Contactar
+        </button>
+        <button className={styles.button_message}>
+          <BiMessageRounded />
+          Dar opinión
+        </button>
       </div>
-      <button className={styles.button_message}>
-        <BiMessageRounded />
-        Contactar
-      </button>
     </div>
   );
 };

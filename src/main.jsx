@@ -1,11 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { MainStore } from "./Store";
 
 import "./index.css";
+import { ProfileProf } from "./AuthProfessional";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <MainStore />
+    <ProfileProf />
   </React.StrictMode>
 );

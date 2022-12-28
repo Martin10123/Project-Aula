@@ -37,7 +37,7 @@
 }
 
 .name {
-  font-size: 0.9rem;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
@@ -65,7 +65,7 @@
   display: flex;
   font-size: 1.3rem;
   gap: 0.5rem;
-  height: 3.75rem;
+  height: 3rem;
   justify-content: center;
   width: 100%;
 }
@@ -81,11 +81,19 @@
 }
 
 @media (min-width: 1000px) {
-  .content {
-    width: 30%;
+  .container {
+    border-right: 1px solid gainsboro;
+    box-shadow: 1px 1px 6px grey;
+    justify-content: flex-start;
+    position: sticky;
+    transform: translate(0);
   }
 
-  .hidden {
-    transform: translate(100rem);
+  .backg {
+    display: none;
+  }
+
+  .content {
+    width: 100%;
   }
 }
