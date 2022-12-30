@@ -1,22 +1,25 @@
 import {
-  BsCameraVideo,
-  BsTelephone,
-  BsFillCameraFill,
   BsArrowLeft,
+  BsCameraVideo,
+  BsFillCameraFill,
+  BsTelephone,
 } from "react-icons/bs";
 import { MdOutlineAddReaction } from "react-icons/md";
 import { TbMicrophone } from "react-icons/tb";
+
 import { photoUser } from "../../../images";
 
 import styles from "./chatMessage.module.css";
 
-export const ChatMessage = () => {
+export const ChatMessage = ({ openChatMessage, setopenChatMessage }) => {
+  const openChat = openChatMessage ? "" : styles.hidden_component;
+
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} ${openChat}`}>
       <div className={styles.content}>
         <div className={styles.nav_message}>
           <div className={styles.image_user}>
-            <BsArrowLeft />
+            <BsArrowLeft onClick={() => setopenChatMessage(false)} />
 
             <img src={photoUser} alt="Foto de perfil" />
 

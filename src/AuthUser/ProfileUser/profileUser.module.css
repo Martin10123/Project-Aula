@@ -64,14 +64,21 @@
   width: 100%;
 }
 
-.content_items > li {
+.content_items > li,
+.button_logout {
   align-items: center;
   border-bottom: 1px solid gray;
   cursor: pointer;
   display: flex;
   font-size: 1.2rem;
+  font-weight: 500;
   gap: 1rem;
   padding: 1.5rem 1rem;
+}
+
+.content_items > li svg,
+.button_logout > svg {
+  font-size: 1.5rem;
 }
 
 .data_user {
@@ -158,42 +165,29 @@
 }
 
 .delete,
-.content_items > li:nth-child(6) {
+.button_logout {
   background-color: #ff0000;
   color: #fff;
 }
 
 @media (min-width: 1000px) {
   .container {
-    background: #fff;
-    border-radius: 0.5rem;
-    margin: 1rem auto;
-    width: 54rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 20rem 1fr;
+    height: 100vh;
+    overflow: hidden;
   }
 
-  .container::before {
-    background: #f0f1f5;
-    content: "";
+  .content_nav_options {
+    background: #fff;
+    display: grid;
+    grid-template-rows: 0fr 1fr;
     height: 100vh;
-    left: 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: -1;
   }
 
   .hiddenMenu {
     display: block;
-  }
-
-  .nav {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 2rem;
-  }
-
-  .nav > img {
-    margin: 0.5rem 0 0;
   }
 
   .svg,
@@ -201,41 +195,28 @@
     display: none;
   }
 
-  .content_menu {
-    width: 100%;
-  }
-
   .list {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    padding: 1rem;
     position: relative;
-    height: fit-content;
-    z-index: 1;
   }
 
   .content_items {
-    background: transparent;
-    box-shadow: none;
-    display: grid;
     gap: 1rem;
-    grid-template-columns: 1fr 1fr 1fr;
-    position: relative;
-    width: 100%;
+    padding: 1rem 0;
   }
 
   .content_items > li {
+    border-bottom: none;
     border-radius: 0.5rem;
-    border: 1px solid gray;
-    font-size: 1.1rem;
-    padding: 1rem;
-    transition: 1s ease-in-out;
+    font-weight: 400;
+    padding: 0.5rem;
   }
 
-  .content_items > li:hover {
-    transform: scale(1.05);
-    transition: 1s ease-in-out;
-  }
-
-  .content_items > li > svg {
-    font-size: 1.4rem;
+  .content_box_info {
+    overflow: auto;
   }
 
   .description_yourself {
@@ -243,8 +224,21 @@
     width: 32rem;
   }
 
+  .container_other_data {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
   .other_data {
+    display: grid;
     gap: 0.5rem;
+    grid-template-columns: 1fr 1fr;
+    width: 50rem;
+  }
+
+  hr {
+    display: none;
   }
 
   .other_data > p {
@@ -256,7 +250,7 @@
   .buttons {
     grid-template-columns: 1fr 1fr;
     margin: 0 auto;
-    width: 80%;
+    width: 65%;
   }
 
   .buttons > button {

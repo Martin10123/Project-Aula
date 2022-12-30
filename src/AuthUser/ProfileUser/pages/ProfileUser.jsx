@@ -20,17 +20,18 @@ export const ProfileUser = () => {
   return (
     <>
       <section className={styles.container}>
-        <nav className={styles.nav}>
-          <img className={styles.imgLogo} src={logoApp} alt="" />
-          <div className={styles.content_menu}>
-            <GiHamburgerMenu
-              className={styles.svg}
-              onClick={() => setOpenMenu(!openMenu)}
-            />
-
-            <OptionsList openMenu={openMenu} setOpenMenu={setOpenMenu} />
-          </div>
-        </nav>
+        <div className={styles.content_nav_options}>
+          <nav className={styles.nav}>
+            <img className={styles.imgLogo} src={logoApp} alt="" />
+            <div className={styles.content_menu}>
+              <GiHamburgerMenu
+                className={styles.svg}
+                onClick={() => setOpenMenu(!openMenu)}
+              />
+            </div>
+          </nav>
+          <OptionsList openMenu={openMenu} setOpenMenu={setOpenMenu} />
+        </div>
 
         <div className={styles.content_box_info}>
           <div className={styles.box_info_perso_user}>

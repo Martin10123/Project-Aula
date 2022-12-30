@@ -26,6 +26,106 @@ export const ConfirmAppoi = () => {
             <button>Cancelar</button>
           </div>
         </div>
+        <div className={styles.card_appoi}>
+          <CardAppoiConfirm />
+
+          <div className={styles.buttons}>
+            <button>Ver perfil</button>
+            <button>Aceptar</button>
+            <button onClick={() => setOpenUpdate(true)}>Modificar</button>
+            <button>Cancelar</button>
+          </div>
+        </div>
+        <div className={styles.card_appoi}>
+          <CardAppoiConfirm />
+
+          <div className={styles.buttons}>
+            <button>Ver perfil</button>
+            <button>Aceptar</button>
+            <button onClick={() => setOpenUpdate(true)}>Modificar</button>
+            <button>Cancelar</button>
+          </div>
+        </div>
+        <div className={styles.card_appoi}>
+          <CardAppoiConfirm />
+
+          <div className={styles.buttons}>
+            <button>Ver perfil</button>
+            <button>Aceptar</button>
+            <button onClick={() => setOpenUpdate(true)}>Modificar</button>
+            <button>Cancelar</button>
+          </div>
+        </div>
+        <div className={styles.card_appoi}>
+          <CardAppoiConfirm />
+
+          <div className={styles.buttons}>
+            <button>Ver perfil</button>
+            <button>Aceptar</button>
+            <button onClick={() => setOpenUpdate(true)}>Modificar</button>
+            <button>Cancelar</button>
+          </div>
+        </div>
+        <div className={styles.card_appoi}>
+          <CardAppoiConfirm />
+
+          <div className={styles.buttons}>
+            <button>Ver perfil</button>
+            <button>Aceptar</button>
+            <button onClick={() => setOpenUpdate(true)}>Modificar</button>
+            <button>Cancelar</button>
+          </div>
+        </div>
+        <div className={styles.card_appoi}>
+          <CardAppoiConfirm />
+
+          <div className={styles.buttons}>
+            <button>Ver perfil</button>
+            <button>Aceptar</button>
+            <button onClick={() => setOpenUpdate(true)}>Modificar</button>
+            <button>Cancelar</button>
+          </div>
+        </div>
+        <div className={styles.card_appoi}>
+          <CardAppoiConfirm />
+
+          <div className={styles.buttons}>
+            <button>Ver perfil</button>
+            <button>Aceptar</button>
+            <button onClick={() => setOpenUpdate(true)}>Modificar</button>
+            <button>Cancelar</button>
+          </div>
+        </div>
+        <div className={styles.card_appoi}>
+          <CardAppoiConfirm />
+
+          <div className={styles.buttons}>
+            <button>Ver perfil</button>
+            <button>Aceptar</button>
+            <button onClick={() => setOpenUpdate(true)}>Modificar</button>
+            <button>Cancelar</button>
+          </div>
+        </div>
+        <div className={styles.card_appoi}>
+          <CardAppoiConfirm />
+
+          <div className={styles.buttons}>
+            <button>Ver perfil</button>
+            <button>Aceptar</button>
+            <button onClick={() => setOpenUpdate(true)}>Modificar</button>
+            <button>Cancelar</button>
+          </div>
+        </div>
+        <div className={styles.card_appoi}>
+          <CardAppoiConfirm />
+
+          <div className={styles.buttons}>
+            <button>Ver perfil</button>
+            <button>Aceptar</button>
+            <button onClick={() => setOpenUpdate(true)}>Modificar</button>
+            <button>Cancelar</button>
+          </div>
+        </div>
       </div>
 
       {openUpdate && <UpdateAppoi setOpenUpdate={setOpenUpdate} />}

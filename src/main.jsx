@@ -1,12 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { ConfirmAppoi } from "./AuthProfessional/ConfirmAppoi/pages/ConfirmAppoi";
+import { NotificationUser, ProfileUser } from "./AuthUser";
 
-import { ChatMessage } from "./ChatsApp";
+import { MessagesApp } from "./ChatsApp";
 
 import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <ChatMessage />
+    <ConfirmAppoi />
   </React.StrictMode>
 );

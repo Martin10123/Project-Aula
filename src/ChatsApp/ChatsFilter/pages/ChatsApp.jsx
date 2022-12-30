@@ -4,7 +4,7 @@ import { ChatsActive, ChatsMessage } from "../components";
 
 import styles from "./chatsApp.module.css";
 
-export const ChatsApp = () => {
+export const ChatsApp = ({ setopenChatMessage }) => {
   return (
     <section className={styles.container_chat}>
       <div className={styles.return_nav}>
@@ -22,14 +22,24 @@ export const ChatsApp = () => {
         <div className={styles.content_chats_active}>
           <div className={styles.chats_active}>
             <div className={styles.messages__scroll_users}>
-              <ChatsActive />
+              <ChatsActive setopenChatMessage={setopenChatMessage} />
             </div>
           </div>
 
-          <h2>Mensajes</h2>
+          <p className={styles.title_message}>Mensajes</p>
 
           <div className={styles.content_chats_to_message}>
-            <ChatsMessage />
+            <ChatsMessage setopenChatMessage={setopenChatMessage} />
+            <ChatsMessage setopenChatMessage={setopenChatMessage} />
+            <ChatsMessage setopenChatMessage={setopenChatMessage} />
+            <ChatsMessage setopenChatMessage={setopenChatMessage} />
+            <ChatsMessage setopenChatMessage={setopenChatMessage} />
+            <ChatsMessage setopenChatMessage={setopenChatMessage} />
+            <ChatsMessage setopenChatMessage={setopenChatMessage} />
+            <ChatsMessage setopenChatMessage={setopenChatMessage} />
+            <ChatsMessage setopenChatMessage={setopenChatMessage} />
+            <ChatsMessage setopenChatMessage={setopenChatMessage} />
+            <ChatsMessage setopenChatMessage={setopenChatMessage} />
           </div>
         </div>
       </div>

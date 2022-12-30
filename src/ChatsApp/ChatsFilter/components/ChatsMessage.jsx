@@ -3,9 +3,12 @@ import { photoUser } from "../../../images";
 
 import styles from "../pages/chatsApp.module.css";
 
-export const ChatsMessage = () => {
+export const ChatsMessage = ({ setopenChatMessage }) => {
   return (
-    <div className={styles.chat_message}>
+    <div
+      className={styles.chat_message}
+      onClick={() => setopenChatMessage(true)}
+    >
       <figure className={styles.img_user_message}>
         <img src={photoUser} alt="Foto de perfil" />
         <FaCircle />

@@ -1,7 +1,8 @@
-import { AiFillEdit } from "react-icons/ai";
+import { FaMoneyCheck } from "react-icons/fa";
+import { HiOutlineChatBubbleLeftRight } from "react-icons/hi2";
+import { AiFillEdit, AiOutlineAppstoreAdd } from "react-icons/ai";
 import { BiLogIn } from "react-icons/bi";
-import { BsCalendarDate } from "react-icons/bs";
-import { FaCommentAlt, FaMoneyCheck } from "react-icons/fa";
+import { BsCalendarDate, BsBell } from "react-icons/bs";
 import { MdOutlineFreeCancellation } from "react-icons/md";
 
 import styles from "../profileUser.module.css";
@@ -19,6 +20,10 @@ export const OptionsList = ({ openMenu, setOpenMenu }) => {
       ></div>
       <div className={styles.content_items}>
         <li>
+          <AiOutlineAppstoreAdd />
+          Agendar cita
+        </li>
+        <li>
           <BsCalendarDate />
           Mis citas confirmadas
         </li>
@@ -31,18 +36,22 @@ export const OptionsList = ({ openMenu, setOpenMenu }) => {
           Cancelar una cita
         </li>
         <li>
-          <FaCommentAlt />
-          Mis opiniones
-        </li>
-        <li>
           <FaMoneyCheck />
           Recargar mi tarjeta
         </li>
         <li>
-          <BiLogIn />
-          Cerrar cesion
+          <HiOutlineChatBubbleLeftRight />
+          Mensajes
+        </li>
+        <li>
+          <BsBell />
+          Notificaciónes
         </li>
       </div>
+      <li className={styles.button_logout}>
+        <BiLogIn />
+        Cerrar cesion
+      </li>
     </ul>
   );
 };
