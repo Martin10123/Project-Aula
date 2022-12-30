@@ -115,9 +115,6 @@
     width: 100%;
   }
 
-  .navbar {
-  }
-
   .container::before,
   .navbar {
     display: none;

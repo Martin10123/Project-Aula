@@ -6,3 +6,4 @@ export * from "./RecoverAccount/RecoverAccountProf";
 export * from "./RegisterAppProf";
 export * from "./SeeAppoiConfirm/pages/SeeAppoiConfirm";
 export * from "./UpdateData/UpdateData";
+export * from "./CommentProf/pages/CommentProf";

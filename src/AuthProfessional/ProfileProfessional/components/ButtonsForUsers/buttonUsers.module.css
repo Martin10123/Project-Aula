@@ -15,7 +15,7 @@
 .buttons_votes button {
   align-items: center;
   border: 1px solid;
-  border-radius: 4rem;
+  border-radius: 0.5rem;
   color: #ffffff;
   cursor: pointer;
   display: flex;
