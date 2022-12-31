@@ -1,3 +1,5 @@
+import { BsArrowLeft } from "react-icons/bs";
+
 import { ButtonForm, InputForm } from "../../Helpers";
 
 import styles from "./loginProf.module.css";
@@ -6,6 +8,11 @@ export const LoginProf = () => {
   return (
     <div className={styles.container}>
       <div className={styles.content}>
+        <div className={styles.comeBack_choose}>
+          <BsArrowLeft />
+          <p>Regresar</p>
+        </div>
+
         <div className={styles.title}>
           <h2>Login Profesional</h2>
         </div>

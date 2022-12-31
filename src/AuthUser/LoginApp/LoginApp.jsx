@@ -1,3 +1,4 @@
+import { BsArrowLeft } from "react-icons/bs";
 import { FaFacebookF } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 import { ButtonForm, InputForm } from "../../Helpers";
@@ -8,6 +9,11 @@ export const LoginAppUser = () => {
   return (
     <div className={styles.container}>
       <div className={styles.content}>
+        <div className={styles.comeBack_choose}>
+          <BsArrowLeft />
+          <p>Regresar</p>
+        </div>
+
         <div className={styles.title}>
           <h2>Login App</h2>
         </div>

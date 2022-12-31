@@ -29,6 +29,17 @@
   font-weight: bold;
 }
 
+.comeBack_choose {
+  align-items: center;
+  display: flex;
+  font-size: 1.4rem;
+  gap: 1rem;
+}
+
+.comeBack_choose svg {
+  cursor: pointer;
+}
+
 @media (min-width: 1000px) {
   .content {
     width: 22rem;
