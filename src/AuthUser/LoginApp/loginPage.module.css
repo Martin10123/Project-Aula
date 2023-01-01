@@ -108,7 +108,7 @@
   width: 100%;
 }
 
-.redirect_register > p > span {
+.redirect_register > p > a {
   color: #000;
   cursor: pointer;
   font-weight: bold;
@@ -116,9 +116,11 @@
 
 .comeBack_choose {
   align-items: center;
+  color: #000;
   display: flex;
   font-size: 1.4rem;
   gap: 1rem;
+  width: fit-content;
 }
 
 .comeBack_choose svg {

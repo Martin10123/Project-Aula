@@ -1,8 +1,10 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 import { ButtonForm, dataCountrys, InputForm } from "../../../Helpers";
 import { daysAvaible, homeServices } from "../../helpers/OptionsProf";
 import { OptionsFilter } from "../../../Appointment/ScheduleAppointment/components";
+import { useForm } from "../../../hooks/useForm";
 
 import styles from "../registerApp.module.css";
 
@@ -10,6 +12,36 @@ export const RegisterAppProf = () => {
   const [openDays, setOpenDays] = useState(false);
   const [openProfession, setOpenProfession] = useState(false);
   const [openCountry, setOpenCountry] = useState(false);
+  const {
+    name,
+    username,
+    nickName,
+    email,
+    phone,
+    password1,
+    password2,
+    onInputChange,
+  } = useForm({
+    name: "",
+    username: "",
+    nickName: "",
+    email: "",
+    phone: "",
+    password1: "",
+    password2: "",
+  });
+
+  const onSubmitRegister = () => {
+    console.log({
+      name,
+      username,
+      nickName,
+      email,
+      phone,
+      password1,
+      password2,
+    });
+  };
 
   return (
     <section className={styles.container}>
@@ -19,53 +51,53 @@ export const RegisterAppProf = () => {
         <div className={styles.form}>
           <InputForm
             nameInput="name"
-            onChangeF={() => {}}
+            onChangeF={onInputChange}
             placeH="Nombre..."
             type="text"
-            value=""
+            value={name}
           />
           <InputForm
             nameInput="username"
-            onChangeF={() => {}}
+            onChangeF={onInputChange}
             placeH="Nombre de usuario..."
             type="text"
-            value=""
+            value={username}
           />
           <InputForm
             nameInput="nickName"
-            onChangeF={() => {}}
+            onChangeF={onInputChange}
             placeH="Apodo..."
             type="text"
-            value=""
+            value={nickName}
           />
           <InputForm
             nameInput="email"
-            onChangeF={() => {}}
+            onChangeF={onInputChange}
             placeH="Correo..."
             type="email"
-            value=""
+            value={email}
           />
           <InputForm
             nameInput="phone"
-            onChangeF={() => {}}
+            onChangeF={onInputChange}
             placeH="Telefono..."
             type="tel"
-            value=""
+            value={phone}
           />
           <div className={styles.content_passwords}>
             <InputForm
               nameInput="password1"
-              onChangeF={() => {}}
+              onChangeF={onInputChange}
               placeH="Contraseña..."
               type="password"
-              value=""
+              value={password1}
             />
             <InputForm
               nameInput="password2"
-              onChangeF={() => {}}
+              onChangeF={onInputChange}
               placeH="Confirmar contraseña..."
               type="password"
-              value=""
+              value={password2}
             />
           </div>
 
@@ -103,10 +135,12 @@ export const RegisterAppProf = () => {
           )}
 
           <div className={styles.buttons}>
-            <ButtonForm title="Registrarse" />
-            <ButtonForm title="Cancelar" colorButton="red" />
+            <ButtonForm title="Registrarse" onSubmit={onSubmitRegister} />
           </div>
         </div>
+        <p className={styles.redirect_login}>
+          ¿Ya tienes una cuenta? <Link to="/auth-prof/login">Ingresar</Link>
+        </p>
       </div>
     </section>
   );

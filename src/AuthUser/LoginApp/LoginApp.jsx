@@ -1,18 +1,32 @@
+import { Link } from "react-router-dom";
+
 import { BsArrowLeft } from "react-icons/bs";
-import { FaFacebookF } from "react-icons/fa";
-import { FcGoogle } from "react-icons/fc";
+
 import { ButtonForm, InputForm } from "../../Helpers";
+import { useForm } from "../../hooks/useForm";
 
 import styles from "./loginPage.module.css";
 
 export const LoginAppUser = () => {
+  const { email, password, onInputChange } = useForm({
+    email: "",
+    password: "",
+  });
+
+  const onSubmitLoginUser = () => {
+    console.log({
+      email,
+      password,
+    });
+  };
+
   return (
     <div className={styles.container}>
       <div className={styles.content}>
-        <div className={styles.comeBack_choose}>
+        <Link to="/" className={styles.comeBack_choose}>
           <BsArrowLeft />
           <p>Regresar</p>
-        </div>
+        </Link>
 
         <div className={styles.title}>
           <h2>Login App</h2>
@@ -21,48 +35,36 @@ export const LoginAppUser = () => {
         <form className={styles.form}>
           <InputForm
             nameInput="email"
-            onChangeF={() => {}}
+            onChangeF={onInputChange}
             placeH="Correo..."
             type="email"
-            value=""
+            value={email}
           />
 
           <InputForm
             nameInput="password"
-            onChangeF={() => {}}
+            onChangeF={onInputChange}
             placeH="Contraseña..."
             type="password"
-            value=""
+            value={password}
           />
         </form>
 
-        <div className={styles.forgot_password}>
+        <Link to="/auth-user/recoverAccount" className={styles.forgot_password}>
           <h5>¿Olvidaste tu contraseña?</h5>
-        </div>
+        </Link>
 
         <div className={styles.remember_data}>
           <input type="checkbox" name="" />
           <h5>Recordar mis datos</h5>
         </div>
 
-        <ButtonForm title="Ingresar" />
+        <ButtonForm title="Ingresar" onSubmit={onSubmitLoginUser} />
         <hr />
-
-        <div className={styles.with_fa_or_go}>
-          <h3>Ingresar tambien con</h3>
-          <div className={styles.content_logos}>
-            <div className={styles.logo_face}>
-              <FaFacebookF />
-            </div>
-            <div className={styles.logo_google}>
-              <FcGoogle />
-            </div>
-          </div>
-        </div>
 
         <div className={styles.redirect_register}>
           <p>
-            ¿No tienes cuenta? <span>Registrate</span>
+            ¿No tienes cuenta? <Link to="/auth-user/register">Registrate</Link>
           </p>
         </div>
       </div>

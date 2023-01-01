@@ -1,8 +1,22 @@
+import { Link } from "react-router-dom";
 import { InputForm, ButtonForm, dataCountrys } from "../../Helpers";
+import { useForm } from "../../hooks/useForm";
 
 import styles from "./registerApp.module.css";
 
 export const RegisterAppUser = () => {
+  const { email, password, onInputChange } = useForm({
+    email: "",
+    password: "",
+  });
+
+  const onSubmitLoginUser = () => {
+    console.log({
+      email,
+      password,
+    });
+  };
+
   return (
     <div className={styles.container}>
       <div className={styles.content}>
@@ -63,7 +77,7 @@ export const RegisterAppUser = () => {
             />
           </div>
 
-          <select name="gender" id="gender" className={styles.select}>
+          <select name="country" id="country" className={styles.select}>
             <option value="">Pais</option>
             {dataCountrys.map((country) => (
               <option key={country} value={country}>
@@ -81,7 +95,7 @@ export const RegisterAppUser = () => {
           <ButtonForm title="Registrarse" />
 
           <p className={styles.redirect_login}>
-            ¿Ya tienes una cuenta? <span>Ingresar</span>
+            ¿Ya tienes una cuenta? <Link to="/auth-user/login">Ingresar</Link>
           </p>
         </form>
       </div>

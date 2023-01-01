@@ -16,6 +16,7 @@ import professional from "./professional.jpg";
 import register from "./register.jpg";
 import registerBank from "./registerBank.svg";
 import users from "./users.jpg";
+import waveChoose from "./waveChoose.svg";
 
 export {
   bankBackgro,
@@ -36,4 +37,5 @@ export {
   register,
   registerBank,
   users,
+  waveChoose,
 };

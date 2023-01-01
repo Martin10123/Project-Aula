@@ -1,7 +1,8 @@
 import { useState } from "react";
 
 import { ButtonForm, InputForm } from "../../Helpers";
-import { OptionsDays, OptionsProfession } from "../RegisterAppProf";
+import { daysAvaible, homeServices } from "../helpers/OptionsProf";
+import { OptionsFilter } from "../../Appointment/ScheduleAppointment/components";
 
 import styles from "./updateData.module.css";
 
@@ -45,14 +46,19 @@ export const UpdateData = () => {
           </div>
 
           {openProfession && (
-            <OptionsProfession setOpenProfession={setOpenProfession} />
+            <OptionsFilter
+              data={homeServices}
+              setOpenFilter={setOpenProfession}
+            />
           )}
 
           <div className={styles.days} onClick={() => setOpenDays(true)}>
             <p>Escoger dias disponibles</p>
           </div>
 
-          {openDays && <OptionsDays setOpenDays={setOpenDays} />}
+          {openDays && (
+            <OptionsFilter data={daysAvaible} setOpenFilter={setOpenDays} />
+          )}
 
           <div className={styles.buttons}>
             <ButtonForm title="Actualizar" />

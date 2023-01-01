@@ -16,6 +16,8 @@
 
 .title,
 .forgot_password {
+  color: #000;
+  cursor: pointer;
   font-size: 1.3rem;
   margin: 1rem 0;
 }
@@ -24,16 +26,19 @@
   font-size: 1.2rem;
 }
 
-.redirect_register span {
+.redirect_register a {
   color: #0099ff;
+  cursor: pointer;
   font-weight: bold;
 }
 
 .comeBack_choose {
   align-items: center;
+  color: #000;
   display: flex;
   font-size: 1.4rem;
   gap: 1rem;
+  width: fit-content;
 }
 
 .comeBack_choose svg {

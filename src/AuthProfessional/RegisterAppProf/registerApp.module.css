@@ -76,6 +76,17 @@
   padding: 1rem;
 }
 
+.redirect_login {
+  color: #808080c9;
+  text-align: end;
+  width: 100%;
+}
+
+.redirect_login > a {
+  color: #0b6efe;
+  cursor: pointer;
+}
+
 @media (min-width: 1000px) {
   .container {
     align-items: center;

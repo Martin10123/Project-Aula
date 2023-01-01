@@ -70,7 +70,7 @@
   width: 100%;
 }
 
-.redirect_login > span {
+.redirect_login > a {
   color: #0b6efe;
   cursor: pointer;
 }

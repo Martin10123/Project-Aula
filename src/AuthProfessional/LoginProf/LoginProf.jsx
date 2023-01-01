@@ -1,17 +1,31 @@
+import { Link } from "react-router-dom";
 import { BsArrowLeft } from "react-icons/bs";
 
 import { ButtonForm, InputForm } from "../../Helpers";
+import { useForm } from "../../hooks/useForm";
 
 import styles from "./loginProf.module.css";
 
 export const LoginProf = () => {
+  const { email, password, onInputChange } = useForm({
+    email: "",
+    password: "",
+  });
+
+  const onSubmitLogin = () => {
+    console.log({
+      email,
+      password,
+    });
+  };
+
   return (
     <div className={styles.container}>
       <div className={styles.content}>
-        <div className={styles.comeBack_choose}>
+        <Link to="/" className={styles.comeBack_choose}>
           <BsArrowLeft />
           <p>Regresar</p>
-        </div>
+        </Link>
 
         <div className={styles.title}>
           <h2>Login Profesional</h2>
@@ -20,32 +34,32 @@ export const LoginProf = () => {
         <div className={styles.form}>
           <InputForm
             nameInput="email"
-            onChangeF={() => {}}
+            onChangeF={onInputChange}
             placeH="Correo..."
             type="email"
-            value=""
+            value={email}
           />
 
           <InputForm
             nameInput="password"
-            onChangeF={() => {}}
+            onChangeF={onInputChange}
             placeH="Contraseña..."
             type="password"
-            value=""
+            value={password}
           />
 
           <div className="buttons">
-            <ButtonForm title="Ingresar" />
+            <ButtonForm title="Ingresar" onSubmit={onSubmitLogin} />
           </div>
         </div>
 
-        <div className={styles.forgot_password}>
+        <Link to="/auth-prof/recoverAccount" className={styles.forgot_password}>
           <h5>¿Olvidaste tu contraseña?</h5>
-        </div>
+        </Link>
 
         <div className={styles.redirect_register}>
           <p>
-            ¿No tienes cuenta? <span>Registrate</span>
+            ¿No tienes cuenta? <Link to="/auth-prof/register">Registrate</Link>
           </p>
         </div>
       </div>

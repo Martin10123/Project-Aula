@@ -1,8 +1,20 @@
+import { Link } from "react-router-dom";
 import { ButtonForm, InputForm } from "../../Helpers";
+import { useForm } from "../../hooks/useForm";
 
 import styles from "./recoverProfe.module.css";
 
 export const RecoverAccountProf = () => {
+  const { email, onInputChange } = useForm({
+    email: "",
+  });
+
+  const onSubmitRecover = () => {
+    console.log({
+      email,
+    });
+  };
+
   return (
     <div className={styles.container}>
       <div className={styles.content}>
@@ -10,15 +22,15 @@ export const RecoverAccountProf = () => {
 
         <InputForm
           nameInput="email"
-          onChangeF={() => {}}
+          onChangeF={onInputChange}
           placeH="Correo..."
           type="email"
-          value=""
+          value={email}
         />
 
-        <ButtonForm title="Recuperar" />
+        <ButtonForm title="Recuperar" onSubmit={onSubmitRecover} />
 
-        <p>Volver</p>
+        <Link to="/auth-prof/login">Volver</Link>
       </div>
     </div>
   );

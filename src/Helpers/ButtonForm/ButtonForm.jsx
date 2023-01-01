@@ -2,9 +2,13 @@ import PropTypes from "prop-types";
 
 import styles from "../stylesHelpers.module.css";
 
-export const ButtonForm = ({ title, colorButton = "#0b6efe" }) => {
+export const ButtonForm = ({ title, colorButton = "#0b6efe", onSubmit }) => {
   return (
-    <button className={styles.buttonForm} style={{ background: colorButton }}>
+    <button
+      onClick={onSubmit}
+      className={styles.buttonForm}
+      style={{ background: colorButton }}
+    >
       {title}
     </button>
   );
@@ -12,4 +16,5 @@ export const ButtonForm = ({ title, colorButton = "#0b6efe" }) => {
 
 ButtonForm.propTypes = {
   title: PropTypes.string.isRequired,
+  onSubmit: PropTypes.func.isRequired,
 };
