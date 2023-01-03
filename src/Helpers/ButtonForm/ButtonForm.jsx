@@ -5,6 +5,7 @@ import styles from "../stylesHelpers.module.css";
 export const ButtonForm = ({ title, colorButton = "#0b6efe", onSubmit }) => {
   return (
     <button
+      type="submit"
       onClick={onSubmit}
       className={styles.buttonForm}
       style={{ background: colorButton }}
@@ -16,5 +17,5 @@ export const ButtonForm = ({ title, colorButton = "#0b6efe", onSubmit }) => {
 
 ButtonForm.propTypes = {
   title: PropTypes.string.isRequired,
-  onSubmit: PropTypes.func.isRequired,
+  onSubmit: PropTypes.func,
 };
