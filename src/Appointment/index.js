@@ -3,3 +3,4 @@ export * from "./ScheduleAppointment/Pages";
 export * from "./SeeAppointmentUser/pages/SeeAppointment";
 export * from "./UpdateAppointment/UpdateAppoi";
 export * from "./ScheduleAppointment/components/OptionsFilter";
+export * from "./routes/AppointmentRoutes";

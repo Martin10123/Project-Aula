@@ -1,5 +1,7 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { BsArrowLeft } from "react-icons/bs";
+
 import { homeServices } from "../../../../AuthProfessional";
 import { CardProfessional, OptionsFilter } from "../../components";
 
@@ -13,7 +15,9 @@ export const SeeProfessional = () => {
       <div className={styles.content}>
         <div className={styles.nav}>
           <div className={styles.return}>
-            <BsArrowLeft />
+            <Link to="/home">
+              <BsArrowLeft />
+            </Link>
             <p>Martin Elias</p>
           </div>
 
@@ -43,10 +47,9 @@ export const SeeProfessional = () => {
         <p className={styles.title_result}>Resultados</p>
 
         <div className={styles.container_card}>
-          <CardProfessional />
-          <CardProfessional />
-          <CardProfessional />
-          <CardProfessional />
+          <Link to="/appointment/professional/JuanPerez/1234">
+            <CardProfessional />
+          </Link>
         </div>
       </div>
     </section>

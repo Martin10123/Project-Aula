@@ -8,7 +8,6 @@ export const CardSeeAppoi = () => {
       <div className={styles.sidebar_color}></div>
       <div className={styles.container_card_info_select}>
         <CardInfoSelectAppoi />
-        <CardInfoSelectAppoi />
       </div>
     </div>
   );

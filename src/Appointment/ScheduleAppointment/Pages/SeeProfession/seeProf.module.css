@@ -17,7 +17,12 @@
   cursor: pointer;
 }
 
+.return a {
+  display: flex;
+}
+
 .return svg {
+  color: #000;
   font-size: 1.5rem;
 }
 
@@ -92,6 +97,7 @@
 }
 
 .img_professional figcaption {
+  color: #000;
   font-size: 1.2rem;
   padding: 0.5rem;
 }

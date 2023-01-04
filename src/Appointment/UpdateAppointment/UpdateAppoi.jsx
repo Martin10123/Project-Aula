@@ -1,7 +1,9 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 import { ButtonForm, InputForm } from "../../Helpers";
 import { CardPreview, OptionsFilter } from "../ScheduleAppointment/components";
+import { daysAvaible, hoursAvaible } from "../../AuthProfessional";
 import { NavbarReturn } from "../../BankPage/helpers";
 
 import styles from "../ScheduleAppointment/Pages/ScheduleAppoi/scheduleAppoi.module.css";
@@ -9,11 +11,16 @@ import styles from "../ScheduleAppointment/Pages/ScheduleAppoi/scheduleAppoi.mod
 export const UpdateAppointment = () => {
   const [openDays, setOpenDays] = useState(false);
   const [openHours, setOpenHours] = useState(false);
+  const navigate = useNavigate();
+
+  const returnHome = () => {
+    navigate(-1);
+  };
 
   return (
     <div className={styles.container_schedule}>
       <span className={styles.return_nav_close}>
-        <NavbarReturn title="Actualizar cita" />
+        <NavbarReturn title="Actualizar cita" onNavigate={returnHome} />
       </span>
 
       <div className={styles.container_preview}>
@@ -26,7 +33,7 @@ export const UpdateAppointment = () => {
           </div>
 
           {openDays && (
-            <OptionsFilter data={hoursAvaible} setOpenFilter={setOpenDays} />
+            <OptionsFilter data={daysAvaible} setOpenFilter={setOpenDays} />
           )}
 
           <div
@@ -37,7 +44,7 @@ export const UpdateAppointment = () => {
           </div>
 
           {openHours && (
-            <OptionsFilter data={daysAvaible} setOpenFilter={setOpenHours} />
+            <OptionsFilter data={hoursAvaible} setOpenFilter={setOpenHours} />
           )}
 
           <div className={styles.type_service}>
@@ -77,7 +84,11 @@ export const UpdateAppointment = () => {
 
           <div className={styles.buttons}>
             <ButtonForm title="Actualizar" />
-            <ButtonForm title="Cancelar" colorButton="red" />
+            <ButtonForm
+              title="Cancelar"
+              colorButton="red"
+              onSubmit={returnHome}
+            />
           </div>
         </div>
 

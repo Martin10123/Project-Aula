@@ -27,6 +27,7 @@
 
 .li {
   align-items: center;
+  cursor: pointer;
   display: flex;
   font-size: 1.3rem;
   gap: 1rem;

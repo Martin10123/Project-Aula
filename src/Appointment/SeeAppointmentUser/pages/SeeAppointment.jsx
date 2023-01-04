@@ -1,5 +1,7 @@
+import { Link } from "react-router-dom";
 import { AiFillHome, AiOutlineAppstoreAdd } from "react-icons/ai";
 import { BsBell } from "react-icons/bs";
+
 import { CardSeeAppoi } from "../components";
 
 import styles from "./seeAppointment.module.css";
@@ -10,7 +12,9 @@ export const SeeAppointment = () => {
       <div className={styles.content}>
         <div className={styles.nav}>
           <div className={styles.nav_title}>
-            <AiFillHome />
+            <Link to="/home">
+              <AiFillHome />
+            </Link>
             <p>Tus citas</p>
           </div>
 

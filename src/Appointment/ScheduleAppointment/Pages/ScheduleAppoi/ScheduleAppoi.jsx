@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 import { daysAvaible, hoursAvaible } from "../../../../AuthProfessional";
 import { NavbarReturn } from "../../../../BankPage/helpers";
@@ -11,11 +12,16 @@ import styles from "./scheduleAppoi.module.css";
 export const ScheduleAppoi = () => {
   const [openDays, setOpenDays] = useState(false);
   const [openHours, setOpenHours] = useState(false);
+  const navigate = useNavigate();
+
+  const returnHome = () => {
+    navigate(-1);
+  };
 
   return (
     <div className={styles.container_schedule}>
       <span className={styles.return_nav_close}>
-        <NavbarReturn title="Agendar cita" />
+        <NavbarReturn title="Agendar cita" onNavigate={returnHome} />
       </span>
 
       <div className={styles.container_preview}>
@@ -79,7 +85,11 @@ export const ScheduleAppoi = () => {
 
           <div className={styles.buttons}>
             <ButtonForm title="Agendar" />
-            <ButtonForm title="Cancelar" colorButton="red" />
+            <ButtonForm
+              title="Cancelar"
+              colorButton="red"
+              onSubmit={returnHome}
+            />
           </div>
         </div>
 
