@@ -57,6 +57,7 @@
 
 .list_item {
   align-items: center;
+  color: #000;
   cursor: pointer;
   display: flex;
   gap: 1rem;

@@ -17,6 +17,7 @@ import register from "./register.jpg";
 import registerBank from "./registerBank.svg";
 import users from "./users.jpg";
 import waveChoose from "./waveChoose.svg";
+import whatsapp from "./whatsapp.svg";
 
 export {
   bankBackgro,
@@ -38,4 +39,5 @@ export {
   registerBank,
   users,
   waveChoose,
+  whatsapp,
 };

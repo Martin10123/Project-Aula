@@ -1,7 +1,20 @@
-import { facebook, github, gmail, instagram } from "../../../images";
+import { useState } from "react";
+import { facebook, github, gmail, instagram, whatsapp } from "../../../images";
 import styles from "./footer.module.css";
 
 export const FooterPage = () => {
+  const [copy, setCopy] = useState("");
+
+  const handleCopyText = async () => {
+    try {
+      await navigator.clipboard.writeText("Martinsimarra4@gmail.com");
+
+      setCopy("Se copio el texto");
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   return (
     <footer className={styles.container}>
       <p className={styles.title}>
@@ -16,10 +29,22 @@ export const FooterPage = () => {
       </div>
 
       <div className={styles.social_network}>
-        <img src={facebook} alt="Facebook" />
-        <img src={gmail} alt="Gmail" />
-        <img src={instagram} alt="Instagram" />
-        <img src={github} alt="Github" />
+        <a href="https://www.facebook.com/Martin101206" target="_blank">
+          <img src={facebook} alt="Facebook" />
+        </a>
+        <a
+          href="https://api.whatsapp.com/send?phone=3006830624&text=Hola%20mucho%20gusto"
+          target="_blank"
+        >
+          <img src={whatsapp} alt="Gmail" />
+        </a>
+
+        <a href="https://www.instagram.com/martinelias1012/" target="_blank">
+          <img src={instagram} alt="Instagram" />
+        </a>
+        <a href="https://github.com/Martin10123" target="_blank">
+          <img src={github} alt="Github" />
+        </a>
       </div>
     </footer>
   );

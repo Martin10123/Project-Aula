@@ -1,10 +1,11 @@
+import { Link } from "react-router-dom";
 import styles from "../ChargeMoney.module.css";
 
-export const OptionItem = ({ Icon, name }) => {
+export const OptionItem = ({ Icon, name, linkTo }) => {
   return (
-    <div className={styles.list_option}>
+    <Link className={styles.list_option} to={linkTo}>
       <Icon />
       <p>{name}</p>
-    </div>
+    </Link>
   );
 };

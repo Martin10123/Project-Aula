@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { photoUser } from "../../../images";
 
 import styles from "../viewArticle.module.css";
@@ -26,8 +27,12 @@ export const InfoSeller = () => {
           <p>300-000-0000</p>
         </div>
         <div className={styles.buttons_seller}>
-          <button>Ver perfil</button>
-          <button>Contratar</button>
+          <Link to="/profile">
+            <button>Ver perfil</button>
+          </Link>
+          <Link to="/appointment/schedule">
+            <button>Contratar</button>
+          </Link>
         </div>
       </div>
     </div>

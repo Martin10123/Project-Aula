@@ -1,4 +1,5 @@
 import { BsBank } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 import styles from "../chargeMoney.module.css";
 
@@ -9,7 +10,7 @@ export const InfoMoney = ({ showMessageAccount }) => {
         <p>
           Banco bogota <span>Card</span>
         </p>
-        {showMessageAccount && <p>Ver cuenta</p>}
+        {showMessageAccount && <Link to="/bank/myAccount">Ver cuenta</Link>}
       </div>
       <div className={styles.quantifi_money}>
         <div className={styles.spinner}></div>

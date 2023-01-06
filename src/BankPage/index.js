@@ -6,3 +6,4 @@ export * from "./RechargeAccount/RechargeAccount.jsx";
 export * from "./RegisterBank/RegisterBank.jsx";
 export * from "./SendMoney/SendMoney.jsx";
 export * from "./helpers";
+export * from "./routes/BankRouter";

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { BsFilterLeft, BsFilterRight } from "react-icons/bs";
@@ -22,7 +23,9 @@ export const MainStore = () => {
         <nav className={styles.content_nav}>
           <BsFilterLeft onClick={() => setOpenSideBar(true)} />
           <p>Store</p>
-          <AiOutlineShoppingCart />
+          <Link to="/store/myCart/Martin">
+            <AiOutlineShoppingCart />
+          </Link>
         </nav>
 
         <div className={styles.form}>
@@ -52,12 +55,9 @@ export const MainStore = () => {
         </div>
 
         <div className={styles.container_card}>
-          <CardProduct />
-          <CardProduct />
-          <CardProduct />
-          <CardProduct />
-          <CardProduct />
-          <CardProduct />
+          <Link to="/store/viewArticle/12345">
+            <CardProduct />
+          </Link>
         </div>
       </div>
     </section>

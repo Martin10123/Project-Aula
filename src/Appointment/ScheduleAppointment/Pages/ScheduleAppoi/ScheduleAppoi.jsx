@@ -21,7 +21,7 @@ export const ScheduleAppoi = () => {
   return (
     <div className={styles.container_schedule}>
       <span className={styles.return_nav_close}>
-        <NavbarReturn title="Agendar cita" onNavigate={returnHome} />
+        <NavbarReturn title="Agendar cita" />
       </span>
 
       <div className={styles.container_preview}>

@@ -26,8 +26,8 @@ export const InfoApp = () => {
           <Link to="/appointment/seeProfessionals">
             <button className={styles.button_appo}>Agendar cita</button>
           </Link>
-          <Link to="/appointment/store/self">
-            <button className={styles.button_see}>Comprar productos</button>
+          <Link to="/store">
+            <button className={styles.button_see}>Tienda</button>
           </Link>
         </div>
       </div>
@@ -46,12 +46,12 @@ export const InfoApp = () => {
         <OptionItem
           Icon={BsCartCheck}
           title="Comprar productos"
-          linkTo="/appointment/store"
+          linkTo="/store"
         />
         <OptionItem
           Icon={MdOutlineSell}
           title="Vender productos"
-          linkTo="/appointment/store/self"
+          linkTo="/store/selfArticle"
         />
       </div>
     </>

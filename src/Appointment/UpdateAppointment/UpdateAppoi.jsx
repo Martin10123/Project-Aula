@@ -20,7 +20,7 @@ export const UpdateAppointment = () => {
   return (
     <div className={styles.container_schedule}>
       <span className={styles.return_nav_close}>
-        <NavbarReturn title="Actualizar cita" onNavigate={returnHome} />
+        <NavbarReturn title="Actualizar cita" />
       </span>
 
       <div className={styles.container_preview}>

@@ -1,15 +1,16 @@
 import { IoChevronBackOutline } from "react-icons/io5";
-import { CardProduct, CountProduct } from "./components";
+import { Link } from "react-router-dom";
+import { CardProduct, CountProduct } from "../components";
 
-import styles from "./myCart.module.css";
+import styles from "../myCart.module.css";
 
 export const MyCartPage = () => {
   return (
     <section className={styles.container}>
       <div className={styles.nav}>
-        <button>
+        <Link to="/store">
           <IoChevronBackOutline />
-        </button>
+        </Link>
         <p>My Cart</p>
         <div></div>
       </div>

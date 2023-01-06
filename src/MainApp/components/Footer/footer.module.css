@@ -26,7 +26,8 @@
   justify-content: space-around;
 }
 
-.social_network > img {
+.social_network > a img,
+.social_network > div img {
   width: 3rem;
   height: 3rem;
   cursor: pointer;

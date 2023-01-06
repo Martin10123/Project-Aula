@@ -25,12 +25,13 @@
   width: 100%;
 }
 
-.nav button {
+.nav a {
   align-items: center;
   background: #fff;
   border-radius: 50%;
   border: none;
   box-shadow: 1px 1px 6px #8080808a;
+  color: #000;
   cursor: pointer;
   display: flex;
   font-size: 1.2rem;

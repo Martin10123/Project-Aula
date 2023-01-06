@@ -87,6 +87,10 @@
   cursor: pointer;
 }
 
+.name_bank a {
+  color: #000;
+}
+
 .quantifi_money {
   align-items: center;
   display: flex;
@@ -139,6 +143,7 @@
   align-items: center;
   background-color: #cacaca87;
   border-radius: 0.5rem;
+  color: #000;
   cursor: pointer;
   display: flex;
   gap: 0.5rem;

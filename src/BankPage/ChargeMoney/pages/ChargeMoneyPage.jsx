@@ -29,10 +29,26 @@ export const ChargeMoneyPage = () => {
             <InfoMoney showMessageAccount={true} />
 
             <div className={styles.content_list_options}>
-              <OptionItem Icon={BsCreditCard} name="Nueva Tarjeta" />
-              <OptionItem Icon={AiOutlineDollarCircle} name="Recargar" />
-              <OptionItem Icon={MdTransferWithinAStation} name="Transferir" />
-              <OptionItem Icon={BsClipboardData} name="Ver cuenta" />
+              <OptionItem
+                Icon={BsCreditCard}
+                name="Nueva Tarjeta"
+                linkTo="/bank/addCard"
+              />
+              <OptionItem
+                Icon={AiOutlineDollarCircle}
+                name="Recargar"
+                linkTo="/bank/recharge"
+              />
+              <OptionItem
+                Icon={MdTransferWithinAStation}
+                name="Transferir"
+                linkTo="/bank/sendMoney"
+              />
+              <OptionItem
+                Icon={BsClipboardData}
+                name="Ver cuenta"
+                linkTo="/bank/myAccount"
+              />
             </div>
           </div>
           <div className={styles.transition}>

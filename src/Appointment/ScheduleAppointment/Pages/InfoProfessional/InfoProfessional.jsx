@@ -1,20 +1,14 @@
 import { photoUser } from "../../../../images";
 import { NavbarReturn } from "../../../../BankPage/helpers";
 import { CardItem } from "../../components";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import styles from "./infoProf.module.css";
 
 export const InfoProfessional = () => {
-  const navigate = useNavigate();
-
-  const returnHome = () => {
-    navigate(-1);
-  };
-
   return (
     <div className={styles.screen_prof_select}>
-      <NavbarReturn title="Martin Elias" onNavigate={returnHome} />
+      <NavbarReturn title="Martin Elias" />
       <div className={styles.content_prof_select}>
         <div className={styles.content_info_prof_select}>
           <figure className={styles.img_professional}>

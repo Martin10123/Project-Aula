@@ -1,10 +1,11 @@
+import { Link } from "react-router-dom";
 import styles from "./sideBar.module.css";
 
-export const ListItem = ({ Icon, title }) => {
+export const ListItem = ({ Icon, title, linkTo }) => {
   return (
-    <div className={styles.list_item}>
+    <Link className={styles.list_item} to={linkTo}>
       <Icon />
       <p>{title}</p>
-    </div>
+    </Link>
   );
 };
