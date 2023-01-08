@@ -2,7 +2,13 @@ import { dataCountrys } from "../../../Helpers";
 
 import styles from "../registerApp.module.css";
 
-export const CountryGenderForm = ({ country, gender, onInputChange }) => {
+export const CountryGenderForm = ({
+  formState,
+
+  onInputChange,
+}) => {
+  const { country, gender } = formState;
+
   return (
     <>
       <select
@@ -12,7 +18,6 @@ export const CountryGenderForm = ({ country, gender, onInputChange }) => {
         onChange={onInputChange}
         value={country}
       >
-        <option value="">Pais</option>
         {dataCountrys.map((co) => (
           <option key={co} value={co}>
             {co}

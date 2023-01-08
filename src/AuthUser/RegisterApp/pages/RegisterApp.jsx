@@ -7,7 +7,15 @@ import { useRegister } from "../hook/useRegister";
 import styles from "../registerApp.module.css";
 
 export const RegisterAppUser = () => {
-  const { formState, onInputChange, onSubmitRegister } = useRegister();
+  const {
+    errorMessage,
+    formState,
+    formSubmitted,
+    formValidation,
+    isLoadingForm,
+    onInputChange,
+    onSubmitRegister,
+  } = useRegister();
 
   return (
     <div className={styles.container}>
@@ -15,13 +23,36 @@ export const RegisterAppUser = () => {
         <h2>Crear cuenta</h2>
 
         <form className={styles.form}>
-          <NamesForm {...formState} onInputChange={onInputChange} />
+          <NamesForm
+            formState={formState}
+            formValidation={formValidation}
+            formSubmitted={formSubmitted}
+            onInputChange={onInputChange}
+          />
 
-          <PasswordsForm {...formState} onInputChange={onInputChange} />
+          <PasswordsForm
+            formState={formState}
+            formValidation={formValidation}
+            formSubmitted={formSubmitted}
+            onInputChange={onInputChange}
+          />
 
-          <CountryGenderForm {...formState} onInputChange={onInputChange} />
+          <CountryGenderForm
+            formState={formState}
+            formValidation={formValidation}
+            formSubmitted={formSubmitted}
+            onInputChange={onInputChange}
+          />
 
-          <ButtonForm title="Registrarse" onSubmit={onSubmitRegister} />
+          <ButtonForm
+            disabled={isLoadingForm}
+            title="Registrarse"
+            onSubmit={onSubmitRegister}
+          />
+
+          {!!errorMessage && (
+            <p className={styles.show_error}>{errorMessage}</p>
+          )}
 
           <p className={styles.redirect_login}>
             ¿Ya tienes una cuenta? <Link to="/auth-user/login">Ingresar</Link>

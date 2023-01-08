@@ -13,6 +13,10 @@
 
 /* InputForm */
 
+.form_input {
+  width: 100%;
+}
+
 .inputForm {
   border-radius: 0.5rem;
   border: 1px solid #887e7e;
@@ -22,4 +26,9 @@
   margin: 0.5rem 0;
   padding: 1rem;
   width: 100%;
+}
+
+.content_error {
+  color: red;
+  font-size: 0.8rem;
 }
