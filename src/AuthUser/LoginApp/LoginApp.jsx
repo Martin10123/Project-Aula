@@ -39,7 +39,6 @@ export const LoginAppUser = () => {
 
       setIsLoadingForm(false);
     } catch (error) {
-      console.log(error);
       if (error.code === "auth/user-not-found") {
         setErrorMessage("Este usuario no existe");
       } else if (error.code === "auth/wrong-password") {
