@@ -127,6 +127,18 @@
   cursor: pointer;
 }
 
+.show_error {
+  align-items: center;
+  background: #ff0000;
+  color: #fff;
+  display: flex;
+  font-size: 1.2rem;
+  height: 2rem;
+  justify-content: center;
+  margin: 0.4rem 0;
+  width: 100%;
+}
+
 @media (min-width: 800px) {
   .content {
     width: 23rem;

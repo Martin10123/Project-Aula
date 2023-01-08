@@ -30,8 +30,8 @@ export const InputForm = ({
 };
 
 InputForm.propTypes = {
-  error: PropTypes.bool.isRequired,
-  helperText: PropTypes.string.isRequired,
+  error: PropTypes.bool,
+  helperText: PropTypes.string,
   nameInput: PropTypes.string.isRequired,
   onChangeF: PropTypes.func.isRequired,
   placeH: PropTypes.string.isRequired,

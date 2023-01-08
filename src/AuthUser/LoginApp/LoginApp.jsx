@@ -1,23 +1,53 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 import { BsArrowLeft } from "react-icons/bs";
 
 import { ButtonForm, InputForm } from "../../Helpers";
 import { useForm } from "../../hooks/useForm";
+import { signInWithEmailAndPassword } from "firebase/auth";
+import { FirebaseAuth } from "../../firebase/config";
+import { formValidationsLogin } from "../helpers/validator";
 
 import styles from "./loginPage.module.css";
 
 export const LoginAppUser = () => {
-  const { email, password, onInputChange } = useForm({
-    email: "",
-    password: "",
-  });
+  const [formSubmitted, setFormSubmitted] = useState(false);
+  const [isLoadingForm, setIsLoadingForm] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
 
-  const onSubmitLoginUser = () => {
-    console.log({
-      email,
-      password,
-    });
+  const {
+    email,
+    emailValid,
+    isFormValid,
+    onInputChange,
+    password,
+    passwordValid,
+  } = useForm(
+    {
+      email: "martinsimarra4@gmail.com",
+      password: "123456789",
+    },
+    formValidationsLogin
+  );
+
+  const onSubmitLoginUser = async () => {
+    if (!isFormValid) return setFormSubmitted(true);
+
+    try {
+      await signInWithEmailAndPassword(FirebaseAuth, email, password);
+
+      setIsLoadingForm(false);
+    } catch (error) {
+      console.log(error);
+      if (error.code === "auth/user-not-found") {
+        setErrorMessage("Este usuario no existe");
+      } else {
+        setErrorMessage(error.message);
+      }
+
+      setIsLoadingForm(false);
+    }
   };
 
   return (
@@ -34,6 +64,8 @@ export const LoginAppUser = () => {
 
         <form className={styles.form}>
           <InputForm
+            error={!!emailValid && formSubmitted}
+            helperText={emailValid}
             nameInput="email"
             onChangeF={onInputChange}
             placeH="Correo..."
@@ -42,6 +74,8 @@ export const LoginAppUser = () => {
           />
 
           <InputForm
+            error={!!passwordValid && formSubmitted}
+            helperText={passwordValid}
             nameInput="password"
             onChangeF={onInputChange}
             placeH="Contraseña..."
@@ -59,7 +93,13 @@ export const LoginAppUser = () => {
           <h5>Recordar mis datos</h5>
         </div>
 
-        <ButtonForm title="Ingresar" onSubmit={onSubmitLoginUser} />
+        <ButtonForm
+          disabled={isLoadingForm}
+          title="Ingresar"
+          onSubmit={onSubmitLoginUser}
+        />
+
+        {!!errorMessage && <p className={styles.show_error}>{errorMessage}</p>}
         <hr />
 
         <div className={styles.redirect_register}>

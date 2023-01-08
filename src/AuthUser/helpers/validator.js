@@ -34,3 +34,8 @@ export const formValidations = {
     "El nombre de usuario debe ser más largo",
   ],
 };
+
+export const formValidationsLogin = {
+  email: [(va) => va.trim().length <= 0, "No puede estar vació"],
+  password: [(va) => va.trim().length <= 0, "No puede estar vació"],
+};
