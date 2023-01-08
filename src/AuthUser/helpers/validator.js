@@ -12,7 +12,7 @@ const dateIsValid = (date) => {
 };
 
 // Validar email
-const regex =
+export const regex =
   /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
 
 export const formValidations = {
@@ -36,6 +36,6 @@ export const formValidations = {
 };
 
 export const formValidationsLogin = {
-  email: [(va) => va.trim().length <= 0, "No puede estar vació"],
+  email: [(va) => regex.test(va) === false, "Ingresa un email valido"],
   password: [(va) => va.trim().length <= 0, "No puede estar vació"],
 };
