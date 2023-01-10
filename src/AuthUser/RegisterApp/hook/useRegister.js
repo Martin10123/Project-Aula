@@ -10,13 +10,12 @@ import { useForm } from "../../../hooks/useForm";
 const registerData = {
   birthday: "",
   country: "Colombia",
-  email: "martinsimarra4@gmail.com",
+  email: "martin@gmail.com",
   gender: "Hombre",
-  lastname: "Simarra",
-  name: "Martin",
+  displayName: "Martin Elias Simarra",
   password1: "123456789",
   password2: "123456789",
-  phoneNumber: "3006804563",
+  phoneNumber: "3000000000",
   username: "Martin1234",
 };
 
@@ -42,20 +41,20 @@ export const useRegister = () => {
         formState.password1
       );
 
+      const nameComplete = `${formState.name} ${formState.lastname}`;
+
       await updateProfile(FirebaseAuth.currentUser, {
-        displayName: `${formState.name} ${formState.lastname}`,
+        displayName: nameComplete,
       });
 
+      delete formState.password1;
+      delete formState.password2;
+
       await addDoc(collection(FirebaseDB, "users"), {
-        birthday: formState.birthday,
-        country: formState.country,
+        ...formState,
         createAccount: new Date().getTime(),
-        displayName: `${formState.name} ${formState.lastname}`,
-        email: formState.email,
-        gender: formState.gender,
-        phoneNumber: formState.phoneNumber,
+        displayName: nameComplete,
         uid: user.uid,
-        username: formState.username,
       });
 
       setIsLoadingForm(false);

@@ -20,13 +20,24 @@ export const formValidations = {
     (va) => va === "" || dateIsValid(va) <= 18,
     "Debes ser mayor de edad",
   ],
-  email: [(va) => regex.test(va) === false, "Ingrese un email valido"],
-  lastname: [(va) => va.trim().length <= 2, "El apellido debe ser más largo"],
-  name: [(va) => va.trim().length <= 2, "El nombre debe ser más largo"],
+  displayName: [
+    (va) => va.trim().length <= 15,
+    "El nombre debe de estar completo",
+  ],
+  email: [
+    (va) => {
+      if (regex.test(va) === false) {
+        return true;
+      } else if (va.includes("@professional")) {
+        return true;
+      }
+    },
+    "dirección de correo no valida, no puedes usar (@professional.com o .es) aqui, registrate como profesional",
+  ],
   password1: [(va) => va.trim().length < 8, "La contraseña debe ser más larga"],
   password2: [(p1, p2) => p1 !== p2, "Las contraseñas no coinciden"],
   phoneNumber: [
-    (va) => va.trim().length !== 10,
+    (va) => va.trim().length !== 10 || isNaN(va),
     "Ingrese un número de telefono valido",
   ],
   username: [
@@ -36,6 +47,50 @@ export const formValidations = {
 };
 
 export const formValidationsLogin = {
-  email: [(va) => regex.test(va) === false, "Ingresa un email valido"],
+  email: [
+    (va) => {
+      if (regex.test(va) === false) {
+        return true;
+      } else if (va.includes("@professional")) {
+        return true;
+      }
+    },
+    "Ingresa un email valido como usuario",
+  ],
   password: [(va) => va.trim().length <= 0, "No puede estar vació"],
+};
+
+export const formValidationsLoginProf = {
+  email: [
+    (va) => {
+      if (regex.test(va) === false) {
+        return true;
+      } else if (!va.includes("@professional")) {
+        return true;
+      }
+    },
+    "Ingresa un email valido como professional",
+  ],
+  password: [(va) => va.trim().length <= 0, "No puede estar vació"],
+};
+
+delete formValidations.username;
+
+export const formValidationsProf = {
+  ...formValidations,
+  displayName: [
+    (va) => va.trim().length <= 15,
+    "El nombre debe de estar completo",
+  ],
+  nickName: [(va) => va.trim().length <= 2, "El apodo debe ser más largo"],
+  email: [
+    (va) => {
+      if (!va.includes("@professional")) {
+        return true;
+      } else if (regex.test(va) === false) {
+        return true;
+      }
+    },
+    "dirección de correo no valida, tu correo debe llevar (@professional.com o .es .co) para registrarte como profesional, si quieres registrarte como usuario regresa a la opción de usuario",
+  ],
 };

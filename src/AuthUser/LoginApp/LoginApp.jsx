@@ -96,8 +96,8 @@ export const LoginAppUser = () => {
 
         <ButtonForm
           disabled={isLoadingForm}
-          title="Ingresar"
           onSubmit={onSubmitLoginUser}
+          title={isLoadingForm ? "Cargando..." : "Ingresar"}
         />
 
         {!!errorMessage && <p className={styles.show_error}>{errorMessage}</p>}

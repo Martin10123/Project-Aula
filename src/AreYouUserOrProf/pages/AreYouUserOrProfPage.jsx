@@ -9,32 +9,33 @@ export const AreYouUserOrProfPage = () => {
 
   return (
     <div className={styles.container}>
-      <div className={styles.content_info}>
-        <h1 className={styles.welcome}>Bienvenido a nuestra aplicación</h1>
+      <div className={styles.content_all_info}>
+        <div className={styles.content_info}>
+          <h2 className={styles.welcome}>Bienvenido a nuestra aplicación</h2>
 
-        <h3 className={styles.title}>
-          Aplicación para la gestión de agendamiento de citas de reparaciones
-          locativas.
-        </h3>
+          <p className={styles.title}>
+            Aplicación para la gestión de agendamiento de citas de reparaciones
+            locativas.
+          </p>
+        </div>
 
+        <div className={styles.content_cards}>
+          <CardChooseOption
+            Logo={FaRegUserCircle}
+            title="Usuario"
+            path="/auth-user/login"
+          />
+
+          <CardChooseOption
+            Logo={FaHouseUser}
+            title="Profesional"
+            path="/auth-prof/login"
+          />
+        </div>
         <p className={styles.resumen} onClick={() => setResumen(true)}>
           Ver resumen de nuestra app
         </p>
         {resumen && <ModalResumen setResumen={setResumen} />}
-      </div>
-
-      <div className={styles.content_cards}>
-        <CardChooseOption
-          Logo={FaRegUserCircle}
-          title="Usuario"
-          path="/auth-user/login"
-        />
-
-        <CardChooseOption
-          Logo={FaHouseUser}
-          title="Profesional"
-          path="/auth-prof/login"
-        />
       </div>
     </div>
   );

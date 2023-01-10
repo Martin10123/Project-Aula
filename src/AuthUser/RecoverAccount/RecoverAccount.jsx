@@ -8,8 +8,17 @@ import { regex } from "../helpers/validator";
 
 import styles from "./recoverAccount.module.css";
 
-export const formValidations = {
-  email: [(va) => regex.test(va) === false, "ingresa un email valido"],
+const formValidations = {
+  email: [
+    (va) => {
+      if (regex.test(va) === false) {
+        return true;
+      } else if (va.includes("@professional")) {
+        return true;
+      }
+    },
+    "ingresa un email valido como usuario",
+  ],
 };
 
 export const RecoverAccount = () => {
@@ -18,7 +27,7 @@ export const RecoverAccount = () => {
   const [errorMessage, setErrorMessage] = useState("");
   const { email, onInputChange, isFormValid, emailValid } = useForm(
     {
-      email: "martinsimarra4@gmail.com",
+      email: "",
     },
     formValidations
   );
@@ -61,7 +70,7 @@ export const RecoverAccount = () => {
           <ButtonForm
             disabled={isLoadingForm}
             onSubmit={onRecoverAccount}
-            title="Recuperar"
+            title={isLoadingForm ? "Cargando..." : "Recuperar"}
           />
         </form>
 

@@ -7,5 +7,6 @@ export const MessageError = ({ helperText = "", error }) => {
 };
 
 MessageError.propTypes = {
+  error: PropTypes.bool.isRequired,
   helperText: PropTypes.string.isRequired,
 };

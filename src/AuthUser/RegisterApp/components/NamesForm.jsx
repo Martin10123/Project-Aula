@@ -8,10 +8,9 @@ export const NamesForm = ({
   formValidation,
   onInputChange,
 }) => {
-  const { name, lastname, username, phoneNumber, birthday, email } = formState;
+  const { displayName, username, phoneNumber, birthday, email } = formState;
   const {
-    nameValid,
-    lastnameValid,
+    displayNameValid,
     usernameValid,
     phoneNumberValid,
     birthdayValid,
@@ -20,46 +19,36 @@ export const NamesForm = ({
 
   return (
     <>
+      <InputForm
+        error={!!displayNameValid && formSubmitted}
+        nameInput="displayName"
+        onChangeF={onInputChange}
+        placeH="Nombre completo..."
+        helperText={displayNameValid}
+        type="text"
+        value={displayName}
+      />
       <div className={styles.content_inputs}>
         <InputForm
-          error={!!nameValid && formSubmitted}
-          nameInput="name"
+          error={!!usernameValid && formSubmitted}
+          nameInput="username"
           onChangeF={onInputChange}
-          placeH="Nombre..."
-          helperText={nameValid}
+          placeH="Nombre de usuario..."
+          helperText={usernameValid}
           type="text"
-          value={name}
+          value={username}
         />
-
         <InputForm
-          error={!!lastnameValid && formSubmitted}
-          nameInput="lastname"
+          maxLenght={10}
+          error={!!phoneNumberValid && formSubmitted}
+          nameInput="phoneNumber"
           onChangeF={onInputChange}
-          placeH="Apellido..."
-          helperText={lastnameValid}
-          type="text"
-          value={lastname}
+          placeH="Telefono..."
+          helperText={phoneNumberValid}
+          type="tel"
+          value={phoneNumber}
         />
       </div>
-      <InputForm
-        error={!!usernameValid && formSubmitted}
-        nameInput="username"
-        onChangeF={onInputChange}
-        placeH="Nombre de usuario..."
-        helperText={usernameValid}
-        type="text"
-        value={username}
-      />
-      <InputForm
-        maxLenght={10}
-        error={!!phoneNumberValid && formSubmitted}
-        nameInput="phoneNumber"
-        onChangeF={onInputChange}
-        placeH="Telefono..."
-        helperText={phoneNumberValid}
-        type="tel"
-        value={phoneNumber}
-      />
       <InputForm
         error={!!birthdayValid && formSubmitted}
         nameInput="birthday"

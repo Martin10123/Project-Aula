@@ -46,8 +46,8 @@ export const RegisterAppUser = () => {
 
           <ButtonForm
             disabled={isLoadingForm}
-            title="Registrarse"
             onSubmit={onSubmitRegister}
+            title={isLoadingForm ? "Cargando..." : "Registrarse"}
           />
 
           {!!errorMessage && (

@@ -1,5 +1,3 @@
-export * from "./AvaibleProf";
+export * from "./NameForm";
 export * from "./EmailPassword";
-export * from "./NamesProf";
-export * from "./NavTabs";
-export * from "./ButtonsRegister";
+export * from "./ProfessionDisponibility";

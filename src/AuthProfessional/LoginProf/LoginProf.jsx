@@ -1,22 +1,53 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { BsArrowLeft } from "react-icons/bs";
+import { signInWithEmailAndPassword } from "firebase/auth";
 
 import { ButtonForm, InputForm } from "../../Helpers";
+import { FirebaseAuth } from "../../firebase/config";
+import { formValidationsLoginProf } from "../../AuthUser/helpers/validator";
 import { useForm } from "../../hooks/useForm";
 
 import styles from "./loginProf.module.css";
 
 export const LoginProf = () => {
-  const { email, password, onInputChange } = useForm({
-    email: "",
-    password: "",
-  });
+  const [formSubmitted, setFormSubmitted] = useState(false);
+  const [isLoadingForm, setIsLoadingForm] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
 
-  const onSubmitLogin = () => {
-    console.log({
-      email,
-      password,
-    });
+  const {
+    email,
+    emailValid,
+    isFormValid,
+    onInputChange,
+    password,
+    passwordValid,
+  } = useForm(
+    {
+      email: "martinsimarra4@gmail.com",
+      password: "123456789",
+    },
+    formValidationsLoginProf
+  );
+
+  const onSubmitLoginProf = async () => {
+    if (!isFormValid) return setFormSubmitted(true);
+
+    try {
+      await signInWithEmailAndPassword(FirebaseAuth, email, password);
+
+      setIsLoadingForm(false);
+    } catch (error) {
+      if (error.code === "auth/user-not-found") {
+        setErrorMessage("Este usuario no existe");
+      } else if (error.code === "auth/wrong-password") {
+        setErrorMessage("Contraseña incorrecta");
+      } else {
+        setErrorMessage(error.message);
+      }
+
+      setIsLoadingForm(false);
+    }
   };
 
   return (
@@ -33,6 +64,8 @@ export const LoginProf = () => {
 
         <div className={styles.form}>
           <InputForm
+            error={!!emailValid && formSubmitted}
+            helperText={emailValid}
             nameInput="email"
             onChangeF={onInputChange}
             placeH="Correo..."
@@ -41,6 +74,8 @@ export const LoginProf = () => {
           />
 
           <InputForm
+            error={!!passwordValid && formSubmitted}
+            helperText={passwordValid}
             nameInput="password"
             onChangeF={onInputChange}
             placeH="Contraseña..."
@@ -48,10 +83,14 @@ export const LoginProf = () => {
             value={password}
           />
 
-          <div className="buttons">
-            <ButtonForm title="Ingresar" onSubmit={onSubmitLogin} />
-          </div>
+          <ButtonForm
+            disabled={isLoadingForm}
+            title={isLoadingForm ? "Cargando..." : "Ingresar"}
+            onSubmit={onSubmitLoginProf}
+          />
         </div>
+
+        {!!errorMessage && <p className={styles.show_error}>{errorMessage}</p>}
 
         <Link to="/auth-prof/recoverAccount" className={styles.forgot_password}>
           <h5>¿Olvidaste tu contraseña?</h5>
